@@ -1,1894 +1,0 @@
-travis_fold:start:worker_info[0K[33;1mWorker information[0m
-hostname: c338e0d6-906d-47f1-af6a-546f6bf81641@1.worker-org-689d9fcfd5-4x28d.gce-production-1
-version: v6.2.8 https://github.com/travis-ci/worker/tree/6d3048d96b26562be21fa1a8b8144f4c4cecd083
-instance: travis-job-4c05c511-8642-48df-a120-4a256f176700 travis-ci-ubuntu-1804-1582576938-a9b1ae58 (via amqp)
-startup: 6.300118982s
-travis_fold:end:worker_info[0Ktravis_time:start:08c90e0b[0Ktravis_time:end:08c90e0b:start=1585809137138110870,finish=1585809137334818464,duration=196707594,event=no_world_writable_dirs[0Ktravis_time:start:14fd70ca[0Ktravis_time:end:14fd70ca:start=1585809137337785974,finish=1585809137345292660,duration=7506686,event=agent[0Ktravis_time:start:17c98d02[0Ktravis_time:end:17c98d02:start=1585809137348246229,finish=1585809137350366769,duration=2120540,event=check_unsupported[0Ktravis_time:start:14f24e9c[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
-Build language: node_js
-Build dist: bionic
-Build id: 670010535
-Job id: 670010537
-Runtime kernel version: 5.0.0-1031-gcp
-travis-build version: f65a8dc88
-[34m[1mBuild image provisioning date and time[0m
-Mon Feb 24 21:21:37 UTC 2020
-[34m[1mOperating System Details[0m
-Distributor ID:	Ubuntu
-Description:	Ubuntu 18.04.4 LTS
-Release:	18.04
-Codename:	bionic
-[34m[1mSystemd Version[0m
-systemd 237
-[34m[1mCookbooks Version[0m
-b5e4fc1 https://github.com/travis-ci/travis-cookbooks/tree/b5e4fc1
-[34m[1mgit version[0m
-git version 2.25.1
-[34m[1mbash version[0m
-GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)
-[34m[1mgcc version[0m
-gcc (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0
-[34m[1mdocker version[0m
-Client:
- Version:           18.06.0-ce
- API version:       1.38
- Go version:        go1.10.3
- Git commit:        0ffa825
- Built:             Wed Jul 18 19:09:54 2018
- OS/Arch:           linux/amd64
- Experimental:      false
-
-Server:
- Engine:
-  Version:          18.06.0-ce
-  API version:      1.38 (minimum version 1.12)
-  Go version:       go1.10.3
-  Git commit:       0ffa825
-  Built:            Wed Jul 18 19:07:56 2018
-  OS/Arch:          linux/amd64
-  Experimental:     false
-[34m[1mclang version[0m
-clang version 7.0.0 (tags/RELEASE_700/final)
-[34m[1mjq version[0m
-jq-1.5
-[34m[1mbats version[0m
-Bats 0.4.0
-[34m[1mshellcheck version[0m
-0.7.0
-[34m[1mshfmt version[0m
-v2.6.3
-[34m[1mccache version[0m
-3.4.1
-[34m[1mcmake version[0m
-cmake version 3.12.4
-[34m[1mheroku version[0m
-heroku/7.38.2 linux-x64 node-v12.13.0
-[34m[1mimagemagick version[0m
-Version: ImageMagick 6.9.7-4 Q16 x86_64 20170114 http://www.imagemagick.org
-[34m[1mmd5deep version[0m
-4.4
-[34m[1mmercurial version[0m
-version 4.8
-[34m[1mmysql version[0m
-mysql  Ver 14.14 Distrib 5.7.29, for Linux (x86_64) using  EditLine wrapper
-[34m[1mopenssl version[0m
-OpenSSL 1.1.1  11 Sep 2018
-[34m[1mpacker version[0m
-1.3.3
-[34m[1mpostgresql client version[0m
-psql (PostgreSQL) 11.7 (Ubuntu 11.7-2.pgdg18.04+1)
-[34m[1mragel version[0m
-Ragel State Machine Compiler version 6.10 March 2017
-[34m[1msudo version[0m
-1.8.21p2
-[34m[1mgzip version[0m
-gzip 1.6
-[34m[1mzip version[0m
-Zip 3.0
-[34m[1mvim version[0m
-VIM - Vi IMproved 8.0 (2016 Sep 12, compiled Jun 06 2019 17:31:41)
-[34m[1miptables version[0m
-iptables v1.6.1
-[34m[1mcurl version[0m
-curl 7.58.0 (x86_64-pc-linux-gnu) libcurl/7.58.0 OpenSSL/1.1.1 zlib/1.2.11 libidn2/2.0.4 libpsl/0.19.1 (+libidn2/2.0.4) nghttp2/1.30.0 librtmp/2.3
-[34m[1mwget version[0m
-GNU Wget 1.19.4 built on linux-gnu.
-[34m[1mrsync version[0m
-rsync  version 3.1.2  protocol version 31
-[34m[1mgimme version[0m
-v1.5.3
-[34m[1mnvm version[0m
-0.35.2
-[34m[1mperlbrew version[0m
-/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.87
-[34m[1mphpenv version[0m
-rbenv 1.1.2-26-gc6324ff
-[34m[1mrvm version[0m
-rvm 1.29.9 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
-[34m[1mdefault ruby version[0m
-ruby 2.6.5p114 (2019-10-01 revision 67812) [x86_64-linux]
-[34m[1mElasticSearch version[0m
-5.5.0
-[34m[1mInstalled Firefox version[0m
-firefox 63.0.1
-[34m[1mMongoDB version[0m
-MongoDB 4.0.16
-[34m[1mPhantomJS version[0m
-2.1.1
-[34m[1mPre-installed PostgreSQL versions[0m
-9.3.25
-9.4.26
-9.5.21
-9.6.17
-[34m[1mRedis version[0m
-redis-server 5.0.7
-[34m[1mPre-installed Go versions[0m
-1.11.1
-[34m[1mant version[0m
-Apache Ant(TM) version 1.10.5 compiled on March 28 2019
-[34m[1mmvn version[0m
-Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
-[34m[1mgradle version[0m
-Gradle 5.1.1!
-[34m[1mlein version[0m
-Leiningen 2.9.1 on Java 11.0.2 OpenJDK 64-Bit Server VM
-[34m[1mPre-installed Node.js versions[0m
-v10.16.0
-v10.19.0
-v11.15.0
-v12.13.1
-v12.16.1
-v13.3.0
-v4.9.1
-v6.17.1
-v8.16.2
-v8.17.0
-v8.9
-[34m[1mphpenv versions[0m
-  system
-  7.1
-  7.1.33
-  7.2
-* 7.2.27 (set by /home/travis/.phpenv/version)
-  7.3
-  7.3.14
-  7.4
-  7.4.2
-  hhvm
-  hhvm-stable
-[34m[1mcomposer --version[0m
-Composer version 1.9.2 2020-01-14 16:30:31
-[34m[1mPre-installed Ruby versions[0m
-ruby-2.4.9
-ruby-2.5.3
-ruby-2.5.7
-ruby-2.6.5
-ruby-2.7.0
-travis_fold:end:system_info[0K
-travis_time:end:14f24e9c:start=1585809137353221658,finish=1585809137359700328,duration=6478670,event=show_system_info[0Ktravis_time:start:1d67026a[0Ktravis_time:end:1d67026a:start=1585809137362505953,finish=1585809137388295593,duration=25789640,event=rm_riak_source[0Ktravis_time:start:1a85d15e[0Ktravis_time:end:1a85d15e:start=1585809137399331606,finish=1585809137410084361,duration=10752755,event=fix_rwky_redis[0Ktravis_time:start:3036a71f[0Ktravis_time:end:3036a71f:start=1585809137413183693,finish=1585809137828157348,duration=414973655,event=wait_for_network[0Ktravis_time:start:0aa94999[0Ktravis_time:end:0aa94999:start=1585809137831358396,finish=1585809138085837072,duration=254478676,event=update_apt_keys[0Ktravis_time:start:19324aa6[0Ktravis_time:end:19324aa6:start=1585809138089042167,finish=1585809138146377076,duration=57334909,event=fix_hhvm_source[0Ktravis_time:start:00a15916[0Ktravis_time:end:00a15916:start=1585809138149914326,finish=1585809138152703616,duration=2789290,event=update_mongo_arch[0Ktravis_time:start:04b225bd[0Ktravis_time:end:04b225bd:start=1585809138155888533,finish=1585809138199952329,duration=44063796,event=fix_sudo_enabled_trusty[0Ktravis_time:start:1c6dfaf5[0Ktravis_time:end:1c6dfaf5:start=1585809138203237891,finish=1585809138205581198,duration=2343307,event=update_glibc[0Ktravis_time:start:14617380[0Ktravis_time:end:14617380:start=1585809138208667368,finish=1585809138216462455,duration=7795087,event=clean_up_path[0Ktravis_time:start:0a278800[0Ktravis_time:end:0a278800:start=1585809138219485909,finish=1585809138228479410,duration=8993501,event=fix_resolv_conf[0Ktravis_time:start:399fecff[0Ktravis_time:end:399fecff:start=1585809138231396308,finish=1585809138259470210,duration=28073902,event=fix_etc_hosts[0Ktravis_time:start:065b3e1a[0Ktravis_time:end:065b3e1a:start=1585809138262669651,finish=1585809138271378059,duration=8708408,event=fix_mvn_settings_xml[0Ktravis_time:start:0f940e48[0Ktravis_time:end:0f940e48:start=1585809138274418613,finish=1585809138285224726,duration=10806113,event=no_ipv6_localhost[0Ktravis_time:start:0c3a10e6[0Ktravis_time:end:0c3a10e6:start=1585809138288377766,finish=1585809138290496409,duration=2118643,event=fix_etc_mavenrc[0Ktravis_time:start:03d11714[0Ktravis_time:end:03d11714:start=1585809138293292362,finish=1585809138296150108,duration=2857746,event=fix_wwdr_certificate[0Ktravis_time:start:023e27e8[0Ktravis_time:end:023e27e8:start=1585809138299026321,finish=1585809138357565099,duration=58538778,event=put_localhost_first[0Ktravis_time:start:22d30166[0Ktravis_time:end:22d30166:start=1585809138361074324,finish=1585809138364507940,duration=3433616,event=home_paths[0Ktravis_time:start:0863e14d[0Ktravis_time:end:0863e14d:start=1585809138367604714,finish=1585809138381433132,duration=13828418,event=disable_initramfs[0Ktravis_time:start:0e549ed0[0Ktravis_time:end:0e549ed0:start=1585809138384724707,finish=1585809138567359343,duration=182634636,event=disable_ssh_roaming[0Ktravis_time:start:31459d73[0Ktravis_time:end:31459d73:start=1585809138570369894,finish=1585809138572584754,duration=2214860,event=debug_tools[0Ktravis_time:start:0b4aebcd[0Ktravis_time:end:0b4aebcd:start=1585809138575301636,finish=1585809138578142021,duration=2840385,event=uninstall_oclint[0Ktravis_time:start:0e67cf10[0Ktravis_time:end:0e67cf10:start=1585809138580977772,finish=1585809138583721554,duration=2743782,event=rvm_use[0Ktravis_time:start:16a61bb0[0Ktravis_time:end:16a61bb0:start=1585809138586532693,finish=1585809138594892408,duration=8359715,event=rm_etc_boto_cfg[0Ktravis_time:start:16329c48[0Ktravis_time:end:16329c48:start=1585809138598031250,finish=1585809138600159996,duration=2128746,event=rm_oraclejdk8_symlink[0Ktravis_time:start:21aea78e[0Ktravis_time:end:21aea78e:start=1585809138602859456,finish=1585809138699191441,duration=96331985,event=enable_i386[0Ktravis_time:start:00c3bc70[0Ktravis_time:end:00c3bc70:start=1585809138702347442,finish=1585809138706197266,duration=3849824,event=update_rubygems[0Ktravis_time:start:170a2858[0Ktravis_time:end:170a2858:start=1585809138709165584,finish=1585809139530932236,duration=821766652,event=ensure_path_components[0Ktravis_time:start:001aeef4[0Ktravis_time:end:001aeef4:start=1585809139534229365,finish=1585809139536433837,duration=2204472,event=redefine_curl[0Ktravis_time:start:07bb87e8[0Ktravis_time:end:07bb87e8:start=1585809139539157308,finish=1585809139541196417,duration=2039109,event=nonblock_pipe[0Ktravis_time:start:0a226cca[0Ktravis_time:end:0a226cca:start=1585809139543843137,finish=1585809145579188999,duration=6035345862,event=apt_get_update[0Ktravis_time:start:06d7b7c0[0Ktravis_time:end:06d7b7c0:start=1585809145582211869,finish=1585809145584245433,duration=2033564,event=deprecate_xcode_64[0Ktravis_time:start:067912f0[0Ktravis_time:end:067912f0:start=1585809145586759661,finish=1585809148055674739,duration=2468915078,event=update_heroku[0Ktravis_time:start:0324d527[0Ktravis_time:end:0324d527:start=1585809148058637312,finish=1585809148060668829,duration=2031517,event=shell_session_update[0Ktravis_time:start:0529f0a2[0Ktravis_fold:start:docker_mtu[0Ktravis_fold:end:docker_mtu[0Ktravis_time:end:0529f0a2:start=1585809148063257686,finish=1585809150223516549,duration=2160258863,event=set_docker_mtu[0Ktravis_time:start:0528369c[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_time:end:0528369c:start=1585809150226731105,finish=1585809150303120752,duration=76389647,event=resolvconf[0Ktravis_time:start:0eaf8712[0Ktravis_time:end:0eaf8712:start=1585809150307035245,finish=1585809150466984748,duration=159949503,event=maven_central_mirror[0Ktravis_time:start:04d4ce1a[0Ktravis_time:end:04d4ce1a:start=1585809150470015540,finish=1585809150572734388,duration=102718848,event=maven_https[0Ktravis_fold:start:apt[0Ktravis_time:start:22066ed0[0K$ travis_apt_get_update
-travis_time:end:22066ed0:start=1585809150576766166,finish=1585809160044164498,duration=9467398332,event=prepare[0K[33;1mInstalling APT Packages[0m
-travis_time:start:003425a1[0K$ sudo -E apt-get -yq --no-install-suggests --no-install-recommends $(travis_apt_get_options) install libopenjp2-tools
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following package was automatically installed and is no longer required:
-  libopts25
-Use 'sudo apt autoremove' to remove it.
-The following additional packages will be installed:
-  libopenjp2-7
-The following NEW packages will be installed:
-  libopenjp2-7 libopenjp2-tools
-0 upgraded, 2 newly installed, 0 to remove and 86 not upgraded.
-Need to get 229 kB of archives.
-After this operation, 807 kB of additional disk space will be used.
-Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 libopenjp2-7 amd64 2.3.0-2build0.18.04.1 [145 kB]
-Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 libopenjp2-tools amd64 2.3.0-2build0.18.04.1 [84.1 kB]
-Fetched 229 kB in 0s (933 kB/s)
-Selecting previously unselected package libopenjp2-7:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 118522 files and directories currently installed.)
-Preparing to unpack .../libopenjp2-7_2.3.0-2build0.18.04.1_amd64.deb ...
-Unpacking libopenjp2-7:amd64 (2.3.0-2build0.18.04.1) ...
-Selecting previously unselected package libopenjp2-tools.
-Preparing to unpack .../libopenjp2-tools_2.3.0-2build0.18.04.1_amd64.deb ...
-Unpacking libopenjp2-tools (2.3.0-2build0.18.04.1) ...
-Setting up libopenjp2-7:amd64 (2.3.0-2build0.18.04.1) ...
-Setting up libopenjp2-tools (2.3.0-2build0.18.04.1) ...
-Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
-Processing triggers for libc-bin (2.27-3ubuntu1) ...
-travis_time:end:003425a1:start=1585809160047628598,finish=1585809163887459323,duration=3839830725,event=prepare[0Ktravis_fold:end:apt[0Ktravis_time:start:1926d588[0Ktravis_time:end:1926d588:start=1585809163891172836,finish=1585809163893469944,duration=2297108,event=fix_ps4[0Ktravis_time:start:1081e00b[0K
-travis_fold:start:git.checkout[0Ktravis_time:start:01bed996[0K$ git clone --depth=50 https://github.com/irccloud/irccloud-desktop.git irccloud/irccloud-desktop
-Cloning into 'irccloud/irccloud-desktop'...
-remote: Enumerating objects: 273, done.[K
-remote: Counting objects:   0% (1/273)[Kremote: Counting objects:   1% (3/273)[Kremote: Counting objects:   2% (6/273)[Kremote: Counting objects:   3% (9/273)[Kremote: Counting objects:   4% (11/273)[Kremote: Counting objects:   5% (14/273)[Kremote: Counting objects:   6% (17/273)[Kremote: Counting objects:   7% (20/273)[Kremote: Counting objects:   8% (22/273)[Kremote: Counting objects:   9% (25/273)[Kremote: Counting objects:  10% (28/273)[Kremote: Counting objects:  11% (31/273)[Kremote: Counting objects:  12% (33/273)[Kremote: Counting objects:  13% (36/273)[Kremote: Counting objects:  14% (39/273)[Kremote: Counting objects:  15% (41/273)[Kremote: Counting objects:  16% (44/273)[Kremote: Counting objects:  17% (47/273)[Kremote: Counting objects:  18% (50/273)[Kremote: Counting objects:  19% (52/273)[Kremote: Counting objects:  20% (55/273)[Kremote: Counting objects:  21% (58/273)[Kremote: Counting objects:  22% (61/273)[Kremote: Counting objects:  23% (63/273)[Kremote: Counting objects:  24% (66/273)[Kremote: Counting objects:  25% (69/273)[Kremote: Counting objects:  26% (71/273)[Kremote: Counting objects:  27% (74/273)[Kremote: Counting objects:  28% (77/273)[Kremote: Counting objects:  29% (80/273)[Kremote: Counting objects:  30% (82/273)[Kremote: Counting objects:  31% (85/273)[Kremote: Counting objects:  32% (88/273)[Kremote: Counting objects:  33% (91/273)[Kremote: Counting objects:  34% (93/273)[Kremote: Counting objects:  35% (96/273)[Kremote: Counting objects:  36% (99/273)[Kremote: Counting objects:  37% (102/273)[Kremote: Counting objects:  38% (104/273)[Kremote: Counting objects:  39% (107/273)[Kremote: Counting objects:  40% (110/273)[Kremote: Counting objects:  41% (112/273)[Kremote: Counting objects:  42% (115/273)[Kremote: Counting objects:  43% (118/273)[Kremote: Counting objects:  44% (121/273)[Kremote: Counting objects:  45% (123/273)[Kremote: Counting objects:  46% (126/273)[Kremote: Counting objects:  47% (129/273)[Kremote: Counting objects:  48% (132/273)[Kremote: Counting objects:  49% (134/273)[Kremote: Counting objects:  50% (137/273)[Kremote: Counting objects:  51% (140/273)[Kremote: Counting objects:  52% (142/273)[Kremote: Counting objects:  53% (145/273)[Kremote: Counting objects:  54% (148/273)[Kremote: Counting objects:  55% (151/273)[Kremote: Counting objects:  56% (153/273)[Kremote: Counting objects:  57% (156/273)[Kremote: Counting objects:  58% (159/273)[Kremote: Counting objects:  59% (162/273)[Kremote: Counting objects:  60% (164/273)[Kremote: Counting objects:  61% (167/273)[Kremote: Counting objects:  62% (170/273)[Kremote: Counting objects:  63% (172/273)[Kremote: Counting objects:  64% (175/273)[Kremote: Counting objects:  65% (178/273)[Kremote: Counting objects:  66% (181/273)[Kremote: Counting objects:  67% (183/273)[Kremote: Counting objects:  68% (186/273)[Kremote: Counting objects:  69% (189/273)[Kremote: Counting objects:  70% (192/273)[Kremote: Counting objects:  71% (194/273)[Kremote: Counting objects:  72% (197/273)[Kremote: Counting objects:  73% (200/273)[Kremote: Counting objects:  74% (203/273)[Kremote: Counting objects:  75% (205/273)[Kremote: Counting objects:  76% (208/273)[Kremote: Counting objects:  77% (211/273)[Kremote: Counting objects:  78% (213/273)[Kremote: Counting objects:  79% (216/273)[Kremote: Counting objects:  80% (219/273)[Kremote: Counting objects:  81% (222/273)[Kremote: Counting objects:  82% (224/273)[Kremote: Counting objects:  83% (227/273)[Kremote: Counting objects:  84% (230/273)[Kremote: Counting objects:  85% (233/273)[Kremote: Counting objects:  86% (235/273)[Kremote: Counting objects:  87% (238/273)[Kremote: Counting objects:  88% (241/273)[Kremote: Counting objects:  89% (243/273)[Kremote: Counting objects:  90% (246/273)[Kremote: Counting objects:  91% (249/273)[Kremote: Counting objects:  92% (252/273)[Kremote: Counting objects:  93% (254/273)[Kremote: Counting objects:  94% (257/273)[Kremote: Counting objects:  95% (260/273)[Kremote: Counting objects:  96% (263/273)[Kremote: Counting objects:  97% (265/273)[Kremote: Counting objects:  98% (268/273)[Kremote: Counting objects:  99% (271/273)[Kremote: Counting objects: 100% (273/273)[Kremote: Counting objects: 100% (273/273), done.[K
-remote: Compressing objects:   0% (1/183)[Kremote: Compressing objects:   1% (2/183)[Kremote: Compressing objects:   2% (4/183)[Kremote: Compressing objects:   3% (6/183)[Kremote: Compressing objects:   4% (8/183)[Kremote: Compressing objects:   5% (10/183)[Kremote: Compressing objects:   6% (11/183)[Kremote: Compressing objects:   7% (13/183)[Kremote: Compressing objects:   8% (15/183)[Kremote: Compressing objects:   9% (17/183)[Kremote: Compressing objects:  10% (19/183)[Kremote: Compressing objects:  11% (21/183)[Kremote: Compressing objects:  12% (22/183)[Kremote: Compressing objects:  13% (24/183)[Kremote: Compressing objects:  14% (26/183)[Kremote: Compressing objects:  15% (28/183)[Kremote: Compressing objects:  16% (30/183)[Kremote: Compressing objects:  17% (32/183)[Kremote: Compressing objects:  18% (33/183)[Kremote: Compressing objects:  19% (35/183)[Kremote: Compressing objects:  20% (37/183)[Kremote: Compressing objects:  21% (39/183)[Kremote: Compressing objects:  22% (41/183)[Kremote: Compressing objects:  23% (43/183)[Kremote: Compressing objects:  24% (44/183)[Kremote: Compressing objects:  25% (46/183)[Kremote: Compressing objects:  26% (48/183)[Kremote: Compressing objects:  27% (50/183)[Kremote: Compressing objects:  28% (52/183)[Kremote: Compressing objects:  29% (54/183)[Kremote: Compressing objects:  30% (55/183)[Kremote: Compressing objects:  31% (57/183)[Kremote: Compressing objects:  32% (59/183)[Kremote: Compressing objects:  33% (61/183)[Kremote: Compressing objects:  34% (63/183)[Kremote: Compressing objects:  35% (65/183)[Kremote: Compressing objects:  36% (66/183)[Kremote: Compressing objects:  37% (68/183)[Kremote: Compressing objects:  38% (70/183)[Kremote: Compressing objects:  39% (72/183)[Kremote: Compressing objects:  40% (74/183)[Kremote: Compressing objects:  41% (76/183)[Kremote: Compressing objects:  42% (77/183)[Kremote: Compressing objects:  43% (79/183)[Kremote: Compressing objects:  44% (81/183)[Kremote: Compressing objects:  45% (83/183)[Kremote: Compressing objects:  46% (85/183)[Kremote: Compressing objects:  47% (87/183)[Kremote: Compressing objects:  48% (88/183)[Kremote: Compressing objects:  49% (90/183)[Kremote: Compressing objects:  50% (92/183)[Kremote: Compressing objects:  51% (94/183)[Kremote: Compressing objects:  52% (96/183)[Kremote: Compressing objects:  53% (97/183)[Kremote: Compressing objects:  54% (99/183)[Kremote: Compressing objects:  55% (101/183)[Kremote: Compressing objects:  56% (103/183)[Kremote: Compressing objects:  57% (105/183)[Kremote: Compressing objects:  58% (107/183)[Kremote: Compressing objects:  59% (108/183)[Kremote: Compressing objects:  60% (110/183)[Kremote: Compressing objects:  61% (112/183)[Kremote: Compressing objects:  62% (114/183)[Kremote: Compressing objects:  63% (116/183)[Kremote: Compressing objects:  64% (118/183)[Kremote: Compressing objects:  65% (119/183)[Kremote: Compressing objects:  66% (121/183)[Kremote: Compressing objects:  67% (123/183)[Kremote: Compressing objects:  68% (125/183)[Kremote: Compressing objects:  69% (127/183)[Kremote: Compressing objects:  70% (129/183)[Kremote: Compressing objects:  71% (130/183)[Kremote: Compressing objects:  72% (132/183)[Kremote: Compressing objects:  73% (134/183)[Kremote: Compressing objects:  74% (136/183)[Kremote: Compressing objects:  75% (138/183)[Kremote: Compressing objects:  76% (140/183)[Kremote: Compressing objects:  77% (141/183)[Kremote: Compressing objects:  78% (143/183)[Kremote: Compressing objects:  79% (145/183)[Kremote: Compressing objects:  80% (147/183)[Kremote: Compressing objects:  81% (149/183)[Kremote: Compressing objects:  82% (151/183)[Kremote: Compressing objects:  83% (152/183)[Kremote: Compressing objects:  84% (154/183)[Kremote: Compressing objects:  85% (156/183)[Kremote: Compressing objects:  86% (158/183)[Kremote: Compressing objects:  87% (160/183)[Kremote: Compressing objects:  88% (162/183)[Kremote: Compressing objects:  89% (163/183)[Kremote: Compressing objects:  90% (165/183)[Kremote: Compressing objects:  91% (167/183)[Kremote: Compressing objects:  92% (169/183)[Kremote: Compressing objects:  93% (171/183)[Kremote: Compressing objects:  94% (173/183)[Kremote: Compressing objects:  95% (174/183)[Kremote: Compressing objects:  96% (176/183)[Kremote: Compressing objects:  97% (178/183)[Kremote: Compressing objects:  98% (180/183)[Kremote: Compressing objects:  99% (182/183)[Kremote: Compressing objects: 100% (183/183)[Kremote: Compressing objects: 100% (183/183), done.[K
-Receiving objects:   0% (1/273)Receiving objects:   1% (3/273)Receiving objects:   2% (6/273)Receiving objects:   3% (9/273)Receiving objects:   4% (11/273)Receiving objects:   5% (14/273)Receiving objects:   6% (17/273)Receiving objects:   7% (20/273)Receiving objects:   8% (22/273)Receiving objects:   9% (25/273)Receiving objects:  10% (28/273)Receiving objects:  11% (31/273)Receiving objects:  12% (33/273)Receiving objects:  13% (36/273)Receiving objects:  14% (39/273)Receiving objects:  15% (41/273)Receiving objects:  16% (44/273)Receiving objects:  17% (47/273)Receiving objects:  18% (50/273)Receiving objects:  19% (52/273)Receiving objects:  20% (55/273)Receiving objects:  21% (58/273)Receiving objects:  22% (61/273)Receiving objects:  23% (63/273)Receiving objects:  24% (66/273)Receiving objects:  25% (69/273)Receiving objects:  26% (71/273)Receiving objects:  27% (74/273)Receiving objects:  28% (77/273)Receiving objects:  29% (80/273)Receiving objects:  30% (82/273)Receiving objects:  31% (85/273)Receiving objects:  32% (88/273)Receiving objects:  33% (91/273)Receiving objects:  34% (93/273)Receiving objects:  35% (96/273)Receiving objects:  36% (99/273)Receiving objects:  37% (102/273)Receiving objects:  38% (104/273)Receiving objects:  39% (107/273)Receiving objects:  40% (110/273)Receiving objects:  41% (112/273)Receiving objects:  42% (115/273)Receiving objects:  43% (118/273)Receiving objects:  44% (121/273)Receiving objects:  45% (123/273)Receiving objects:  46% (126/273)Receiving objects:  47% (129/273)Receiving objects:  48% (132/273)Receiving objects:  49% (134/273)Receiving objects:  50% (137/273)Receiving objects:  51% (140/273)Receiving objects:  52% (142/273)Receiving objects:  53% (145/273)Receiving objects:  54% (148/273)Receiving objects:  55% (151/273)Receiving objects:  56% (153/273)Receiving objects:  57% (156/273)Receiving objects:  58% (159/273)Receiving objects:  59% (162/273)Receiving objects:  60% (164/273)Receiving objects:  61% (167/273)Receiving objects:  62% (170/273)Receiving objects:  63% (172/273)Receiving objects:  64% (175/273)Receiving objects:  65% (178/273)Receiving objects:  66% (181/273)Receiving objects:  67% (183/273)Receiving objects:  68% (186/273)Receiving objects:  69% (189/273)Receiving objects:  70% (192/273)Receiving objects:  71% (194/273)Receiving objects:  72% (197/273)Receiving objects:  73% (200/273)Receiving objects:  74% (203/273)Receiving objects:  75% (205/273)Receiving objects:  76% (208/273)Receiving objects:  77% (211/273)Receiving objects:  78% (213/273)Receiving objects:  79% (216/273)Receiving objects:  80% (219/273)Receiving objects:  81% (222/273)Receiving objects:  82% (224/273)Receiving objects:  83% (227/273)Receiving objects:  84% (230/273)Receiving objects:  85% (233/273)Receiving objects:  86% (235/273)Receiving objects:  87% (238/273)Receiving objects:  88% (241/273)Receiving objects:  89% (243/273)Receiving objects:  90% (246/273)Receiving objects:  91% (249/273)Receiving objects:  92% (252/273)Receiving objects:  93% (254/273)Receiving objects:  94% (257/273)Receiving objects:  95% (260/273)Receiving objects:  96% (263/273)Receiving objects:  97% (265/273)Receiving objects:  98% (268/273)remote: Total 273 (delta 156), reused 195 (delta 87), pack-reused 0[K
-Receiving objects:  99% (271/273)Receiving objects: 100% (273/273)Receiving objects: 100% (273/273), 2.63 MiB | 16.50 MiB/s, done.
-Resolving deltas:   0% (0/156)Resolving deltas:   5% (9/156)Resolving deltas:   6% (10/156)Resolving deltas:  19% (31/156)Resolving deltas:  42% (66/156)Resolving deltas:  45% (71/156)Resolving deltas:  48% (75/156)Resolving deltas:  51% (80/156)Resolving deltas:  53% (84/156)Resolving deltas:  54% (85/156)Resolving deltas:  57% (89/156)Resolving deltas:  59% (93/156)Resolving deltas:  60% (95/156)Resolving deltas:  65% (102/156)Resolving deltas:  66% (103/156)Resolving deltas:  67% (106/156)Resolving deltas:  69% (108/156)Resolving deltas:  76% (119/156)Resolving deltas:  83% (131/156)Resolving deltas:  87% (137/156)Resolving deltas:  89% (139/156)Resolving deltas:  90% (141/156)Resolving deltas:  92% (145/156)Resolving deltas:  93% (146/156)Resolving deltas: 100% (156/156)Resolving deltas: 100% (156/156), done.
-travis_time:end:01bed996:start=1585809163899717542,finish=1585809164606882680,duration=707165138,event=checkout[0K$ cd irccloud/irccloud-desktop
-travis_time:start:01407f45[0K$ git fetch origin +refs/pull/156/merge:
-remote: Enumerating objects: 14, done.[K
-remote: Counting objects:   7% (1/14)[Kremote: Counting objects:  14% (2/14)[Kremote: Counting objects:  21% (3/14)[Kremote: Counting objects:  28% (4/14)[Kremote: Counting objects:  35% (5/14)[Kremote: Counting objects:  42% (6/14)[Kremote: Counting objects:  50% (7/14)[Kremote: Counting objects:  57% (8/14)[Kremote: Counting objects:  64% (9/14)[Kremote: Counting objects:  71% (10/14)[Kremote: Counting objects:  78% (11/14)[Kremote: Counting objects:  85% (12/14)[Kremote: Counting objects:  92% (13/14)[Kremote: Counting objects: 100% (14/14)[Kremote: Counting objects: 100% (14/14), done.[K
-remote: Compressing objects:  50% (1/2)[Kremote: Compressing objects: 100% (2/2)[Kremote: Compressing objects: 100% (2/2), done.[K
-remote: Total 5 (delta 3), reused 4 (delta 3), pack-reused 0[K
-Unpacking objects:  20% (1/5)Unpacking objects:  40% (2/5)Unpacking objects:  60% (3/5)Unpacking objects:  80% (4/5)Unpacking objects: 100% (5/5)Unpacking objects: 100% (5/5), 1.13 KiB | 577.00 KiB/s, done.
-From https://github.com/irccloud/irccloud-desktop
- * branch            refs/pull/156/merge -> FETCH_HEAD
-travis_time:end:01407f45:start=1585809164610533921,finish=1585809164976618163,duration=366084242,event=checkout[0K$ git checkout -qf FETCH_HEAD
-travis_fold:end:git.checkout[0K
-travis_time:end:01407f45:start=1585809164610533921,finish=1585809165004207062,duration=393673141,event=checkout[0Ktravis_time:start:172d0bd0[0K
-[33;1mEncrypted environment variables have been removed for security reasons.[0m
-[33;1mSee https://docs.travis-ci.com/user/pull-requests/#pull-requests-and-security-restrictions[0m
-travis_time:end:172d0bd0:start=1585809165007456965,finish=1585809165013857239,duration=6400274,event=env[0Ktravis_fold:start:nvm.install[0Ktravis_time:start:1ec0c77c[0K$ nvm install 12
-Downloading and installing node v12.16.1...
-Downloading https://nodejs.org/dist/v12.16.1/node-v12.16.1-linux-x64.tar.xz...
-Computing checksum with sha256sum
-Checksums matched!
-Now using node v12.16.1 (npm v6.13.4)
-travis_time:end:1ec0c77c:start=1585809165736791564,finish=1585809168588759184,duration=2851967620,event=setup[0Ktravis_fold:end:nvm.install[0K
-$ node --version
-v12.16.1
-$ npm --version
-6.13.4
-$ nvm --version
-0.35.3
-$ yarn --version
-1.22.0
-
-travis_fold:start:before_install.1[0Ktravis_time:start:181eef58[0K$ openssl aes-256-cbc -K $encrypted_fc666da9e2f5_key -iv $encrypted_fc666da9e2f5_iv -in .travis.env.enc -out .travis.env -d; source .travis.env;
-iv undefined
-travis_time:end:181eef58:start=1585809169911312362,finish=1585809169925078134,duration=13765772,event=before_install[0Ktravis_fold:end:before_install.1[0Ktravis_fold:start:before_install.2[0Ktravis_time:start:0466824d[0K$ node --version
-v12.16.1
-travis_time:end:0466824d:start=1585809169929320580,finish=1585809169935405179,duration=6084599,event=before_install[0Ktravis_fold:end:before_install.2[0Ktravis_fold:start:before_install.3[0Ktravis_time:start:047cf200[0K$ yarn --version
-1.22.0
-travis_time:end:047cf200:start=1585809169939225193,finish=1585809170076770136,duration=137544943,event=before_install[0Ktravis_fold:end:before_install.3[0Ktravis_fold:start:install[0Ktravis_time:start:004bffb8[0K$ yarn
-[2K[1G[1myarn install v1.22.0[22m
-[2K[1G[2m[1/4][22m Resolving packages...
-[1G⠁ [0K[2K[1G[2K[1G[2m[2/4][22m Fetching packages...
-[2K[1G[2m[3/4][22m Linking dependencies...
-[2K[1G[2m[4/4][22m Building fresh packages...
-[2K[1G[2m$ electron-builder install-app-deps[22m
-  [34m•[39m electron-builder  [34mversion[39m=22.3.5
-  [34m•[39m loaded configuration  [34mfile[39m=/home/travis/build/irccloud/irccloud-desktop/electron-builder.json
-[2K[1G[2m$ yarn run snyk-protect[22m
-[2K[1G[1myarn run v1.22.0[22m
-[2K[1G[2m$ snyk protect[22m
-Successfully applied Snyk patches
-
-[2K[1GDone in 2.56s.
-[2K[1GDone in 24.30s.
-travis_time:end:004bffb8:start=1585809170081804794,finish=1585809194533274023,duration=24451469229,event=install[0Ktravis_fold:end:install[0Ktravis_fold:start:before_script[0Ktravis_time:start:005bbf50[0K$ yarn list
-[2K[1G[1myarn list v1.22.0[22m
-[1G⠁ [0K[2K[1G├─ @babel/code-frame@7.8.3
-│  └─ [2m@babel/highlight@^7.8.3[22m
-├─ @babel/highlight@7.8.3
-│  ├─ [2mchalk@^2.0.0[22m
-│  ├─ [2mesutils@^2.0.2[22m
-│  └─ [2mjs-tokens@^4.0.0[22m
-├─ @develar/schema-utils@2.1.0
-│  ├─ [2majv-keywords@^3.1.0[22m
-│  └─ [2majv@^6.1.0[22m
-├─ @electron/get@1.7.5
-│  ├─ [2mdebug@^4.1.1[22m
-│  ├─ [2menv-paths@^2.2.0[22m
-│  ├─ [2mfs-extra@^8.1.0[22m
-│  ├─ [2mglobal-agent@^2.0.2[22m
-│  ├─ [2mglobal-tunnel-ng@^2.7.1[22m
-│  ├─ [2mgot@^9.6.0[22m
-│  ├─ [2msanitize-filename@^1.6.2[22m
-│  └─ [2msumchecker@^3.0.1[22m
-├─ @sindresorhus/is@0.14.0
-├─ [1m@snyk/cli-interface@2.3.1[22m
-│  └─ [2mtslib@^1.9.3[22m
-├─ @snyk/cocoapods-lockfile-parser@3.0.0
-│  ├─ [2m@snyk/dep-graph@^1.11.0[22m
-│  ├─ [2m@snyk/ruby-semver@^2.0.4[22m
-│  ├─ [2m@types/js-yaml@^3.12.1[22m
-│  ├─ [2mcore-js@^3.2.0[22m
-│  ├─ [2mjs-yaml@^3.13.1[22m
-│  ├─ [2msource-map-support@^0.5.7[22m
-│  └─ [2mtslib@^1.9.3[22m
-├─ @snyk/composer-lockfile-parser@1.2.0
-│  └─ [2mlodash@^4.17.13[22m
-├─ @snyk/configstore@3.2.0-rc1
-│  ├─ [2mdot-prop@^5.2.0[22m
-│  ├─ [2mgraceful-fs@^4.1.2[22m
-│  ├─ [2mmake-dir@^1.0.0[22m
-│  ├─ [1mmake-dir@1.3.0[22m
-│  │  └─ [2mpify@^3.0.0[22m
-│  ├─ [2munique-string@^1.0.0[22m
-│  ├─ [2mwrite-file-atomic@^2.0.0[22m
-│  ├─ [1mwrite-file-atomic@2.4.3[22m
-│  │  ├─ [2mgraceful-fs@^4.1.11[22m
-│  │  ├─ [2mimurmurhash@^0.1.4[22m
-│  │  └─ [2msignal-exit@^3.0.2[22m
-│  └─ [2mxdg-basedir@^3.0.0[22m
-├─ [1m@snyk/dep-graph@1.15.0[22m
-│  ├─ [2mgraphlib@^2.1.5[22m
-│  ├─ [2mlodash@^4.7.14[22m
-│  ├─ [2mobject-hash@^1.3.1[22m
-│  ├─ [2msemver@^6.0.0[22m
-│  ├─ [2msource-map-support@^0.5.11[22m
-│  └─ [2mtslib@^1.10.0[22m
-├─ @snyk/gemfile@1.2.0
-├─ @snyk/ruby-semver@2.0.4
-│  └─ [2mlodash@^4.17.14[22m
-├─ @snyk/snyk-cocoapods-plugin@2.0.1
-│  ├─ [2m@snyk/cli-interface@1.5.0[22m
-│  ├─ [1m@snyk/cli-interface@1.5.0[22m
-│  │  └─ [2mtslib@^1.9.3[22m
-│  ├─ [2m@snyk/cocoapods-lockfile-parser@3.0.0[22m
-│  ├─ [2m@snyk/dep-graph@^1.13.1[22m
-│  ├─ [2msource-map-support@^0.5.7[22m
-│  └─ [2mtslib@^1.9.3[22m
-├─ @snyk/update-notifier@2.5.1-rc2
-│  ├─ [2m@snyk/configstore@3.2.0-rc1[22m
-│  ├─ [2mboxen@^1.3.0[22m
-│  ├─ [2mchalk@^2.3.2[22m
-│  ├─ ci-info@1.6.0
-│  ├─ [2mimport-lazy@^2.1.0[22m
-│  ├─ [2mis-ci@^1.0.10[22m
-│  ├─ [1mis-ci@1.2.1[22m
-│  │  └─ [2mci-info@^1.5.0[22m
-│  ├─ [2mis-installed-globally@^0.1.0[22m
-│  ├─ [2mis-npm@^1.0.0[22m
-│  ├─ [2mlatest-version@^3.1.0[22m
-│  ├─ [2msemver-diff@^2.0.0[22m
-│  └─ [2mxdg-basedir@^3.0.0[22m
-├─ @szmarczak/http-timer@1.1.2
-│  └─ [2mdefer-to-connect@^1.0.1[22m
-├─ @types/agent-base@4.2.0
-│  ├─ [2m@types/events@*[22m
-│  └─ [2m@types/node@*[22m
-├─ @types/bunyan@1.8.6
-│  └─ [2m@types/node@*[22m
-├─ @types/color-name@1.1.1
-├─ @types/debug@4.1.5
-├─ @types/events@3.0.0
-├─ @types/fs-extra@8.1.0
-│  └─ [2m@types/node@*[22m
-├─ @types/js-yaml@3.12.2
-├─ [1m@types/node@13.7.0[22m
-├─ @types/restify@4.3.6
-│  ├─ [2m@types/bunyan@*[22m
-│  └─ [2m@types/node@*[22m
-├─ @types/semver@7.1.0
-│  └─ [2m@types/node@*[22m
-├─ @types/xml2js@0.4.3
-│  ├─ [2m@types/events@*[22m
-│  └─ [2m@types/node@*[22m
-├─ @types/yargs-parser@15.0.0
-├─ @types/yargs@15.0.3
-│  └─ [2m@types/yargs-parser@*[22m
-├─ @yarnpkg/lockfile@1.1.0
-├─ 7zip-bin@5.0.3
-├─ abbrev@1.1.1
-├─ accessibility-developer-tools@2.12.0
-├─ acorn-jsx@5.1.0
-├─ acorn@7.1.0
-├─ [1magent-base@4.3.0[22m
-│  └─ [2mes6-promisify@^5.0.0[22m
-├─ ajv-keywords@3.4.1
-├─ ajv@6.11.0
-│  ├─ [2mfast-deep-equal@^3.1.1[22m
-│  ├─ [2mfast-json-stable-stringify@^2.0.0[22m
-│  ├─ [2mjson-schema-traverse@^0.4.1[22m
-│  └─ [2muri-js@^4.2.2[22m
-├─ ansi-align@2.0.0
-│  ├─ ansi-regex@3.0.0
-│  ├─ [2mstring-width@^2.0.0[22m
-│  ├─ [1mstring-width@2.1.1[22m
-│  │  ├─ [2mis-fullwidth-code-point@^2.0.0[22m
-│  │  └─ [2mstrip-ansi@^4.0.0[22m
-│  └─ strip-ansi@4.0.0
-│     └─ [2mansi-regex@^3.0.0[22m
-├─ [1mansi-escapes@3.2.0[22m
-├─ ansi-regex@4.1.0
-├─ [1mansi-styles@3.2.1[22m
-│  └─ [2mcolor-convert@^1.9.0[22m
-├─ ansicolors@0.3.2
-├─ app-builder-bin@3.5.2
-├─ app-builder-lib@22.3.5
-│  ├─ [2m@develar/schema-utils@~2.1.0[22m
-│  ├─ [2m7zip-bin@~5.0.3[22m
-│  ├─ [2masync-exit-hook@^2.0.1[22m
-│  ├─ [2mbluebird-lst@^1.0.9[22m
-│  ├─ [2mbuilder-util-runtime@8.6.1[22m
-│  ├─ [2mbuilder-util@22.3.5[22m
-│  ├─ [2mchromium-pickle-js@^0.2.0[22m
-│  ├─ [2mdebug@^4.1.1[22m
-│  ├─ [2mejs@^3.0.1[22m
-│  ├─ [2melectron-publish@22.3.5[22m
-│  ├─ [2mfs-extra@^8.1.0[22m
-│  ├─ [2mhosted-git-info@^3.0.2[22m
-│  ├─ [1mhosted-git-info@3.0.2[22m
-│  │  └─ [2mlru-cache@^5.1.1[22m
-│  ├─ [2mis-ci@^2.0.0[22m
-│  ├─ [2misbinaryfile@^4.0.4[22m
-│  ├─ [2mjs-yaml@^3.13.1[22m
-│  ├─ [2mlazy-val@^1.0.4[22m
-│  ├─ lru-cache@5.1.1
-│  │  └─ [2myallist@^3.0.2[22m
-│  ├─ [2mminimatch@^3.0.4[22m
-│  ├─ [2mnormalize-package-data@^2.5.0[22m
-│  ├─ [2mread-config-file@5.0.1[22m
-│  ├─ [2msanitize-filename@^1.6.3[22m
-│  ├─ [2msemver@^7.1.3[22m
-│  ├─ [1msemver@7.1.3[22m
-│  ├─ [2mtemp-file@^3.3.6[22m
-│  └─ yallist@3.1.1
-├─ archy@1.0.0
-├─ argparse@1.0.10
-│  └─ [2msprintf-js@~1.0.2[22m
-├─ asap@2.0.6
-├─ ast-types@0.13.2
-├─ astral-regex@1.0.0
-├─ async-exit-hook@2.0.1
-├─ async@3.1.1
-├─ balanced-match@1.0.0
-├─ bl@3.0.0
-│  ├─ [2mreadable-stream@^3.0.1[22m
-│  ├─ [1mreadable-stream@3.5.0[22m
-│  │  ├─ [2minherits@^2.0.3[22m
-│  │  ├─ [2mstring_decoder@^1.1.1[22m
-│  │  └─ [2mutil-deprecate@^1.0.1[22m
-│  └─ string_decoder@1.3.0
-│     └─ [2msafe-buffer@~5.2.0[22m
-├─ bluebird-lst@1.0.9
-│  └─ [2mbluebird@^3.5.5[22m
-├─ bluebird@3.7.2
-├─ boolean@3.0.0
-├─ boxen@1.3.0
-│  ├─ [2mansi-align@^2.0.0[22m
-│  ├─ ansi-regex@3.0.0
-│  ├─ [2mcamelcase@^4.0.0[22m
-│  ├─ [1mcamelcase@4.1.0[22m
-│  ├─ [2mchalk@^2.0.1[22m
-│  ├─ [2mcli-boxes@^1.0.0[22m
-│  ├─ [2mstring-width@^2.0.0[22m
-│  ├─ [1mstring-width@2.1.1[22m
-│  │  ├─ [2mis-fullwidth-code-point@^2.0.0[22m
-│  │  └─ [2mstrip-ansi@^4.0.0[22m
-│  ├─ strip-ansi@4.0.0
-│  │  └─ [2mansi-regex@^3.0.0[22m
-│  ├─ [2mterm-size@^1.2.0[22m
-│  └─ [2mwidest-line@^2.0.0[22m
-├─ brace-expansion@1.1.11
-│  ├─ [2mbalanced-match@^1.0.0[22m
-│  └─ [2mconcat-map@0.0.1[22m
-├─ buffer-from@1.1.1
-├─ builder-util-runtime@8.6.1
-│  ├─ [2mdebug@^4.1.1[22m
-│  └─ [2msax@^1.2.4[22m
-├─ builder-util@22.3.5
-│  ├─ [2m@types/debug@^4.1.5[22m
-│  ├─ [2m@types/fs-extra@^8.1.0[22m
-│  ├─ [2m7zip-bin@~5.0.3[22m
-│  ├─ ansi-styles@4.2.1
-│  │  ├─ [2m@types/color-name@^1.1.1[22m
-│  │  └─ [2mcolor-convert@^2.0.1[22m
-│  ├─ [2mapp-builder-bin@3.5.2[22m
-│  ├─ [2mbluebird-lst@^1.0.9[22m
-│  ├─ [2mbuilder-util-runtime@8.6.1[22m
-│  ├─ [2mchalk@^3.0.0[22m
-│  ├─ [1mchalk@3.0.0[22m
-│  │  ├─ [2mansi-styles@^4.1.0[22m
-│  │  └─ [2msupports-color@^7.1.0[22m
-│  ├─ color-convert@2.0.1
-│  │  └─ [2mcolor-name@~1.1.4[22m
-│  ├─ color-name@1.1.4
-│  ├─ [2mdebug@^4.1.1[22m
-│  ├─ [2mfs-extra@^8.1.0[22m
-│  ├─ has-flag@4.0.0
-│  ├─ [2mis-ci@^2.0.0[22m
-│  ├─ [2mjs-yaml@^3.13.1[22m
-│  ├─ [2msource-map-support@^0.5.16[22m
-│  ├─ [2mstat-mode@^1.0.0[22m
-│  ├─ supports-color@7.1.0
-│  │  └─ [2mhas-flag@^4.0.0[22m
-│  └─ [2mtemp-file@^3.3.6[22m
-├─ bytes@3.1.0
-├─ cacheable-request@6.1.0
-│  ├─ [2mclone-response@^1.0.2[22m
-│  ├─ [2mget-stream@^5.1.0[22m
-│  ├─ [1mget-stream@5.1.0[22m
-│  │  └─ [2mpump@^3.0.0[22m
-│  ├─ [2mhttp-cache-semantics@^4.0.0[22m
-│  ├─ [2mkeyv@^3.0.0[22m
-│  ├─ [2mlowercase-keys@^2.0.0[22m
-│  ├─ [1mlowercase-keys@2.0.0[22m
-│  ├─ [2mnormalize-url@^4.1.0[22m
-│  └─ [2mresponselike@^1.0.2[22m
-├─ callsites@3.1.0
-├─ [1mcamelcase@5.3.1[22m
-├─ capture-stack-trace@1.0.1
-├─ [1mchalk@2.4.2[22m
-│  ├─ [2mansi-styles@^3.2.1[22m
-│  ├─ [2mescape-string-regexp@^1.0.5[22m
-│  └─ [2msupports-color@^5.3.0[22m
-├─ chardet@0.7.0
-├─ charenc@0.0.2
-├─ chromium-pickle-js@0.2.0
-├─ ci-info@2.0.0
-├─ cli-boxes@1.0.0
-├─ cli-cursor@2.1.0
-│  └─ [2mrestore-cursor@^2.0.0[22m
-├─ cli-spinner@0.2.10
-├─ cli-width@2.2.0
-├─ cliui@6.0.0
-│  ├─ ansi-regex@5.0.0
-│  ├─ ansi-styles@4.2.1
-│  │  ├─ [2m@types/color-name@^1.1.1[22m
-│  │  └─ [2mcolor-convert@^2.0.1[22m
-│  ├─ color-convert@2.0.1
-│  │  └─ [2mcolor-name@~1.1.4[22m
-│  ├─ color-name@1.1.4
-│  ├─ [2mstring-width@^4.2.0[22m
-│  ├─ [2mstrip-ansi@^6.0.0[22m
-│  ├─ [1mstrip-ansi@6.0.0[22m
-│  │  └─ [2mansi-regex@^5.0.0[22m
-│  ├─ [2mwrap-ansi@^6.2.0[22m
-│  └─ [1mwrap-ansi@6.2.0[22m
-│     ├─ [2mansi-styles@^4.0.0[22m
-│     ├─ [2mstring-width@^4.1.0[22m
-│     └─ [2mstrip-ansi@^6.0.0[22m
-├─ clone-response@1.0.2
-│  └─ [2mmimic-response@^1.0.0[22m
-├─ co@4.6.0
-├─ code-point-at@1.1.0
-├─ color-convert@1.9.3
-│  └─ [2mcolor-name@1.1.3[22m
-├─ color-name@1.1.3
-├─ concat-map@0.0.1
-├─ concat-stream@1.6.2
-│  ├─ [2mbuffer-from@^1.0.0[22m
-│  ├─ [2minherits@^2.0.3[22m
-│  ├─ [2mreadable-stream@^2.2.2[22m
-│  └─ [2mtypedarray@^0.0.6[22m
-├─ conf@6.2.1
-│  ├─ [2majv@^6.10.2[22m
-│  ├─ [2mdebounce-fn@^3.0.1[22m
-│  ├─ [2mdot-prop@^5.0.0[22m
-│  ├─ [2menv-paths@^2.2.0[22m
-│  ├─ [2mjson-schema-typed@^7.0.1[22m
-│  ├─ [2mmake-dir@^3.0.0[22m
-│  ├─ [2monetime@^5.1.0[22m
-│  ├─ [2mpkg-up@^3.0.1[22m
-│  ├─ [2msemver@^6.2.0[22m
-│  └─ [2mwrite-file-atomic@^3.0.0[22m
-├─ config-chain@1.1.12
-│  ├─ [2mini@^1.3.4[22m
-│  └─ [2mproto-list@~1.2.1[22m
-├─ configstore@5.0.1
-│  ├─ crypto-random-string@2.0.0
-│  ├─ [2mdot-prop@^5.2.0[22m
-│  ├─ [2mgraceful-fs@^4.1.2[22m
-│  ├─ [2mmake-dir@^3.0.0[22m
-│  ├─ [2munique-string@^2.0.0[22m
-│  ├─ [1munique-string@2.0.0[22m
-│  │  └─ [2mcrypto-random-string@^2.0.0[22m
-│  ├─ [2mwrite-file-atomic@^3.0.0[22m
-│  ���─ [2mxdg-basedir@^4.0.0[22m
-│  └─ [1mxdg-basedir@4.0.0[22m
-├─ cookie@0.3.1
-├─ core-js@3.6.4
-├─ core-util-is@1.0.2
-├─ create-error-class@3.0.2
-│  └─ [2mcapture-stack-trace@^1.0.0[22m
-├─ [1mcross-spawn@6.0.5[22m
-│  ├─ [2mnice-try@^1.0.4[22m
-│  ├─ [2mpath-key@^2.0.1[22m
-│  ├─ [2msemver@^5.5.0[22m
-│  ├─ [1msemver@5.7.1[22m
-│  ├─ [2mshebang-command@^1.2.0[22m
-│  └─ [2mwhich@^1.2.9[22m
-├─ crypt@0.0.2
-├─ crypto-random-string@1.0.0
-├─ data-uri-to-buffer@1.2.0
-├─ debounce-fn@3.0.1
-│  └─ [2mmimic-fn@^2.1.0[22m
-├─ [1mdebug@4.1.1[22m
-│  ├─ [2mms@^2.1.1[22m
-│  └─ [1mms@2.1.2[22m
-├─ decamelize@1.2.0
-├─ decompress-response@3.3.0
-│  └─ [2mmimic-response@^1.0.0[22m
-├─ deep-extend@0.6.0
-├─ deep-is@0.1.3
-├─ defer-to-connect@1.1.3
-├─ define-properties@1.1.3
-│  └─ [2mobject-keys@^1.0.12[22m
-├─ degenerator@1.0.4
-│  ├─ [2mast-types@0.x.x[22m
-│  ├─ [2mescodegen@1.x.x[22m
-│  ├─ [1mesprima@3.1.3[22m
-│  └─ [2mesprima@3.x.x[22m
-├─ depd@1.1.2
-├─ detect-node@2.0.4
-├─ [1mdevtron@1.4.0[22m
-│  ├─ [2maccessibility-developer-tools@^2.11.0[22m
-│  ├─ [2mhighlight.js@^9.3.0[22m
-│  └─ [2mhumanize-plus@^1.8.1[22m
-├─ diff@4.0.2
-├─ dmg-builder@22.3.5
-│  ├─ [2mapp-builder-lib@~22.3.5[22m
-│  ├─ [2mbluebird-lst@^1.0.9[22m
-│  ├─ [2mbuilder-util@~22.3.5[22m
-│  ├─ [2mfs-extra@^8.1.0[22m
-│  ├─ [2miconv-lite@^0.5.1[22m
-│  ├─ [1miconv-lite@0.5.1[22m
-│  │  └─ [2msafer-buffer@>= 2.1.2 < 3[22m
-│  ├─ [2mjs-yaml@^3.13.1[22m
-│  └─ [2msanitize-filename@^1.6.3[22m
-├─ dockerfile-ast@0.0.19
-│  └─ [2mvscode-languageserver-types@^3.5.0[22m
-├─ doctrine@3.0.0
-│  └─ [2mesutils@^2.0.2[22m
-├─ dot-prop@5.2.0
-│  └─ [2mis-obj@^2.0.0[22m
-├─ dotenv-expand@5.1.0
-├─ dotenv@8.2.0
-├─ dotnet-deps-parser@4.9.0
-│  ├─ [2m@types/xml2js@0.4.3[22m
-│  ├─ [2mlodash@^4.17.11[22m
-│  ├─ [2msource-map-support@^0.5.7[22m
-│  ├─ [2mtslib@^1.10.0[22m
-│  ├─ [2mxml2js@0.4.19[22m
-│  ├─ [1mxml2js@0.4.19[22m
-│  │  ├─ [2msax@>=0.6.0[22m
-│  │  └─ [2mxmlbuilder@~9.0.1[22m
-│  └─ xmlbuilder@9.0.7
-├─ duplexer3@0.1.4
-├─ ejs@3.0.1
-├─ [1melectron-builder@22.3.5[22m
-│  ├─ [2m@types/yargs@^15.0.3[22m
-│  ├─ ansi-styles@4.2.1
-│  │  ├─ [2m@types/color-name@^1.1.1[22m
-│  │  └─ [2mcolor-convert@^2.0.1[22m
-│  ├─ [2mapp-builder-lib@22.3.5[22m
-│  ├─ [2mbluebird-lst@^1.0.9[22m
-│  ├─ [2mbuilder-util-runtime@8.6.1[22m
-│  ├─ [2mbuilder-util@22.3.5[22m
-│  ├─ [2mchalk@^3.0.0[22m
-│  ├─ [1mchalk@3.0.0[22m
-│  │  ├─ [2mansi-styles@^4.1.0[22m
-│  │  └─ [2msupports-color@^7.1.0[22m
-│  ├─ color-convert@2.0.1
-│  │  └─ [2mcolor-name@~1.1.4[22m
-│  ├─ color-name@1.1.4
-│  ├─ [2mdmg-builder@22.3.5[22m
-│  ├─ [2mfs-extra@^8.1.0[22m
-│  ├─ has-flag@4.0.0
-│  ├─ [2mis-ci@^2.0.0[22m
-│  ├─ [2mlazy-val@^1.0.4[22m
-│  ├─ [2mread-config-file@5.0.1[22m
-│  ├─ [2msanitize-filename@^1.6.3[22m
-│  ├─ supports-color@7.1.0
-│  │  └─ [2mhas-flag@^4.0.0[22m
-│  ├─ [2mupdate-notifier@^4.1.0[22m
-│  └─ [2myargs@^15.1.0[22m
-├─ [1melectron-dl@3.0.0[22m
-│  ├─ [2mext-name@^5.0.0[22m
-│  ├─ [2mpupa@^2.0.1[22m
-│  └─ [2munused-filename@^2.1.0[22m
-├─ electron-is-dev@0.3.0
-├─ [1melectron-is@3.0.0[22m
-│  ├─ [2melectron-is-dev@^0.3.0[22m
-│  ├─ [2msemver@^5.5.0[22m
-│  └─ [1msemver@5.7.1[22m
-├─ [1melectron-log@4.0.7[22m
-├─ [1melectron-notarize@0.2.1[22m
-│  ├─ [2mdebug@^4.1.1[22m
-│  └─ [2mfs-extra@^8.1.0[22m
-├─ electron-publish@22.3.5
-│  ├─ [2m@types/fs-extra@^8.1.0[22m
-│  ├─ ansi-styles@4.2.1
-│  │  ├─ [2m@types/color-name@^1.1.1[22m
-│  │  └─ [2mcolor-convert@^2.0.1[22m
-│  ├─ [2mbluebird-lst@^1.0.9[22m
-│  ├─ [2mbuilder-util-runtime@8.6.1[22m
-│  ├─ [2mbuilder-util@~22.3.5[22m
-│  ├─ [2mchalk@^3.0.0[22m
-│  ├─ [1mchalk@3.0.0[22m
-│  │  ├─ [2mansi-styles@^4.1.0[22m
-│  │  └─ [2msupports-color@^7.1.0[22m
-│  ├─ color-convert@2.0.1
-│  │  └─ [2mcolor-name@~1.1.4[22m
-│  ├─ color-name@1.1.4
-│  ├─ [2mfs-extra@^8.1.0[22m
-│  ├─ has-flag@4.0.0
-│  ├─ [2mlazy-val@^1.0.4[22m
-│  ├─ [2mmime@^2.4.4[22m
-│  └─ supports-color@7.1.0
-│     └─ [2mhas-flag@^4.0.0[22m
-├─ [1melectron-store@5.1.1[22m
-│  ├─ [2mconf@^6.2.1[22m
-│  ├─ [2mtype-fest@^0.7.1[22m
-│  └─ [1mtype-fest@0.7.1[22m
-├─ [1melectron-updater@4.2.4[22m
-│  ├─ [2m@types/semver@^7.1.0[22m
-│  ├─ [2mbuilder-util-runtime@8.6.1[22m
-│  ├─ [2mfs-extra@^8.1.0[22m
-│  ├─ [2mjs-yaml@^3.13.1[22m
-│  ├─ [2mlazy-val@^1.0.4[22m
-│  ├─ [2mlodash.isequal@^4.5.0[22m
-│  ├─ [2mpako@^1.0.11[22m
-│  ├─ [2msemver@^7.1.3[22m
-│  └─ [1msemver@7.1.3[22m
-├─ [1melectron@8.0.2[22m
-│  ├─ [2m@electron/get@^1.0.1[22m
-│  ├─ [2m@types/node@^12.0.12[22m
-│  ├─ [1m@types/node@12.12.26[22m
-│  └─ [2mextract-zip@^1.0.3[22m
-├─ email-validator@2.0.4
-├─ emoji-regex@8.0.0
-├─ encodeurl@1.0.2
-├─ end-of-stream@1.4.4
-│  └─ [2monce@^1.4.0[22m
-├─ env-paths@2.2.0
-├─ es6-error@4.1.1
-├─ es6-promise@4.2.8
-├─ es6-promisify@5.0.0
-│  └─ [2mes6-promise@^4.0.3[22m
-├─ escape-goat@2.1.1
-├─ [1mescape-string-regexp@1.0.5[22m
-├─ escodegen@1.14.1
-│  ├─ [2mesprima@^4.0.1[22m
-│  ├─ [2mestraverse@^4.2.0[22m
-│  ├─ [2mesutils@^2.0.2[22m
-│  ├─ [2moptionator@^0.8.1[22m
-│  └─ [2msource-map@~0.6.1[22m
-├─ eslint-scope@5.0.0
-│  ├─ [2mesrecurse@^4.1.0[22m
-│  └─ [2mestraverse@^4.1.1[22m
-├─ eslint-utils@1.4.3
-│  └─ [2meslint-visitor-keys@^1.1.0[22m
-├─ eslint-visitor-keys@1.1.0
-├─ [1meslint@6.8.0[22m
-│  ├─ [2m@babel/code-frame@^7.0.0[22m
-│  ├─ [2majv@^6.10.0[22m
-│  ├─ ansi-escapes@4.3.0
-│  │  └─ [2mtype-fest@^0.8.1[22m
-│  ├─ [2mchalk@^2.1.0[22m
-│  ├─ cli-cursor@3.1.0
-│  │  └─ [2mrestore-cursor@^3.1.0[22m
-│  ├─ [2mcross-spawn@^6.0.5[22m
-│  ├─ [2mdebug@^4.0.1[22m
-│  ├─ [2mdoctrine@^3.0.0[22m
-│  ├─ [2meslint-scope@^5.0.0[22m
-│  ├─ [2meslint-utils@^1.4.3[22m
-│  ├─ [2meslint-visitor-keys@^1.1.0[22m
-│  ├─ [2mespree@^6.1.2[22m
-│  ├─ [2mesquery@^1.0.1[22m
-│  ├─ [2mesutils@^2.0.2[22m
-│  ├─ figures@3.1.0
-│  │  └─ [2mescape-string-regexp@^1.0.5[22m
-│  ├─ [2mfile-entry-cache@^5.0.1[22m
-│  ├─ [2mfunctional-red-black-tree@^1.0.1[22m
-│  ├─ [2mglob-parent@^5.0.0[22m
-│  ├─ [2mglobals@^12.1.0[22m
-│  ├─ [2mignore@^4.0.6[22m
-│  ├─ [2mimport-fresh@^3.0.0[22m
-│  ├─ [2mimurmurhash@^0.1.4[22m
-│  ├─ [2minquirer@^7.0.0[22m
-│  ├─ [1minquirer@7.0.4[22m
-│  │  ├─ [2mansi-escapes@^4.2.1[22m
-│  │  ├─ [2mchalk@^2.4.2[22m
-│  │  ├─ [2mcli-cursor@^3.1.0[22m
-│  │  ├─ [2mcli-width@^2.0.0[22m
-│  │  ├─ [2mexternal-editor@^3.0.3[22m
-│  │  ├─ [2mfigures@^3.0.0[22m
-│  │  ├─ [2mlodash@^4.17.15[22m
-│  │  ├─ [2mmute-stream@0.0.8[22m
-│  │  ├─ [2mrun-async@^2.2.0[22m
-│  │  ├─ [2mrxjs@^6.5.3[22m
-│  │  ├─ [2mstring-width@^4.1.0[22m
-│  │  ├─ [2mstrip-ansi@^5.1.0[22m
-│  │  └─ [2mthrough@^2.3.6[22m
-│  ├─ [2mis-glob@^4.0.0[22m
-│  ├─ [2mjs-yaml@^3.13.1[22m
-│  ├─ [2mjson-stable-stringify-without-jsonify@^1.0.1[22m
-│  ├─ [2mlevn@^0.3.0[22m
-│  ├─ [2mlodash@^4.17.14[22m
-│  ├─ [2mminimatch@^3.0.4[22m
-│  ├─ [2mmkdirp@^0.5.1[22m
-│  ├─ mute-stream@0.0.8
-│  ├─ [2mnatural-compare@^1.4.0[22m
-│  ├─ [2moptionator@^0.8.3[22m
-│  ├─ [2mprogress@^2.0.0[22m
-│  ├─ [2mregexpp@^2.0.1[22m
-│  ├─ restore-cursor@3.1.0
-│  │  ├─ [2monetime@^5.1.0[22m
-│  │  └─ [2msignal-exit@^3.0.2[22m
-│  ├─ [2msemver@^6.1.2[22m
-│  ├─ [2mstrip-ansi@^5.2.0[22m
-│  ├─ [2mstrip-json-comments@^3.0.1[22m
-│  ├─ [2mtable@^5.2.3[22m
-│  ├─ [2mtext-table@^0.2.0[22m
-│  └─ [2mv8-compile-cache@^2.0.3[22m
-├─ espree@6.1.2
-│  ├─ [2macorn-jsx@^5.1.0[22m
-│  ├─ [2macorn@^7.1.0[22m
-│  └─ [2meslint-visitor-keys@^1.1.0[22m
-├─ [1mesprima@4.0.1[22m
-├─ esquery@1.0.1
-│  └─ [2mestraverse@^4.0.0[22m
-├─ esrecurse@4.2.1
-│  └─ [2mestraverse@^4.1.0[22m
-├─ estraverse@4.3.0
-├─ esutils@2.0.3
-├─ event-loop-spinner@1.1.0
-│  └─ [2mtslib@^1.10.0[22m
-├─ execa@1.0.0
-│  ├─ [2mcross-spawn@^6.0.0[22m
-│  ├─ [2mget-stream@^4.0.0[22m
-│  ├─ [1mget-stream@4.1.0[22m
-│  │  └─ [2mpump@^3.0.0[22m
-│  ├─ [2mis-stream@^1.1.0[22m
-│  ├─ [2mnpm-run-path@^2.0.0[22m
-│  ├─ [2mp-finally@^1.0.0[22m
-│  ├─ [2msignal-exit@^3.0.0[22m
-│  └─ [2mstrip-eof@^1.0.0[22m
-├─ ext-list@2.2.2
-│  └─ [2mmime-db@^1.28.0[22m
-├─ ext-name@5.0.0
-│  ├─ [2mext-list@^2.0.0[22m
-│  └─ [2msort-keys-length@^1.0.0[22m
-├─ extend@3.0.2
-├─ external-editor@3.1.0
-│  ├─ [2mchardet@^0.7.0[22m
-│  ├─ [2miconv-lite@^0.4.24[22m
-│  └─ [2mtmp@^0.0.33[22m
-├─ extract-zip@1.6.7
-│  ├─ [2mconcat-stream@1.6.2[22m
-│  ├─ [2mdebug@2.6.9[22m
-│  ├─ [1mdebug@2.6.9[22m
-│  │  └─ [2mms@2.0.0[22m
-│  ├─ [2mmkdirp@0.5.1[22m
-│  └─ [2myauzl@2.4.1[22m
-├─ fast-deep-equal@3.1.1
-├─ fast-json-stable-stringify@2.1.0
-├─ fast-levenshtein@2.0.6
-├─ fd-slicer@1.0.1
-│  └─ [2mpend@~1.2.0[22m
-├─ figures@2.0.0
-│  └─ [2mescape-string-regexp@^1.0.5[22m
-├─ file-entry-cache@5.0.1
-│  └─ [2mflat-cache@^2.0.1[22m
-├─ file-uri-to-path@1.0.0
-├─ find-up@4.1.0
-│  ├─ [2mlocate-path@^5.0.0[22m
-│  └─ [2mpath-exists@^4.0.0[22m
-├─ flat-cache@2.0.1
-│  ├─ [2mflatted@^2.0.0[22m
-│  ├─ [2mrimraf@2.6.3[22m
-│  └─ [2mwrite@1.0.3[22m
-├─ flatted@2.0.1
-├─ fs-constants@1.0.0
-├─ fs-extra@8.1.0
-│  ├─ [2mgraceful-fs@^4.2.0[22m
-│  ├─ [2mjsonfile@^4.0.0[22m
-│  └─ [2muniversalify@^0.1.0[22m
-├─ fs.realpath@1.0.0
-├─ ftp@0.3.10
-│  ├─ isarray@0.0.1
-│  ├─ [1mreadable-stream@1.1.14[22m
-│  │  ├─ [2mcore-util-is@~1.0.0[22m
-│  │  ├─ [2minherits@~2.0.1[22m
-│  │  ├─ [2misarray@0.0.1[22m
-│  │  └─ [2mstring_decoder@~0.10.x[22m
-│  ├─ [2mreadable-stream@1.1.x[22m
-│  ├─ string_decoder@0.10.31
-│  └─ [2mxregexp@2.0.0[22m
-├─ functional-red-black-tree@1.0.1
-├─ get-caller-file@2.0.5
-├─ [1mget-stream@3.0.0[22m
-├─ get-uri@2.0.4
-│  ├─ [2mdata-uri-to-buffer@1[22m
-│  ├─ [2mdebug@2[22m
-│  ├─ [1mdebug@2.6.9[22m
-│  │  └─ [2mms@2.0.0[22m
-│  ├─ [2mextend@~3.0.2[22m
-│  ├─ [2mfile-uri-to-path@1[22m
-│  ├─ [2mftp@~0.3.10[22m
-│  └─ [2mreadable-stream@2[22m
-├─ [1mgetos@3.1.4[22m
-│  └─ [2masync@^3.1.0[22m
-├─ git-up@4.0.1
-│  ├─ [2mis-ssh@^1.3.0[22m
-│  └─ [2mparse-url@^5.0.0[22m
-├─ git-url-parse@11.1.2
-│  └─ [2mgit-up@^4.0.0[22m
-├─ glob-parent@5.1.0
-│  └─ [2mis-glob@^4.0.1[22m
-├─ glob@7.1.6
-│  ├─ [2mfs.realpath@^1.0.0[22m
-│  ├─ [2minflight@^1.0.4[22m
-│  ├─ [2minherits@2[22m
-│  ├─ [2mminimatch@^3.0.4[22m
-│  ├─ [2monce@^1.3.0[22m
-│  └─ [2mpath-is-absolute@^1.0.0[22m
-├─ global-agent@2.1.8
-│  ├─ [2mboolean@^3.0.0[22m
-│  ├─ [2mcore-js@^3.6.4[22m
-│  ├─ [2mes6-error@^4.1.1[22m
-│  ├─ [2mmatcher@^2.1.0[22m
-│  ├─ [2mroarr@^2.15.2[22m
-│  ├─ [2msemver@^7.1.2[22m
-│  ├─ [1msemver@7.1.2[22m
-│  └─ [2mserialize-error@^5.0.0[22m
-├─ global-dirs@0.1.1
-│  └─ [2mini@^1.3.4[22m
-├─ global-tunnel-ng@2.7.1
-│  ├─ [2mencodeurl@^1.0.2[22m
-│  ├─ [2mlodash@^4.17.10[22m
-│  ├─ [2mnpm-conf@^1.1.3[22m
-│  └─ [2mtunnel@^0.0.6[22m
-├─ globals@12.3.0
-│  └─ [2mtype-fest@^0.8.1[22m
-├─ globalthis@1.0.1
-│  └─ [2mdefine-properties@^1.1.3[22m
-├─ [1mgot@9.6.0[22m
-│  ├─ [2m@sindresorhus/is@^0.14.0[22m
-│  ├─ [2m@szmarczak/http-timer@^1.1.2[22m
-│  ├─ [2mcacheable-request@^6.0.0[22m
-│  ├─ [2mdecompress-response@^3.3.0[22m
-│  ├─ [2mduplexer3@^0.1.4[22m
-│  ├─ [2mget-stream@^4.1.0[22m
-│  ├─ [1mget-stream@4.1.0[22m
-│  │  └─ [2mpump@^3.0.0[22m
-│  ├─ [2mlowercase-keys@^1.0.1[22m
-│  ├─ [2mmimic-response@^1.0.1[22m
-│  ├─ [2mp-cancelable@^1.0.0[22m
-│  ├─ [2mto-readable-stream@^1.0.0[22m
-│  └─ [2murl-parse-lax@^3.0.0[22m
-├─ graceful-fs@4.2.3
-├─ graphlib@2.1.8
-│  └─ [2mlodash@^4.17.15[22m
-├─ has-flag@3.0.0
-├─ has-yarn@2.1.0
-├─ highlight.js@9.18.1
-├─ [1mhosted-git-info@2.8.5[22m
-├─ http-cache-semantics@4.0.4
-├─ http-errors@1.7.3
-│  ├─ [2mdepd@~1.1.2[22m
-│  ├─ [2minherits@2.0.4[22m
-│  ├─ [2msetprototypeof@1.1.1[22m
-│  ├─ [2mstatuses@>= 1.5.0 < 2[22m
-│  └─ [2mtoidentifier@1.0.0[22m
-├─ http-proxy-agent@2.1.0
-│  ├─ [2magent-base@4[22m
-│  ├─ [2mdebug@3.1.0[22m
-│  └─ [1mdebug@3.1.0[22m
-│     └─ [2mms@2.0.0[22m
-├─ https-proxy-agent@3.0.1
-│  ├─ [2magent-base@^4.3.0[22m
-│  ├─ [2mdebug@^3.1.0[22m
-│  ├─ [1mdebug@3.2.6[22m
-│  │  └─ [2mms@^2.1.1[22m
-│  └─ ms@2.1.2
-├─ humanize-plus@1.8.2
-├─ [1miconv-lite@0.4.24[22m
-│  └─ [2msafer-buffer@>= 2.1.2 < 3[22m
-├─ ignore@4.0.6
-├─ immediate@3.0.6
-├─ import-fresh@3.2.1
-│  ├─ [2mparent-module@^1.0.0[22m
-│  └─ [2mresolve-from@^4.0.0[22m
-├��� import-lazy@2.1.0
-├─ imurmurhash@0.1.4
-├─ inflight@1.0.6
-│  ├─ [2monce@^1.3.0[22m
-│  └─ [2mwrappy@1[22m
-├─ inherits@2.0.4
-├─ ini@1.3.5
-├─ inquirer@6.5.2
-│  ├─ [2mansi-escapes@^3.2.0[22m
-│  ├─ ansi-regex@3.0.0
-│  ├─ [2mchalk@^2.4.2[22m
-│  ├─ [2mcli-cursor@^2.1.0[22m
-│  ├─ [2mcli-width@^2.0.0[22m
-│  ├─ [2mexternal-editor@^3.0.3[22m
-│  ├─ [2mfigures@^2.0.0[22m
-│  ├─ [2mlodash@^4.17.12[22m
-│  ├─ [2mmute-stream@0.0.7[22m
-│  ├─ [2mrun-async@^2.2.0[22m
-│  ├─ [2mrxjs@^6.4.0[22m
-│  ├─ [2mstring-width@^2.1.0[22m
-│  ├─ [1mstring-width@2.1.1[22m
-│  │  ├─ [2mis-fullwidth-code-point@^2.0.0[22m
-│  │  ├─ [2mstrip-ansi@^4.0.0[22m
-│  │  └─ [1mstrip-ansi@4.0.0[22m
-│  │     └─ [2mansi-regex@^3.0.0[22m
-│  ├─ [2mstrip-ansi@^5.1.0[22m
-│  └─ [2mthrough@^2.3.6[22m
-├─ invert-kv@1.0.0
-├─ ip@1.1.5
-├─ is-buffer@1.1.6
-├─ [1mis-ci@2.0.0[22m
-│  └─ [2mci-info@^2.0.0[22m
-├─ is-docker@2.0.0
-├─ is-extglob@2.1.1
-├─ [1mis-fullwidth-code-point@2.0.0[22m
-├─ is-glob@4.0.1
-│  └─ [2mis-extglob@^2.1.1[22m
-├─ is-installed-globally@0.1.0
-│  ├─ [2mglobal-dirs@^0.1.0[22m
-│  └─ [2mis-path-inside@^1.0.0[22m
-├─ is-npm@1.0.0
-├─ is-obj@2.0.0
-├─ is-path-inside@1.0.1
-│  └─ [2mpath-is-inside@^1.0.1[22m
-├─ is-plain-obj@1.1.0
-├─ is-promise@2.1.0
-├─ is-redirect@1.0.0
-├─ is-retry-allowed@1.2.0
-├─ is-ssh@1.3.1
-│  └─ [2mprotocols@^1.1.0[22m
-├─ is-stream@1.1.0
-├─ is-typedarray@1.0.0
-├─ is-wsl@2.1.1
-├─ is-yarn-global@0.3.0
-├─ isarray@1.0.0
-├─ isbinaryfile@4.0.4
-├─ isexe@2.0.0
-├─ js-tokens@4.0.0
-├─ js-yaml@3.13.1
-│  ├─ [2margparse@^1.0.7[22m
-│  └─ [2mesprima@^4.0.0[22m
-├─ json-buffer@3.0.0
-├─ json-schema-traverse@0.4.1
-├─ json-schema-typed@7.0.3
-├─ json-stable-stringify-without-jsonify@1.0.1
-├─ json-stringify-safe@5.0.1
-├─ json5@2.1.1
-│  └─ [2mminimist@^1.2.0[22m
-├─ jsonfile@4.0.0
-│  └─ [2mgraceful-fs@^4.1.6[22m
-├─ jszip@3.2.2
-│  ├─ [2mlie@~3.3.0[22m
-│  ├─ [2mpako@~1.0.2[22m
-│  ├─ [2mreadable-stream@~2.3.6[22m
-│  └─ [2mset-immediate-shim@~1.0.1[22m
-├─ keyv@3.1.0
-│  └─ [2mjson-buffer@3.0.0[22m
-├─ latest-version@3.1.0
-│  └─ [2mpackage-json@^4.0.0[22m
-├─ lazy-val@1.0.4
-├─ lcid@1.0.0
-│  └─ [2minvert-kv@^1.0.0[22m
-├─ levn@0.3.0
-│  ├─ [2mprelude-ls@~1.1.2[22m
-│  └─ [2mtype-check@~0.3.2[22m
-├─ lie@3.3.0
-│  └─ [2mimmediate@~3.0.5[22m
-├─ locate-path@5.0.0
-│  └─ [2mp-locate@^4.1.0[22m
-├─ lodash.assign@4.2.0
-├─ lodash.assignin@4.2.0
-├─ lodash.clone@4.5.0
-├─ lodash.clonedeep@4.5.0
-├─ lodash.flatten@4.4.0
-├─ lodash.get@4.4.2
-├─ lodash.isequal@4.5.0
-├─ lodash.set@4.3.2
-├─ [1mlodash@4.17.15[22m
-├─ [1mlowercase-keys@1.0.1[22m
-├─ [1mlru-cache@4.1.5[22m
-│  ├─ [2mpseudomap@^1.0.2[22m
-│  └─ [2myallist@^2.1.2[22m
-├─ macos-release@2.3.0
-���─ [1mmake-dir@3.0.0[22m
-│  └─ [2msemver@^6.0.0[22m
-├─ matcher@2.1.0
-│  ├─ [2mescape-string-regexp@^2.0.0[22m
-│  └─ [1mescape-string-regexp@2.0.0[22m
-├─ md5@2.2.1
-│  ├─ [2mcharenc@~0.0.1[22m
-│  ├─ [2mcrypt@~0.0.1[22m
-│  └─ [2mis-buffer@~1.1.1[22m
-├─ mime-db@1.43.0
-├─ mime@2.4.4
-├─ [1mmimic-fn@2.1.0[22m
-├─ mimic-response@1.0.1
-├─ minimatch@3.0.4
-│  └─ [2mbrace-expansion@^1.1.7[22m
-├─ [1mminimist@1.2.0[22m
-├─ mkdirp@0.5.1
-│  ├─ [2mminimist@0.0.8[22m
-│  └─ [1mminimist@0.0.8[22m
-├─ modify-filename@1.1.0
-├─ [1mms@2.0.0[22m
-├─ mute-stream@0.0.7
-├─ natural-compare@1.4.0
-├─ nconf@0.10.0
-│  ├─ ansi-regex@2.1.1
-│  ├─ [2masync@^1.4.0[22m
-│  ├─ [1masync@1.5.2[22m
-│  ├─ camelcase@2.1.1
-│  ├─ cliui@3.2.0
-│  │  ├─ [2mstring-width@^1.0.1[22m
-│  │  ├─ [2mstrip-ansi@^3.0.1[22m
-│  │  └─ [2mwrap-ansi@^2.0.0[22m
-│  ├─ [2mini@^1.3.0[22m
-│  ├─ is-fullwidth-code-point@1.0.0
-│  │  └─ [2mnumber-is-nan@^1.0.0[22m
-│  ├─ [2msecure-keys@^1.0.0[22m
-│  ├─ string-width@1.0.2
-│  │  ├─ [2mcode-point-at@^1.0.0[22m
-│  │  ├─ [2mis-fullwidth-code-point@^1.0.0[22m
-│  │  └─ [2mstrip-ansi@^3.0.0[22m
-│  ├─ strip-ansi@3.0.1
-│  │  └─ [2mansi-regex@^2.0.0[22m
-│  ├─ wrap-ansi@2.1.0
-│  │  ├─ [2mstring-width@^1.0.1[22m
-│  │  └─ [2mstrip-ansi@^3.0.1[22m
-│  ├─ y18n@3.2.1
-│  ├─ [2myargs@^3.19.0[22m
-│  └─ [1myargs@3.32.0[22m
-│     ├─ [2mcamelcase@^2.0.1[22m
-│     ├─ [2mcliui@^3.0.3[22m
-│     ├─ [2mdecamelize@^1.1.1[22m
-│     ├─ [2mos-locale@^1.4.0[22m
-│     ├─ [2mstring-width@^1.0.1[22m
-│     ├─ [2mwindow-size@^0.1.4[22m
-│     └─ [2my18n@^3.2.0[22m
-├─ needle@2.3.2
-│  ├─ [2mdebug@^3.2.6[22m
-│  ├─ [1mdebug@3.2.6[22m
-│  │  └─ [2mms@^2.1.1[22m
-│  ├─ [2miconv-lite@^0.4.4[22m
-│  ├─ ms@2.1.2
-│  └─ [2msax@^1.2.4[22m
-├─ netmask@1.0.6
-├─ nice-try@1.0.5
-├─ normalize-package-data@2.5.0
-│  ├─ [2mhosted-git-info@^2.1.4[22m
-│  ├─ [2mresolve@^1.10.0[22m
-│  ├─ [2msemver@2 || 3 || 4 || 5[22m
-│  ├─ [1msemver@5.7.1[22m
-│  └─ [2mvalidate-npm-package-license@^3.0.1[22m
-├─ normalize-url@4.5.0
-├─ npm-conf@1.1.3
-│  ├─ [2mconfig-chain@^1.1.11[22m
-│  └─ [2mpify@^3.0.0[22m
-├─ npm-run-path@2.0.2
-│  └─ [2mpath-key@^2.0.0[22m
-├─ number-is-nan@1.0.1
-├─ object-hash@1.3.1
-├─ object-keys@1.1.1
-├─ once@1.4.0
-│  └─ [2mwrappy@1[22m
-├─ [1monetime@5.1.0[22m
-│  └─ [2mmimic-fn@^2.1.0[22m
-├─ [1mopen@7.0.2[22m
-│  ├─ [2mis-docker@^2.0.0[22m
-│  └─ [2mis-wsl@^2.1.1[22m
-├─ opn@5.5.0
-│  ├─ [2mis-wsl@^1.1.0[22m
-│  └─ [1mis-wsl@1.1.0[22m
-├─ optionator@0.8.3
-│  ├─ [2mdeep-is@~0.1.3[22m
-│  ├─ [2mfast-levenshtein@~2.0.6[22m
-│  ├─ [2mlevn@~0.3.0[22m
-│  ├─ [2mprelude-ls@~1.1.2[22m
-│  ├─ [2mtype-check@~0.3.2[22m
-│  ���─ [2mword-wrap@~1.2.3[22m
-├─ os-locale@1.4.0
-│  └─ [2mlcid@^1.0.0[22m
-├─ [1mos-name@3.1.0[22m
-│  ├─ [2mmacos-release@^2.2.0[22m
-│  └─ [2mwindows-release@^3.1.0[22m
-├─ os-tmpdir@1.0.2
-├─ p-cancelable@1.1.0
-├─ p-finally@1.0.0
-├─ p-limit@2.2.2
-│  └─ [2mp-try@^2.0.0[22m
-├─ p-locate@4.1.0
-│  └─ [2mp-limit@^2.2.0[22m
-├─ p-map@2.1.0
-├─ p-try@2.2.0
-├─ pac-proxy-agent@3.0.1
-│  ├─ [2magent-base@^4.2.0[22m
-│  ├─ [2mdebug@^4.1.1[22m
-│  ├─ [2mget-uri@^2.0.0[22m
-│  ├─ [2mhttp-proxy-agent@^2.1.0[22m
-│  ├─ [2mhttps-proxy-agent@^3.0.0[22m
-│  ├─ [2mpac-resolver@^3.0.0[22m
-│  ├─ [2mraw-body@^2.2.0[22m
-│  └─ [2msocks-proxy-agent@^4.0.1[22m
-├─ pac-resolver@3.0.0
-│  ├─ [2mco@^4.6.0[22m
-│  ├─ [2mdegenerator@^1.0.4[22m
-│  ├─ [2mip@^1.1.5[22m
-│  ├─ [2mnetmask@^1.0.6[22m
-│  └─ [2mthunkify@^2.1.2[22m
-├─ package-json@4.0.1
-│  ├─ [2mgot@^6.7.1[22m
-│  ├─ [1mgot@6.7.1[22m
-│  │  ├─ [2mcreate-error-class@^3.0.0[22m
-│  │  ├─ [2mduplexer3@^0.1.4[22m
-│  │  ├─ [2mget-stream@^3.0.0[22m
-│  │  ├─ [2mis-redirect@^1.0.0[22m
-│  │  ├─ [2mis-retry-allowed@^1.0.0[22m
-│  │  ├─ [2mis-stream@^1.0.0[22m
-│  │  ├─ [2mlowercase-keys@^1.0.0[22m
-│  │  ├─ [2msafe-buffer@^5.0.1[22m
-│  │  ├─ [2mtimed-out@^4.0.0[22m
-│  │  ├─ [2munzip-response@^2.0.1[22m
-│  │  └─ [2murl-parse-lax@^1.0.0[22m
-│  ├─ prepend-http@1.0.4
-│  ├─ [2mregistry-auth-token@^3.0.1[22m
-│  ├─ [2mregistry-url@^3.0.3[22m
-│  ├─ [2msemver@^5.1.0[22m
-│  ├─ [1msemver@5.7.1[22m
-│  └─ url-parse-lax@1.0.0
-│     └─ [2mprepend-http@^1.0.1[22m
-├─ pako@1.0.11
-├─ parent-module@1.0.1
-│  └─ [2mcallsites@^3.0.0[22m
-├─ parse-path@4.0.1
-│  ├─ [2mis-ssh@^1.3.0[22m
-│  └─ [2mprotocols@^1.4.0[22m
-├─ parse-url@5.0.1
-│  ├─ [2mis-ssh@^1.3.0[22m
-│  ├─ [2mnormalize-url@^3.3.0[22m
-│  ├─ [1mnormalize-url@3.3.0[22m
-│  ├─ [2mparse-path@^4.0.0[22m
-│  └─ [2mprotocols@^1.4.0[22m
-├─ [1mpath-exists@4.0.0[22m
-├─ path-is-absolute@1.0.1
-├─ path-is-inside@1.0.2
-├─ path-key@2.0.1
-├─ path-parse@1.0.6
-├─ pend@1.2.0
-├─ pify@3.0.0
-├─ pkg-up@3.1.0
-│  ├─ [2mfind-up@^3.0.0[22m
-│  ├─ [1mfind-up@3.0.0[22m
-│  │  └─ [2mlocate-path@^3.0.0[22m
-│  ├─ locate-path@3.0.0
-│  │  ├─ [2mp-locate@^3.0.0[22m
-│  │  └─ [2mpath-exists@^3.0.0[22m
-│  ├─ p-locate@3.0.0
-│  │  └─ [2mp-limit@^2.0.0[22m
-│  └─ path-exists@3.0.0
-├─ prelude-ls@1.1.2
-├─ prepend-http@2.0.0
-├─ process-nextick-args@2.0.1
-├─ progress@2.0.3
-├─ promise@7.3.1
-│  └─ [2masap@~2.0.3[22m
-├─ proto-list@1.2.4
-├─ protocols@1.4.7
-├─ proxy-agent@3.1.1
-│  ├─ [2magent-base@^4.2.0[22m
-│  ├─ [2mdebug@4[22m
-│  ├─ [2mhttp-proxy-agent@^2.1.0[22m
-│  ├─ [2mhttps-proxy-agent@^3.0.0[22m
-│  ├─ [2mlru-cache@^5.1.1[22m
-│  ├─ [1mlru-cache@5.1.1[22m
-│  │  └─ [2myallist@^3.0.2[22m
-│  ├─ [2mpac-proxy-agent@^3.0.1[22m
-│  ├─ [2mproxy-from-env@^1.0.0[22m
-│  ├─ [2msocks-proxy-agent@^4.0.1[22m
-│  └─ yallist@3.1.1
-├─ proxy-from-env@1.0.0
-├─ pseudomap@1.0.2
-├─ pump@3.0.0
-│  ├─ [2mend-of-stream@^1.1.0[22m
-│  └─ [2monce@^1.3.1[22m
-├─ punycode@2.1.1
-├─ pupa@2.0.1
-│  └─ [2mescape-goat@^2.0.0[22m
-├─ [1mraven@2.6.4[22m
-│  ├─ [2mcookie@0.3.1[22m
-│  ├─ [2mmd5@^2.2.1[22m
-│  ├─ [2mstack-trace@0.0.10[22m
-│  ├─ [2mtimed-out@4.0.1[22m
-│  ├─ [2muuid@3.3.2[22m
-│  └─ [1muuid@3.3.2[22m
-├─ raw-body@2.4.1
-│  ├─ [2mbytes@3.1.0[22m
-│  ├─ [2mhttp-errors@1.7.3[22m
-│  ├─ [2miconv-lite@0.4.24[22m
-│  └─ [2munpipe@1.0.0[22m
-├─ rc@1.2.8
-│  ├─ [2mdeep-extend@^0.6.0[22m
-│  ├─ [2mini@~1.3.0[22m
-│  ├─ [2mminimist@^1.2.0[22m
-│  ├─ [2mstrip-json-comments@~2.0.1[22m
-│  └─ [1mstrip-json-comments@2.0.1[22m
-├─ read-config-file@5.0.1
-│  ├─ [2mdotenv-expand@^5.1.0[22m
-│  ├─ [2mdotenv@^8.2.0[22m
-│  ├─ [2mfs-extra@^8.1.0[22m
-│  ├─ [2mjs-yaml@^3.13.1[22m
-│  ├─ [2mjson5@^2.1.1[22m
-│  └─ [2mlazy-val@^1.0.4[22m
-├─ [1mreadable-stream@2.3.7[22m
-│  ├─ [2mcore-util-is@~1.0.0[22m
-│  ├─ [2minherits@~2.0.3[22m
-│  ├─ [2misarray@~1.0.0[22m
-│  ├─ [2mprocess-nextick-args@~2.0.0[22m
-│  ├─ [2msafe-buffer@~5.1.1[22m
-│  ├─ [1msafe-buffer@5.1.2[22m
-│  ├��� [2mstring_decoder@~1.1.1[22m
-│  └─ [2mutil-deprecate@~1.0.1[22m
-├─ regexpp@2.0.1
-├─ registry-auth-token@3.4.0
-│  ├─ [2mrc@^1.1.6[22m
-│  └─ [2msafe-buffer@^5.0.1[22m
-├─ registry-url@3.1.0
-│  └─ [2mrc@^1.0.1[22m
-├─ require-directory@2.1.1
-├─ require-main-filename@2.0.0
-├─ resolve-from@4.0.0
-├─ resolve@1.15.1
-│  └─ [2mpath-parse@^1.0.6[22m
-├─ responselike@1.0.2
-│  └─ [2mlowercase-keys@^1.0.0[22m
-├─ restore-cursor@2.0.0
-│  ├─ mimic-fn@1.2.0
-│  ├─ [2monetime@^2.0.0[22m
-│  ├─ [1monetime@2.0.1[22m
-│  │  └─ [2mmimic-fn@^1.0.0[22m
-│  └─ [2msignal-exit@^3.0.2[22m
-├─ rimraf@2.6.3
-│  └─ [2mglob@^7.1.3[22m
-├─ roarr@2.15.2
-│  ├─ [2mboolean@^3.0.0[22m
-│  ├─ [2mdetect-node@^2.0.4[22m
-│  ├─ [2mglobalthis@^1.0.1[22m
-│  ├─ [2mjson-stringify-safe@^5.0.1[22m
-│  ├─ [2msemver-compare@^1.0.0[22m
-│  ├─ [2msprintf-js@^1.1.2[22m
-│  └─ [1msprintf-js@1.1.2[22m
-├─ run-async@2.3.0
-│  └─ [2mis-promise@^2.1.0[22m
-├─ rxjs@6.5.4
-│  └─ [2mtslib@^1.9.0[22m
-├─ [1msafe-buffer@5.2.0[22m
-├─ safer-buffer@2.1.2
-├─ sanitize-filename@1.6.3
-│  └─ [2mtruncate-utf8-bytes@^1.0.0[22m
-├─ sax@1.2.4
-├─ secure-keys@1.0.0
-├─ semver-compare@1.0.0
-├─ semver-diff@2.1.0
-│  ├─ [2msemver@^5.0.3[22m
-│  └─ [1msemver@5.7.1[22m
-├─ [1msemver@6.3.0[22m
-├─ serialize-error@5.0.0
-│  └─ [2mtype-fest@^0.8.0[22m
-├─ set-blocking@2.0.0
-├─ set-immediate-shim@1.0.1
-├─ setprototypeof@1.1.1
-├─ shebang-command@1.2.0
-│  └─ [2mshebang-regex@^1.0.0[22m
-├─ shebang-regex@1.0.0
-├─ signal-exit@3.0.2
-├─ slice-ansi@2.1.0
-│  ├─ [2mansi-styles@^3.2.0[22m
-│  ├─ [2mastral-regex@^1.0.0[22m
-│  └─ [2mis-fullwidth-code-point@^2.0.0[22m
-├─ smart-buffer@4.1.0
-├─ snyk-config@2.2.3
-│  ├─ [2mdebug@^3.1.0[22m
-│  ├─ [1mdebug@3.2.6[22m
-│  │  └─ [2mms@^2.1.1[22m
-│  ├─ [2mlodash@^4.17.15[22m
-│  ├─ ms@2.1.2
-│  └─ [2mnconf@^0.10.0[22m
-├─ snyk-docker-plugin@2.2.0
-│  ├─ [2mdebug@^4.1.1[22m
-│  ├─ [2mdockerfile-ast@0.0.19[22m
-│  ├─ [2mevent-loop-spinner@^1.1.0[22m
-│  ├─ [2msemver@^6.1.0[22m
-│  ├─ [2mtar-stream@^2.1.0[22m
-│  └─ [2mtslib@^1[22m
-├─ snyk-go-parser@1.4.0
-│  ├─ [2mtoml@^3.0.0[22m
-│  └─ [2mtslib@^1.10.0[22m
-├─ snyk-go-plugin@1.13.0
-│  ├─ [2mdebug@^4.1.1[22m
-│  ├─ [2mgraphlib@^2.1.1[22m
-│  ├─ rimraf@2.7.1
-│  │  └─ [2mglob@^7.1.3[22m
-│  ├─ [2msnyk-go-parser@1.4.0[22m
-│  ├─ [2mtmp@0.1.0[22m
-│  ├─ [1mtmp@0.1.0[22m
-│  │  └─ [2mrimraf@^2.6.3[22m
-│  └─ [2mtslib@^1.10.0[22m
-├─ snyk-gradle-plugin@3.2.5
-│  ├─ [2m@snyk/cli-interface@2.3.0[22m
-│  ├─ [1m@snyk/cli-interface@2.3.0[22m
-│  │  └─ [2mtslib@^1.9.3[22m
-│  ├─ [2m@types/debug@^4.1.4[22m
-│  ├─ [2mchalk@^2.4.2[22m
-│  ├─ [2mdebug@^4.1.1[22m
-│  ├─ [2mtmp@0.0.33[22m
-│  └─ [2mtslib@^1.9.3[22m
-���─ snyk-module@1.9.1
-│  ├─ [2mdebug@^3.1.0[22m
-│  ├─ [1mdebug@3.2.6[22m
-│  │  └─ [2mms@^2.1.1[22m
-│  ├─ [2mhosted-git-info@^2.7.1[22m
-│  └─ ms@2.1.2
-├─ snyk-mvn-plugin@2.9.0
-│  ├─ [2m@snyk/cli-interface@2.3.1[22m
-│  ├─ [2mdebug@^4.1.1[22m
-│  ├─ [2mlodash@^4.17.15[22m
-│  ├─ ms@2.1.2
-│  ├─ [2mneedle@^2.4.0[22m
-│  ├─ [1mneedle@2.4.0[22m
-│  │  ├─ [2mdebug@^3.2.6[22m
-│  │  ├─ [1mdebug@3.2.6[22m
-│  │  │  └─ [2mms@^2.1.1[22m
-│  │  ├─ [2miconv-lite@^0.4.4[22m
-│  │  └─ [2msax@^1.2.4[22m
-│  ├─ rimraf@2.7.1
-│  │  └─ [2mglob@^7.1.3[22m
-│  ├─ [2mtmp@^0.1.0[22m
-│  ├─ [1mtmp@0.1.0[22m
-│  │  └─ [2mrimraf@^2.6.3[22m
-│  ├─ [2mtslib@1.9.3[22m
-│  └─ [1mtslib@1.9.3[22m
-├─ snyk-nodejs-lockfile-parser@1.17.0
-│  ├─ [2m@yarnpkg/lockfile@^1.0.2[22m
-│  ├─ [2mgraphlib@^2.1.5[22m
-│  ├─ [2mlodash@^4.17.14[22m
-│  ├─ [2mp-map@2.1.0[22m
-│  ├─ [2msource-map-support@^0.5.7[22m
-│  ├─ [2mtslib@^1.9.3[22m
-│  └─ [2muuid@^3.3.2[22m
-├─ snyk-nuget-plugin@1.16.0
-│  ├─ [2mdebug@^3.1.0[22m
-│  ├─ [1mdebug@3.2.6[22m
-│  │  └─ [2mms@^2.1.1[22m
-│  ├─ [2mdotnet-deps-parser@4.9.0[22m
-│  ├─ [2mjszip@^3.1.5[22m
-│  ├─ [2mlodash@^4.17.14[22m
-│  ├─ ms@2.1.2
-│  ├─ [2msnyk-paket-parser@1.5.0[22m
-│  ├─ [2mtslib@^1.9.3[22m
-│  └─ [2mxml2js@^0.4.17[22m
-├─ snyk-paket-parser@1.5.0
-│  └─ [2mtslib@^1.9.3[22m
-├─ snyk-php-plugin@1.7.0
-│  ├─ [2m@snyk/cli-interface@2.2.0[22m
-│  ├─ [1m@snyk/cli-interface@2.2.0[22m
-│  │  ├─ [2mtslib@^1.9.3[22m
-│  │  └─ [1mtslib@1.10.0[22m
-│  ├─ [2m@snyk/composer-lockfile-parser@1.2.0[22m
-│  ├─ [2mtslib@1.9.3[22m
-│  └─ [1mtslib@1.9.3[22m
-├─ snyk-policy@1.13.5
-│  ├─ [2mdebug@^3.1.0[22m
-│  ├─ [1mdebug@3.2.6[22m
-│  │  └─ [2mms@^2.1.1[22m
-│  ├─ [2memail-validator@^2.0.4[22m
-│  ├─ [2mjs-yaml@^3.13.1[22m
-│  ├─ [2mlodash.clonedeep@^4.5.0[22m
-│  ├─ ms@2.1.2
-│  ├─ [2msemver@^6.0.0[22m
-│  ├─ [2msnyk-module@^1.9.1[22m
-│  ├─ [2msnyk-resolve@^1.0.1[22m
-│  ├─ [2msnyk-try-require@^1.3.1[22m
-│  └─ [2mthen-fs@^2.0.0[22m
-├─ snyk-python-plugin@1.17.0
-│  ├─ [2m@snyk/cli-interface@^2.0.3[22m
-│  └─ [2mtmp@0.0.33[22m
-├─ snyk-resolve-deps@4.4.0
-│  ├─ [2m@types/node@^6.14.4[22m
-│  ├─ [1m@types/node@6.14.9[22m
-│  ├─ [2m@types/semver@^5.5.0[22m
-│  ├─ [1m@types/semver@5.5.0[22m
-│  ├─ [2mansicolors@^0.3.2[22m
-│  ├─ [2mdebug@^3.2.5[22m
-│  ├─ [1mdebug@3.2.6[22m
-│  │  └─ [2mms@^2.1.1[22m
-│  ├─ [2mlodash.assign@^4.2.0[22m
-│  ├─ [2mlodash.assignin@^4.2.0[22m
-│  ├─ [2mlodash.clone@^4.5.0[22m
-│  ├─ [2mlodash.flatten@^4.4.0[22m
-│  ├─ [2mlodash.get@^4.4.2[22m
-│  ├─ [2mlodash.set@^4.3.2[22m
-│  ├─ [2mlru-cache@^4.0.0[22m
-│  ├─ ms@2.1.2
-│  ├─ [2msemver@^5.5.1[22m
-│  ���─ [1msemver@5.7.1[22m
-│  ├─ [2msnyk-module@^1.6.0[22m
-│  ├─ [2msnyk-resolve@^1.0.0[22m
-│  ├─ [2msnyk-tree@^1.0.0[22m
-│  ├─ [2msnyk-try-require@^1.1.1[22m
-│  └─ [2mthen-fs@^2.0.0[22m
-├─ snyk-resolve@1.0.1
-│  ├─ [2mdebug@^3.1.0[22m
-│  ├─ [1mdebug@3.2.6[22m
-│  │  └─ [2mms@^2.1.1[22m
-│  ├─ ms@2.1.2
-│  └─ [2mthen-fs@^2.0.0[22m
-├─ snyk-sbt-plugin@2.11.0
-│  ├─ [2mdebug@^4.1.1[22m
-│  ├─ rimraf@2.7.1
-│  │  └─ [2mglob@^7.1.3[22m
-│  ├─ [2msemver@^6.1.2[22m
-│  ├─ [2mtmp@^0.1.0[22m
-│  ├─ [1mtmp@0.1.0[22m
-│  │  └─ [2mrimraf@^2.6.3[22m
-│  ├─ [2mtree-kill@^1.2.2[22m
-│  └─ [2mtslib@^1.10.0[22m
-├─ snyk-tree@1.0.0
-│  └─ [2marchy@^1.0.0[22m
-├─ snyk-try-require@1.3.1
-│  ├─ [2mdebug@^3.1.0[22m
-│  ├─ [1mdebug@3.2.6[22m
-│  │  └─ [2mms@^2.1.1[22m
-│  ├─ [2mlodash.clonedeep@^4.3.0[22m
-│  ├─ [2mlru-cache@^4.0.0[22m
-│  ├─ ms@2.1.2
-│  └─ [2mthen-fs@^2.0.0[22m
-├─ [1msnyk@1.297.3[22m
-│  ├─ [2m@snyk/cli-interface@2.3.2[22m
-│  ├─ [1m@snyk/cli-interface@2.3.2[22m
-│  │  └─ [2mtslib@^1.9.3[22m
-│  ├─ [2m@snyk/configstore@^3.2.0-rc1[22m
-│  ├─ [2m@snyk/dep-graph@1.13.1[22m
-│  ├─ [1m@snyk/dep-graph@1.13.1[22m
-│  │  ├─ [2mgraphlib@^2.1.5[22m
-│  │  ├─ [2mlodash@^4.7.14[22m
-│  │  ├─ [2mobject-hash@^1.3.1[22m
-│  │  ├─ [2msemver@^6.0.0[22m
-│  │  ├─ [2msource-map-support@^0.5.11[22m
-│  ���  └─ [2mtslib@^1.9.3[22m
-│  ├─ [2m@snyk/gemfile@1.2.0[22m
-│  ├─ [2m@snyk/snyk-cocoapods-plugin@2.0.1[22m
-│  ├─ [2m@snyk/update-notifier@^2.5.1-rc2[22m
-│  ├─ [2m@types/agent-base@^4.2.0[22m
-│  ├─ [2m@types/restify@^4.3.6[22m
-│  ├─ [2mabbrev@^1.1.1[22m
-│  ├─ [2mansi-escapes@3.2.0[22m
-│  ├─ [2mchalk@^2.4.2[22m
-│  ├─ [2mcli-spinner@0.2.10[22m
-│  ├─ [2mdebug@^3.1.0[22m
-│  ├─ [1mdebug@3.2.6[22m
-│  │  └─ [2mms@^2.1.1[22m
-│  ├─ [2mdiff@^4.0.1[22m
-│  ├─ [2mgit-url-parse@11.1.2[22m
-│  ├─ [2mglob@^7.1.3[22m
-│  ├─ [2minquirer@^6.2.2[22m
-│  ├─ [2mlodash@^4.17.14[22m
-│  ├─ ms@2.1.2
-│  ├─ [2mneedle@^2.2.4[22m
-│  ├─ [2mopn@^5.5.0[22m
-│  ├─ [2mos-name@^3.0.0[22m
-│  ├─ [2mproxy-agent@^3.1.1[22m
-│  ├─ [2mproxy-from-env@^1.0.0[22m
-│  ├─ [2msemver@^6.0.0[22m
-│  ├─ [2msnyk-config@^2.2.1[22m
-│  ├─ [2msnyk-docker-plugin@2.2.0[22m
-│  ├─ [2msnyk-go-plugin@1.13.0[22m
-│  ├─ [2msnyk-gradle-plugin@3.2.5[22m
-│  ├─ [2msnyk-module@1.9.1[22m
-│  ├─ [2msnyk-mvn-plugin@2.9.0[22m
-│  ├─ [2msnyk-nodejs-lockfile-parser@1.17.0[22m
-│  ├─ [2msnyk-nuget-plugin@1.16.0[22m
-│  ├─ [2msnyk-php-plugin@1.7.0[22m
-│  ├─ [2msnyk-policy@1.13.5[22m
-│  ├─ [2msnyk-python-plugin@1.17.0[22m
-│  ├─ [2msnyk-resolve-deps@4.4.0[22m
-│  ├─ [2msnyk-resolve@1.0.1[22m
-│  ├─ [2msnyk-sbt-plugin@2.11.0[22m
-│  ├─ [2msnyk-tree@^1.0.0[22m
-│  ├��� [2msnyk-try-require@1.3.1[22m
-│  ├─ [2msource-map-support@^0.5.11[22m
-│  ├─ [2mstrip-ansi@^5.2.0[22m
-│  ├─ [2mtempfile@^2.0.0[22m
-│  ├─ [2mthen-fs@^2.0.0[22m
-│  ├─ [2muuid@^3.3.2[22m
-│  └─ [2mwrap-ansi@^5.1.0[22m
-├─ socks-proxy-agent@4.0.2
-│  ├─ [2magent-base@~4.2.1[22m
-│  ├─ [1magent-base@4.2.1[22m
-│  │  └─ [2mes6-promisify@^5.0.0[22m
-│  └─ [2msocks@~2.3.2[22m
-├─ socks@2.3.3
-│  ├─ [2mip@1.1.5[22m
-│  └─ [2msmart-buffer@^4.1.0[22m
-├─ sort-keys-length@1.0.1
-│  └─ [2msort-keys@^1.0.0[22m
-├─ sort-keys@1.1.2
-│  └─ [2mis-plain-obj@^1.0.0[22m
-├─ source-map-support@0.5.16
-│  ├─ [2mbuffer-from@^1.0.0[22m
-│  └─ [2msource-map@^0.6.0[22m
-├─ source-map@0.6.1
-├─ spdx-correct@3.1.0
-│  ├─ [2mspdx-expression-parse@^3.0.0[22m
-│  └─ [2mspdx-license-ids@^3.0.0[22m
-├─ spdx-exceptions@2.2.0
-├─ spdx-expression-parse@3.0.0
-│  ├─ [2mspdx-exceptions@^2.1.0[22m
-│  └─ [2mspdx-license-ids@^3.0.0[22m
-├─ spdx-license-ids@3.0.5
-├─ sprintf-js@1.0.3
-├─ stack-trace@0.0.10
-├─ stat-mode@1.0.0
-├─ statuses@1.5.0
-├─ string_decoder@1.1.1
-│  ├─ [2msafe-buffer@~5.1.0[22m
-│  └─ [1msafe-buffer@5.1.2[22m
-├─ [1mstring-width@4.2.0[22m
-│  ├─ ansi-regex@5.0.0
-│  ├─ [2memoji-regex@^8.0.0[22m
-│  ├─ [2mis-fullwidth-code-point@^3.0.0[22m
-│  ├─ [1mis-fullwidth-code-point@3.0.0[22m
-│  ├─ [2mstrip-ansi@^6.0.0[22m
-│  └─ [1mstrip-ansi@6.0.0[22m
-│     └─ [2mansi-regex@^5.0.0[22m
-├─ [1mstrip-ansi@5.2.0[22m
-│  └─ [2mansi-regex@^4.1.0[22m
-├─ strip-eof@1.0.0
-├─ strip-json-comments@3.0.1
-├─ sumchecker@3.0.1
-│  └─ [2mdebug@^4.1.0[22m
-├─ supports-color@5.5.0
-│  └─ [2mhas-flag@^3.0.0[22m
-├─ table@5.4.6
-│  ├─ [2majv@^6.10.2[22m
-│  ├─ emoji-regex@7.0.3
-│  ├─ [2mlodash@^4.17.14[22m
-│  ├─ [2mslice-ansi@^2.1.0[22m
-│  ├─ [2mstring-width@^3.0.0[22m
-│  └─ [1mstring-width@3.1.0[22m
-│     ├─ [2memoji-regex@^7.0.1[22m
-│     ├─ [2mis-fullwidth-code-point@^2.0.0[22m
-│     └─ [2mstrip-ansi@^5.1.0[22m
-├─ tar-stream@2.1.0
-│  ├─ [2mbl@^3.0.0[22m
-│  ├─ [2mend-of-stream@^1.4.1[22m
-│  ├─ [2mfs-constants@^1.0.0[22m
-│  ├─ [2minherits@^2.0.3[22m
-│  ├─ [2mreadable-stream@^3.1.1[22m
-│  ├─ [1mreadable-stream@3.5.0[22m
-│  │  ├─ [2minherits@^2.0.3[22m
-│  │  ├─ [2mstring_decoder@^1.1.1[22m
-│  │  └─ [2mutil-deprecate@^1.0.1[22m
-│  └─ string_decoder@1.3.0
-│     └─ [2msafe-buffer@~5.2.0[22m
-├─ temp-dir@1.0.0
-├─ temp-file@3.3.6
-│  ├─ [2masync-exit-hook@^2.0.1[22m
-│  └─ [2mfs-extra@^8.1.0[22m
-├─ tempfile@2.0.0
-│  ├─ [2mtemp-dir@^1.0.0[22m
-│  └─ [2muuid@^3.0.1[22m
-├─ term-size@1.2.0
-│  ├─ cross-spawn@5.1.0
-│  │  ├─ [2mlru-cache@^4.0.1[22m
-│  │  ├─ [2mshebang-command@^1.2.0[22m
-│  │  └─ [2mwhich@^1.2.9[22m
-│  ├─ [2mexeca@^0.7.0[22m
-│  └─ [1mexeca@0.7.0[22m
-│     ├─ [2mcross-spawn@^5.0.1[22m
-│     ├─ [2mget-stream@^3.0.0[22m
-│     ├─ [2mis-stream@^1.1.0[22m
-│     ├─ [2mnpm-run-path@^2.0.0[22m
-│     ├─ [2mp-finally@^1.0.0[22m
-│     ├─ [2msignal-exit@^3.0.0[22m
-│     └─ [2mstrip-eof@^1.0.0[22m
-├─ text-table@0.2.0
-├─ then-fs@2.0.0
-│  └─ [2mpromise@>=3.2 <8[22m
-├─ through@2.3.8
-├─ thunkify@2.1.2
-├─ timed-out@4.0.1
-├─ [1mtmp@0.0.33[22m
-│  └─ [2mos-tmpdir@~1.0.2[22m
-├─ to-readable-stream@1.0.0
-├─ toidentifier@1.0.0
-├─ toml@3.0.0
-├─ tree-kill@1.2.2
-├─ truncate-utf8-bytes@1.0.2
-│  └─ [2mutf8-byte-length@^1.0.1[22m
-├─ [1mtslib@1.10.0[22m
-├─ tunnel@0.0.6
-├─ type-check@0.3.2
-│  └─ [2mprelude-ls@~1.1.2[22m
-├─ [1mtype-fest@0.8.1[22m
-├─ typedarray-to-buffer@3.1.5
-│  └─ [2mis-typedarray@^1.0.0[22m
-├─ typedarray@0.0.6
-├─ unique-string@1.0.0
-│  └─ [2mcrypto-random-string@^1.0.0[22m
-├─ universalify@0.1.2
-├─ unpipe@1.0.0
-├─ unused-filename@2.1.0
-│  ├─ [2mmodify-filename@^1.1.0[22m
-│  └─ [2mpath-exists@^4.0.0[22m
-├─ unzip-response@2.0.1
-├─ update-notifier@4.1.0
-│  ├─ ansi-align@3.0.0
-│  │  ├─ [2mstring-width@^3.0.0[22m
-│  │  └─ [1mstring-width@3.1.0[22m
-│  │     ├─ [2memoji-regex@^7.0.1[22m
-│  │     ├─ [2mis-fullwidth-code-point@^2.0.0[22m
-│  │     └─ [2mstrip-ansi@^5.1.0[22m
-│  ├─ ansi-styles@4.2.1
-│  │  ├─ [2m@types/color-name@^1.1.1[22m
-│  │  └─ [2mcolor-convert@^2.0.1[22m
-│  ├─ [2mboxen@^4.2.0[22m
-│  ├─ [1mboxen@4.2.0[22m
-│  │  ├─ [2mansi-align@^3.0.0[22m
-│  │  ├─ [2mcamelcase@^5.3.1[22m
-│  │  ├─ [2mchalk@^3.0.0[22m
-│  │  ├─ [2mcli-boxes@^2.2.0[22m
-│  │  ├─ [2mstring-width@^4.1.0[22m
-│  │  ├─ [2mterm-size@^2.1.0[22m
-│  │  ├─ [2mtype-fest@^0.8.1[22m
-│  │  └─ [2mwidest-line@^3.1.0[22m
-│  ├─ [2mchalk@^3.0.0[22m
-│  ├─ [1mchalk@3.0.0[22m
-│  │  ├─ [2mansi-styles@^4.1.0[22m
-│  │  └─ [2msupports-color@^7.1.0[22m
-│  ├─ cli-boxes@2.2.0
-│  ├─ color-convert@2.0.1
-│  │  └─ [2mcolor-name@~1.1.4[22m
-│  ├─ color-name@1.1.4
-│  ├─ [2mconfigstore@^5.0.1[22m
-│  ├─ emoji-regex@7.0.3
-│  ├─ global-dirs@2.0.1
-│  │  └─ [2mini@^1.3.5[22m
-│  ├─ has-flag@4.0.0
-│  ├─ [2mhas-yarn@^2.1.0[22m
-│  ├─ [2mimport-lazy@^2.1.0[22m
-│  ├─ [2mis-ci@^2.0.0[22m
-│  ├─ [2mis-installed-globally@^0.3.1[22m
-│  ├─ [1mis-installed-globally@0.3.1[22m
-│  │  ├─ [2mglobal-dirs@^2.0.1[22m
-│  │  └─ [2mis-path-inside@^3.0.1[22m
-│  ├─ [2mis-npm@^4.0.0[22m
-│  ├─ [1mis-npm@4.0.0[22m
-│  ├─ is-path-inside@3.0.2
-│  ├─ [2mis-yarn-global@^0.3.0[22m
-│  ├─ [2mlatest-version@^5.0.0[22m
-│  ├─ [1mlatest-version@5.1.0[22m
-│  │  └─ [2mpackage-json@^6.3.0[22m
-│  ├─ package-json@6.5.0
-│  │  ├─ [2mgot@^9.6.0[22m
-│  │  ├─ [2mregistry-auth-token@^4.0.0[22m
-│  │  ├─ [2mregistry-url@^5.0.0[22m
-│  │  └─ [2msemver@^6.2.0[22m
-│  ├─ [2mpupa@^2.0.1[22m
-│  ├─ registry-auth-token@4.1.1
-│  │  └─ [2mrc@^1.2.8[22m
-│  ├─ registry-url@5.1.0
-│  │  └─ [2mrc@^1.2.8[22m
-│  ├─ [2msemver-diff@^3.1.1[22m
-│  ├─ [1msemver-diff@3.1.1[22m
-│  │  └─ [2msemver@^6.3.0[22m
-│  ├─ supports-color@7.1.0
-│  │  └─ [2mhas-flag@^4.0.0[22m
-│  ├─ term-size@2.2.0
-│  ├─ widest-line@3.1.0
-│  │  └─ [2mstring-width@^4.0.0[22m
-│  ├─ [2mxdg-basedir@^4.0.0[22m
-│  └─ [1mxdg-basedir@4.0.0[22m
-├─ uri-js@4.2.2
-│  └─ [2mpunycode@^2.1.0[22m
-├─ url-parse-lax@3.0.0
-│  └─ [2mprepend-http@^2.0.0[22m
-├─ utf8-byte-length@1.0.4
-├─ util-deprecate@1.0.2
-├─ [1muuid@3.4.0[22m
-├─ v8-compile-cache@2.1.0
-├─ validate-npm-package-license@3.0.4
-│  ├─ [2mspdx-correct@^3.0.0[22m
-│  └─ [2mspdx-expression-parse@^3.0.0[22m
-├─ vscode-languageserver-types@3.15.1
-├─ which-module@2.0.0
-├─ which@1.3.1
-│  └─ [2misexe@^2.0.0[22m
-├─ widest-line@2.0.1
-│  ├─ ansi-regex@3.0.0
-│  ├─ [2mstring-width@^2.1.1[22m
-│  ├─ [1mstring-width@2.1.1[22m
-│  │  ├─ [2mis-fullwidth-code-point@^2.0.0[22m
-│  │  └─ [2mstrip-ansi@^4.0.0[22m
-│  └─ strip-ansi@4.0.0
-│     └─ [2mansi-regex@^3.0.0[22m
-├─ window-size@0.1.4
-├─ windows-release@3.2.0
-│  └─ [2mexeca@^1.0.0[22m
-├─ word-wrap@1.2.3
-├─ wrap-ansi@5.1.0
-│  ├─ [2mansi-styles@^3.2.0[22m
-│  ├─ emoji-regex@7.0.3
-│  ├─ [2mstring-width@^3.0.0[22m
-│  ├─ [1mstring-width@3.1.0[22m
-│  │  ├─ [2memoji-regex@^7.0.1[22m
-│  │  ├─ [2mis-fullwidth-code-point@^2.0.0[22m
-│  │  └─ [2mstrip-ansi@^5.1.0[22m
-│  └─ [2mstrip-ansi@^5.0.0[22m
-├─ wrappy@1.0.2
-├─ [1mwrite-file-atomic@3.0.1[22m
-│  ├─ [2mimurmurhash@^0.1.4[22m
-│  ├─ [2mis-typedarray@^1.0.0[22m
-│  ├─ [2msignal-exit@^3.0.2[22m
-│  └─ [2mtypedarray-to-buffer@^3.1.5[22m
-├─ write@1.0.3
-│  └─ [2mmkdirp@^0.5.1[22m
-├─ [1mxdg-basedir@3.0.0[22m
-├─ xml2js@0.4.23
-│  ├─ [2msax@>=0.6.0[22m
-│  └─ [2mxmlbuilder@~11.0.0[22m
-├─ xmlbuilder@11.0.1
-├─ xregexp@2.0.0
-├─ y18n@4.0.0
-├─ yallist@2.1.2
-├─ yargs-parser@16.1.0
-│  ├─ [2mcamelcase@^5.0.0[22m
-│  └─ [2mdecamelize@^1.2.0[22m
-├─ yargs@15.1.0
-│  ├─ [2mcliui@^6.0.0[22m
-│  ├─ [2mdecamelize@^1.2.0[22m
-│  ├─ [2mfind-up@^4.1.0[22m
-│  ├─ [2mget-caller-file@^2.0.1[22m
-│  ├─ [2mrequire-directory@^2.1.1[22m
-│  ├─ [2mrequire-main-filename@^2.0.0[22m
-│  ├─ [2mset-blocking@^2.0.0[22m
-│  ├─ [2mstring-width@^4.2.0[22m
-│  ├─ [2mwhich-module@^2.0.0[22m
-│  ├─ [2my18n@^4.0.0[22m
-│  └─ [2myargs-parser@^16.1.0[22m
-└─ yauzl@2.4.1
-   └─ [2mfd-slicer@~1.0.1[22m
-[2K[1GDone in 0.47s.
-travis_time:end:005bbf50:start=1585809194537530572,finish=1585809195168941848,duration=631411276,event=before_script[0Ktravis_fold:end:before_script[0Ktravis_time:start:153a5e82[0K$ ./scripts/travis.sh
-yarn run test
-[2K[1G[1myarn run v1.22.0[22m
-[2K[1G[2m$ eslint app[22m
-[2K[1GDone in 0.92s.
-if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
-  yarn run snyk
-  yarn run mac
-fi
-if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then
-  sudo snap install snapcraft --classic
-  sudo snap install multipass --beta --classic
-  sudo snap install review-tools
-  yarn run linux
-fi
-Ensure prerequisites for "snapcraft" are available                             /Ensure prerequisites for "snapcraft" are available                             -Ensure prerequisites for "snapcraft" are available                             \Ensure prerequisites for "snapcraft" are available                             |Download snap "core18" (1705) from channel "stable"                            /Download snap "core18" (1705) from channel "stable"                            -Download snap "core18" (1705) from channel "stable"                            \Download snap "core18" (1705) from channel "stable"                            |Download snap "core18" (1705) from channel "stable"                            /Download snap "core18" (1705) from channel "stable"                            -Download snap "core18" (1705) from channel "stable"                            \Download snap "core18" (1705) from channel "stable"                            |Download snap "core18" (1705) from channel "stable"                            /Download snap "core18" (1705) from channel "stable"                            -Download snap "core18" (1705) from channel "stable"                            \[?25l[7m[0mDownload snap "core18" (1705) from channel "stable"            0%     0B/s ages![7m[0mDownload snap "core18" (1705) from channel "stable"            0%     0B/s ages![7m[0mDownload snap "core18" (1705) from channel "stable"            0%  426kB/s 2m15s[7m[0mDownload snap "core18" (1705) from channel "stable"            1%  966kB/s 59.2s[7mD[0mownload snap "core18" (1705) from channel "stable"            1% 1.55MB/s 36.7s[7mDo[0mwnload snap "core18" (1705) from channel "stable"            3% 3.01MB/s 18.5s[7mDownl[0moad snap "core18" (1705) from channel "stable"            7% 5.35MB/s 10.1s[7mDownload [0msnap "core18" (1705) from channel "stable"           12% 8.56MB/s 5.92s[7mDownload snap [0m"core18" (1705) from channel "stable"           18% 11.2MB/s 4.23s[7mDownload snap "cor[0me18" (1705) from channel "stable"           23% 13.1MB/s 3.40s[7mDownload snap "core18"[0m (1705) from channel "stable"           28% 14.7MB/s 2.81s[7mDownload snap "core18" (17[0m05) from channel "stable"           34% 15.9MB/s 2.40s[7mDownload snap "core18" (1705) f[0mrom channel "stable"           39% 17.1MB/s 2.05s[7mDownload snap "core18" (1705) from [0mchannel "stable"           45% 18.1MB/s 1.76s[7mDownload snap "core18" (1705) from chann[0mel "stable"           50% 19.0MB/s 1.52s[7mDownload snap "core18" (1705) from channel "[0mstable"           56% 19.9MB/s 1.28s[7mDownload snap "core18" (1705) from channel "stabl[0me"           62% 20.6MB/s 1.07s[7mDownload snap "core18" (1705) from channel "stable"  [0m         67% 21.3MB/s 886ms[7mDownload snap "core18" (1705) from channel "stable"       [0m    73% 21.8MB/s 720ms[7mDownload snap "core18" (1705) from channel "stable"           [0m78% 22.2MB/s 564ms[7mDownload snap "core18" (1705) from channel "stable"           83% [0m22.6MB/s 421ms[7mDownload snap "core18" (1705) from channel "stable"           89% 23.0M[0mB/s 277ms[7mDownload snap "core18" (1705) from channel "stable"           94% 23.3MB/s [0m138ms[7mDownload snap "core18" (1705) from channel "stable"          100% 23.6MB/s 3.2m[0ms[7mDownload snap "core18" (1705) from channel "stable"          100% 22.7MB/s 0.0ns[0mFetch and check assertions for snap "core18" (1705)                            |Fetch and check assertions for snap "core18" (1705)                            /Fetch and check assertions for snap "core18" (1705)                            -Fetch and check assertions for snap "core18" (1705)                            \Mount snap "core18" (1705)                                                     |Mount snap "core18" (1705)                                                     /Mount snap "core18" (1705)                                                     -Mount snap "core18" (1705)                                                     \Mount snap "core18" (1705)                                                     |Download snap "snapcraft" (4234) from channel "stable"                         /Download snap "snapcraft" (4234) from channel "stable"                         -Download snap "snapcraft" (4234) from channel "stable"                         \Download snap "snapcraft" (4234) from channel "stable"                         |Download snap "snapcraft" (4234) from channel "stable"                         /Download snap "snapcraft" (4234) from channel "stable"                         -Download snap "snapcraft" (4234) from channel "stable"                         \Download snap "snapcraft" (4234) from channel "stable"                         |Download snap "snapcraft" (4234) from channel "stable"                         /Download snap "snapcraft" (4234) from channel "stable"                         -[?25l[7m[0mDownload snap "snapcraft" (4234) from channel "stable"         0%     0B/s ages![7m[0mDownload snap "snapcraft" (4234) from channel "stable"         0%  638kB/s 1m39s[7m[0mDownload snap "snapcraft" (4234) from channel "stable"         0%  856kB/s 1m14s[7m[0mDownload snap "snapcraft" (4234) from channel "stable"         1% 1.29MB/s 48.7s[7mD[0mownload snap "snapcraft" (4234) from channel "stable"         2% 2.32MB/s 26.7s[7mDow[0mnload snap "snapcraft" (4234) from channel "stable"         4% 4.30MB/s 14.1s[7mDownlo[0mad snap "snapcraft" (4234) from channel "stable"         9% 7.56MB/s 7.65s[7mDownload s[0mnap "snapcraft" (4234) from channel "stable"        13% 10.2MB/s 5.41s[7mDownload snap [0m"snapcraft" (4234) from channel "stable"        18% 12.6MB/s 4.09s[7mDownload snap "sna[0mpcraft" (4234) from channel "stable"        23% 14.4MB/s 3.36s[7mDownload snap "snapcra[0mft" (4234) from channel "stable"        28% 16.0MB/s 2.84s[7mDownload snap "snapcraft" [0m(4234) from channel "stable"        33% 17.2MB/s 2.45s[7mDownload snap "snapcraft" (423[0m4) from channel "stable"        39% 18.5MB/s 2.10s[7mDownload snap "snapcraft" (4234) f[0mrom channel "stable"        44% 19.4MB/s 1.84s[7mDownload snap "snapcraft" (4234) from [0mchannel "stable"        49% 20.1MB/s 1.61s[7mDownload snap "snapcraft" (4234) from chan[0mnel "stable"        53% 20.7MB/s 1.42s[7mDownload snap "snapcraft" (4234) from channel [0m"stable"        58% 21.3MB/s 1.23s[7mDownload snap "snapcraft" (4234) from channel "sta[0mble"        63% 21.8MB/s 1.07s[7mDownload snap "snapcraft" (4234) from channel "stable"[0m        68% 22.3MB/s 905ms[7mDownload snap "snapcraft" (4234) from channel "stable"    [0m    73% 22.7MB/s 749ms[7mDownload snap "snapcraft" (4234) from channel "stable"        [0m78% 23.1MB/s 600ms[7mDownload snap "snapcraft" (4234) from channel "stable"        83% [0m23.4MB/s 464ms[7mDownload snap "snapcraft" (4234) from channel "stable"        88% 23.7[0mMB/s 331ms[7mDownload snap "snapcraft" (4234) from channel "stable"        92% 23.9MB/[0ms 202ms[7mDownload snap "snapcraft" (4234) from channel "stable"        97% 24.2MB/s  7[0m0ms[7mDownload snap "snapcraft" (4234) from channel "stable"       100% 23.9MB/s 0.0ns[0m[7mDownload snap "snapcraft" (4234) from channel "stable"       100% 23.1MB/s 0.0ns[0mFetch and check assertions for snap "snapcraft" (4234)                         \Fetch and check assertions for snap "snapcraft" (4234)                         |Fetch and check assertions for snap "snapcraft" (4234)                         /Fetch and check assertions for snap "snapcraft" (4234)                         -Mount snap "snapcraft" (4234)                                                  \Mount snap "snapcraft" (4234)                                                  |Mount snap "snapcraft" (4234)                                                  /Mount snap "snapcraft" (4234)                                                  -Mount snap "snapcraft" (4234)                                                  \Mount snap "snapcraft" (4234)                                                  |Make snap "snapcraft" (4234) available to the system                           /Run configure hook of "snapcraft" snap if present                              -[0m[?25h[Ksnapcraft 3.10.2 from Canonical[32m✓[0m installed
-Ensure prerequisites for "multipass" are available                             /Download snap "multipass" (1899) from channel "beta"                           -Download snap "multipass" (1899) from channel "beta"                           \Download snap "multipass" (1899) from channel "beta"                           |Download snap "multipass" (1899) from channel "beta"                           /Download snap "multipass" (1899) from channel "beta"                           -Download snap "multipass" (1899) from channel "beta"                           \Download snap "multipass" (1899) from channel "beta"                           |[?25l[7m[0mDownload snap "multipass" (1899) from channel "beta"           0% 8.41MB/s 24.7s[7mDo[0mwnload snap "multipass" (1899) from channel "beta"           4% 37.9MB/s 5.29s[7mDownlo[0mad snap "multipass" (1899) from channel "beta"           8% 57.5MB/s 3.32s[7mDownload s[0mnap "multipass" (1899) from channel "beta"          13% 66.3MB/s 2.74s[7mDownload snap [0m"multipass" (1899) from channel "beta"          18% 72.4MB/s 2.37s[7mDownload snap "mu[0mltipass" (1899) from channel "beta"          22% 75.0MB/s 2.17s[7mDownload snap "multip[0mass" (1899) from channel "beta"          26% 77.6MB/s 1.98s[7mDownload snap "multipass[0m" (1899) from channel "beta"          31% 79.4MB/s 1.81s[7mDownload snap "multipass" (1[0m899) from channel "beta"          36% 81.3MB/s 1.65s[7mDownload snap "multipass" (1899)[0m from channel "beta"          40% 82.5MB/s 1.51s[7mDownload snap "multipass" (1899) fr[0mom channel "beta"          45% 83.4MB/s 1.38s[7mDownload snap "multipass" (1899) from c[0mhannel "beta"          49% 84.2MB/s 1.26s[7mDownload snap "multipass" (1899) from chan[0mnel "beta"          54% 84.8MB/s 1.14s[7mDownload snap "multipass" (1899) from channel [0m"beta"          58% 85.3MB/s 1.02s[7mDownload snap "multipass" (1899) from channel "bet[0ma"          63% 85.8MB/s 907ms[7mDownload snap "multipass" (1899) from channel "beta" [0m         67% 86.0MB/s 801ms[7mDownload snap "multipass" (1899) from channel "beta"     [0m     71% 86.4MB/s 689ms[7mDownload snap "multipass" (1899) from channel "beta"        [0m  76% 86.7MB/s 578ms[7mDownload snap "multipass" (1899) from channel "beta"          8[0m0% 86.4MB/s 487ms[7mDownload snap "multipass" (1899) from channel "beta"          84% 8[0m6.7MB/s 377ms[7mDownload snap "multipass" (1899) from channel "beta"          89% 87.0M[0mB/s 268ms[7mDownload snap "multipass" (1899) from channel "beta"          93% 87.2MB/s[0m 159ms[7mDownload snap "multipass" (1899) from channel "beta"          98% 87.3MB/s  57[0mms[7mDownload snap "multipass" (1899) from channel "beta"         100% 85.7MB/s 0.0ns[0m[7mDownload snap "multipass" (1899) from channel "beta"         100% 82.2MB/s 0.0ns[0m[7mDownload snap "multipass" (1899) from channel "beta"         100% 79.1MB/s 0.0ns[0m[7mDownload snap "multipass" (1899) from channel "beta"         100% 76.1MB/s 0.0ns[0m[7mDownload snap "multipass" (1899) from channel "beta"         100% 73.4MB/s 0.0ns[0m[7mDownload snap "multipass" (1899) from channel "beta"         100% 70.9MB/s 0.0ns[0m[7mDownload snap "multipass" (1899) from channel "beta"         100% 68.5MB/s 0.0ns[0m[7mDownload snap "multipass" (1899) from channel "beta"         100% 66.3MB/s 0.0ns[0mFetch and check assertions for snap "multipass" (1899)                         /Fetch and check assertions for snap "multipass" (1899)                         -Fetch and check assertions for snap "multipass" (1899)                         \Fetch and check assertions for snap "multipass" (1899)                         |Mount snap "multipass" (1899)                                                  /Mount snap "multipass" (1899)                                                  -Mount snap "multipass" (1899)                                                  \Mount snap "multipass" (1899)                                                  |Setup snap "multipass" (1899) security profiles                                /Start snap "multipass" (1899) services                                         -Run configure hook of "multipass" snap if present                              \Run configure hook of "multipass" snap if present                              |[0m[?25h[Kmultipass (candidate) 1.1.0 from Canonical[32m✓[0m installed
-Channel latest/beta for multipass is closed; temporarily forwarding to candidate.
-Download snap "review-tools" (1465) from channel "stable"                      /Download snap "review-tools" (1465) from channel "stable"                      -Download snap "review-tools" (1465) from channel "stable"                      \Download snap "review-tools" (1465) from channel "stable"                      |Download snap "review-tools" (1465) from channel "stable"                      /Download snap "review-tools" (1465) from channel "stable"                      -[?25l[7m[0mDownload snap "review-tools" (1465) from channel "stable"      0% 1.61MB/s 24.7s[7mDow[0mnload snap "review-tools" (1465) from channel "stable"      4% 8.49MB/s 4.48s[7mDownload snap "revie[0mw-tools" (1465) from channel "stable"     26% 33.4MB/s 886ms[7mDownload snap "review-tools" (1465) fro[0mm channel "stable"     49% 48.3MB/s 418ms[7mDownload snap "review-tools" (1465) from channel "stable" [0m    73% 57.1MB/s 190ms[7mDownload snap "review-tools" (1465) from channel "stable"     96% 62.6MB/s  [0m28ms[7mDownload snap "review-tools" (1465) from channel "stable"    100% 56.1MB/s 0.0ns[0mFetch and check assertions for snap "review-tools" (1465)                      \Fetch and check assertions for snap "review-tools" (1465)                      |Fetch and check assertions for snap "review-tools" (1465)                      /Fetch and check assertions for snap "review-tools" (1465)                      -Fetch and check assertions for snap "review-tools" (1465)                      \Fetch and check assertions for snap "review-tools" (1465)                      |Fetch and check assertions for snap "review-tools" (1465)                      /Fetch and check assertions for snap "review-tools" (1465)                      -Mount snap "review-tools" (1465)                                               \Mount snap "review-tools" (1465)                                               |Mount snap "review-tools" (1465)                                               /Mount snap "review-tools" (1465)                                               -Mount snap "review-tools" (1465)                                               \Mount snap "review-tools" (1465)                                               |Setup snap "review-tools" (1465) security profiles                             /Setup snap "review-tools" (1465) security profiles                             -Setup snap "review-tools" (1465) security profiles                             \Setup snap "review-tools" (1465) security profiles                             |Setup snap "review-tools" (1465) security profiles                             /Setup snap "review-tools" (1465) security profiles                             -Setup snap "review-tools" (1465) security profiles                             \Setup snap "review-tools" (1465) security profiles                             |Setup snap "review-tools" (1465) security profiles                             /Setup snap "review-tools" (1465) security profiles                             -Setup snap "review-tools" (1465) security profiles                             \Setup snap "review-tools" (1465) security profiles                             |Setup snap "review-tools" (1465) security profiles                             /Setup snap "review-tools" (1465) security profiles                             -Setup snap "review-tools" (1465) security profiles for auto-connections        \Setup snap "review-tools" (1465) security profiles for auto-connections        |Setup snap "review-tools" (1465) security profiles for auto-connections        /Setup snap "review-tools" (1465) security profiles for auto-connections        -Setup snap "review-tools" (1465) security profiles for auto-connections        \Setup snap "review-tools" (1465) security profiles for auto-connections        |Setup snap "review-tools" (1465) security profiles for auto-connections        /Setup snap "review-tools" (1465) security profiles for auto-connections        -Setup snap "review-tools" (1465) security profiles for auto-connections        \Run configure hook of "review-tools" snap if present                           |[0m[?25h[Kreview-tools 0.48+git from Jamie Strandboge (jdstrand[32m[0m) installed
-[2K[1G[1myarn run v1.22.0[22m
-[2K[1G[2m$ electron-builder --linux[22m
-  [34m•[39m electron-builder  [34mversion[39m=22.3.5 [34mos[39m=5.0.0-1031-gcp
-  [34m•[39m publishing will be skipped  [34mreason[39m=current build is a part of pull request [34msolution[39m=
-                                  set env PUBLISH_FOR_PULL_REQUEST to true to force code signing
-                                  There are serious security concerns with PUBLISH_FOR_PULL_REQUEST=true (see the  CircleCI documentation (https://circleci.com/docs/1.0/fork-pr-builds/) for details)
-                                  If you have SSH keys, sensitive env vars or AWS credentials stored in your project settings and untrusted forks can make pull requests against your repo, then this option isn't for you.
-  [34m•[39m loaded configuration  [34mfile[39m=/home/travis/build/irccloud/irccloud-desktop/electron-builder.json
-  [34m•[39m packaging       [34mplatform[39m=linux [34march[39m=x64 [34melectron[39m=8.0.2 [34mappOutDir[39m=dist/linux-unpacked
-[34m  • [0mdownloading     [34murl[0m=https://github.com/electron/electron/releases/download/v8.0.2/electron-v8.0.2-linux-x64.zip [34msize[0m=71 MB [34mparts[0m=4
-[34m  • [0mdownloaded      [34murl[0m=https://github.com/electron/electron/releases/download/v8.0.2/electron-v8.0.2-linux-x64.zip [34mduration[0m=908ms
-  [34m•[39m building        [34mtarget[39m=AppImage [34march[39m=x64 [34mfile[39m=dist/IRCCloud-0.14.1-linux-x86_64.AppImage
-  [34m•[39m building        [34mtarget[39m=snap [34march[39m=x64 [34mfile[39m=dist/irccloud-desktop_0.14.1_linux_amd64.snap
-[34m  • [0mdownloading     [34murl[0m=https://github.com/electron-userland/electron-builder-binaries/releases/download/appimage-12.0.1/appimage-12.0.1.7z [34msize[0m=1.6 MB [34mparts[0m=1
-[34m  • [0mdownloading     [34murl[0m=https://github.com/electron-userland/electron-builder-binaries/releases/download/snap-template-4.0-2/snap-template-electron-4.0-2-amd64.tar.7z [34msize[0m=1.5 MB [34mparts[0m=1
-[34m  • [0mdownloaded      [34murl[0m=https://github.com/electron-userland/electron-builder-binaries/releases/download/snap-template-4.0-2/snap-template-electron-4.0-2-amd64.tar.7z [34mduration[0m=748ms
-[34m  • [0mdownloaded      [34murl[0m=https://github.com/electron-userland/electron-builder-binaries/releases/download/appimage-12.0.1/appimage-12.0.1.7z [34mduration[0m=802ms
-[34m  • [0mdownloading     [34murl[0m=https://github.com/electron-userland/electron-builder-binaries/releases/download/appimage-12.0.1/appimage-12.0.1.7z [34msize[0m=1.6 MB [34mparts[0m=1
-[34m  • [0mdownloaded      [34murl[0m=https://github.com/electron-userland/electron-builder-binaries/releases/download/appimage-12.0.1/appimage-12.0.1.7z [34mduration[0m=534ms
-[33m  • [0mcannot move downloaded into final location (another process downloaded faster?)  [33mpath[0m=/home/travis/.cache/electron-builder/appimage/appimage-12.0.1
-                                                                                     [33mtempFile[0m=/home/travis/.cache/electron-builder/appimage/229564301
-                                                                                     [33merror[0m=rename /home/travis/.cache/electron-builder/appimage/229564301 /home/travis/.cache/electron-builder/appimage/appimage-12.0.1: file exists
-  [34m•[39m building        [34mtarget[39m=deb [34march[39m=x64 [34mfile[39m=dist/irccloud-desktop_0.14.1_linux_amd64.deb
-  • downloading     url=https://github.com/electron-userland/electron-builder-binaries/releases/download/fpm-1.9.3-2.3.1-linux-x86_64/fpm-1.9.3-2.3.1-linux-x86_64.7z size=5.0 MB parts=1
-  • downloaded      url=https://github.com/electron-userland/electron-builder-binaries/releases/download/fpm-1.9.3-2.3.1-linux-x86_64/fpm-1.9.3-2.3.1-linux-x86_64.7z duration=922ms
-[2K[1GDone in 158.77s.
-travis_time:end:153a5e82:start=1585809195173477752,finish=1585809380495836456,duration=185322358704,event=script[0K[32;1mThe command "./scripts/travis.sh" exited with 0.[0m
-
-
-Done. Your build exited with 0.
