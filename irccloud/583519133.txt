@@ -1,0 +1,153 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 496fbcae-f37d-483d-9bf0-cb4a99411941@1.worker-org-7f6cdc984-j65sj.macstadium-prod-1
+version: v6.2.0 https://github.com/travis-ci/worker/tree/5e5476e01646095f48eec13196fdb3faf8f5cbf7
+instance: 601cf4c8-4cec-4c34-8029-ef6537ac3067 travis-ci-macos10.14-xcode11.0-1564616815 (via amqp)
+startup: 1m5.745909506s
+travis_fold:end:worker_info[0Ktravis_time:start:16db740f[0Ktravis_time:end:16db740f:start=1568186000895059000,finish=1568186001601021000,duration=705962000,event=no_world_writable_dirs[0Ktravis_time:start:0ad01061[0Ktravis_time:end:0ad01061:start=1568186001617181000,finish=1568186001636581000,duration=19400000,event=setup_filter[0Ktravis_time:start:10efbcba[0Ktravis_time:end:10efbcba:start=1568186001653794000,finish=1568186001663528000,duration=9734000,event=check_unsupported[0Ktravis_time:start:188ccf22[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: node_js
+Build id: 583519132
+Job id: 583519133
+Runtime kernel version: 18.5.0
+travis-build version: c0a4d3743
+[34m[1mBuild image provisioning date and time[0m
+Thu Aug  1 02:14:07 GMT 2019
+[34m[1mOperating System Details[0m
+ProductName:	Mac OS X
+ProductVersion:	10.14.4
+BuildVersion:	18E226
+[34m[1mGit version[0m
+git version 2.22.0
+[34m[1mbash version[0m
+GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin18)
+Copyright (C) 2007 Free Software Foundation, Inc.
+[34m[1mGCC version[0m
+Apple clang version 11.0.0 (clang-1100.0.32.5)
+Target: x86_64-apple-darwin18.5.0
+Thread model: posix
+InstalledDir: /Applications/Xcode-11.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+[34m[1mLLVM version[0m
+Apple clang version 11.0.0 (clang-1100.0.32.5)
+Target: x86_64-apple-darwin18.5.0
+Thread model: posix
+InstalledDir: /Applications/Xcode-11.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.3.5
+ruby-2.4.5
+[34m[1mPre-installed Node.js versions[0m
+v10.15.0
+v10.16.1
+v4.9.1
+v6.16.0
+v6.17.1
+v8.15.0
+v8.16.0
+[34m[1mmvn -version[0m
+Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-04T19:00:29Z)
+Maven home: /usr/local/Cellar/maven/3.6.1/libexec
+Java version: 12.0.1, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/openjdk-12.0.1.jdk/Contents/Home
+Default locale: en_US, platform encoding: UTF-8
+OS name: "mac os x", version: "10.14.4", arch: "x86_64", family: "mac"
+travis_fold:end:system_info[0K
+travis_time:end:188ccf22:start=1568186001672487000,finish=1568186001688027000,duration=15540000,event=show_system_info[0Ktravis_time:start:0098678a[0Ktravis_time:end:0098678a:start=1568186001702958000,finish=1568186001710827000,duration=7869000,event=rm_riak_source[0Ktravis_time:start:060b9f44[0Ktravis_time:end:060b9f44:start=1568186001720833000,finish=1568186001736782000,duration=15949000,event=fix_rwky_redis[0Ktravis_time:start:0798b5be[0Ktravis_time:end:0798b5be:start=1568186001745923000,finish=1568186002165664000,duration=419741000,event=wait_for_network[0Ktravis_time:start:268780e0[0Ktravis_time:end:268780e0:start=1568186002175043000,finish=1568186002182221000,duration=7178000,event=update_apt_keys[0Ktravis_time:start:0810c525[0Ktravis_time:end:0810c525:start=1568186002191325000,finish=1568186002199743000,duration=8418000,event=fix_hhvm_source[0Ktravis_time:start:032979f0[0Ktravis_time:end:032979f0:start=1568186002210098000,finish=1568186002218521000,duration=8423000,event=update_mongo_arch[0Ktravis_time:start:129d2e88[0Ktravis_time:end:129d2e88:start=1568186002227427000,finish=1568186002238817000,duration=11390000,event=fix_sudo_enabled_trusty[0Ktravis_time:start:1ab28fb2[0Ktravis_time:end:1ab28fb2:start=1568186002248151000,finish=1568186002255724000,duration=7573000,event=update_glibc[0Ktravis_time:start:0367add4[0Ktravis_time:end:0367add4:start=1568186002265312000,finish=1568186002334785000,duration=69473000,event=clean_up_path[0Ktravis_time:start:36aecf63[0Ktravis_time:end:36aecf63:start=1568186002345028000,finish=1568186002398686000,duration=53658000,event=fix_resolv_conf[0Ktravis_time:start:00391079[0Ktravis_time:end:00391079:start=1568186002409760000,finish=1568186002468034000,duration=58274000,event=fix_etc_hosts[0Ktravis_time:start:026bf090[0Ktravis_time:end:026bf090:start=1568186002478476000,finish=1568186002485906000,duration=7430000,event=fix_mvn_settings_xml[0Ktravis_time:start:274b1881[0Ktravis_time:end:274b1881:start=1568186002495285000,finish=1568186002551773000,duration=56488000,event=no_ipv6_localhost[0Ktravis_time:start:0be54b80[0Ktravis_time:end:0be54b80:start=1568186002562154000,finish=1568186002570504000,duration=8350000,event=fix_etc_mavenrc[0Ktravis_time:start:0812d4e4[0Ktravis_time:end:0812d4e4:start=1568186002581352000,finish=1568186003121930000,duration=540578000,event=fix_wwdr_certificate[0Ktravis_time:start:020d3069[0Ktravis_time:end:020d3069:start=1568186003133114000,finish=1568186003328289000,duration=195175000,event=put_localhost_first[0Ktravis_time:start:12614547[0Ktravis_time:end:12614547:start=1568186003339807000,finish=1568186003348226000,duration=8419000,event=home_paths[0Ktravis_time:start:17c3cffc[0Ktravis_time:end:17c3cffc:start=1568186003359219000,finish=1568186003377582000,duration=18363000,event=disable_initramfs[0Ktravis_time:start:0179984b[0Ktravis_time:end:0179984b:start=1568186003387890000,finish=1568186003417033000,duration=29143000,event=disable_ssh_roaming[0Ktravis_time:start:07144614[0Ktravis_time:end:07144614:start=1568186003426970000,finish=1568186003434490000,duration=7520000,event=debug_tools[0Ktravis_time:start:0f4e1897[0K
+travis_time:end:0f4e1897:start=1568186003444812000,finish=1568186007161463000,duration=3716651000,event=uninstall_oclint[0Ktravis_time:start:0b423154[0Ktravis_time:end:0b423154:start=1568186007170375000,finish=1568186008343049000,duration=1172674000,event=rvm_use[0Ktravis_time:start:047654b8[0Ktravis_time:end:047654b8:start=1568186008352646000,finish=1568186008407745000,duration=55099000,event=rm_etc_boto_cfg[0Ktravis_time:start:03f06a32[0Ktravis_time:end:03f06a32:start=1568186008419278000,finish=1568186008427527000,duration=8249000,event=rm_oraclejdk8_symlink[0Ktravis_time:start:0e454678[0Ktravis_time:end:0e454678:start=1568186008437439000,finish=1568186008451057000,duration=13618000,event=enable_i386[0Ktravis_time:start:1366074a[0Ktravis_time:end:1366074a:start=1568186008461909000,finish=1568186008473919000,duration=12010000,event=update_rubygems[0Ktravis_time:start:002cf7af[0Ktravis_time:end:002cf7af:start=1568186008483609000,finish=1568186008497377000,duration=13768000,event=ensure_path_components[0Ktravis_time:start:049dc97e[0Ktravis_time:end:049dc97e:start=1568186008507360000,finish=1568186008515042000,duration=7682000,event=redefine_curl[0Ktravis_time:start:09a4ffe3[0Ktravis_time:end:09a4ffe3:start=1568186008527058000,finish=1568186008714051000,duration=186993000,event=nonblock_pipe[0Ktravis_time:start:139b3d10[0Ktravis_time:end:139b3d10:start=1568186008724034000,finish=1568186008732880000,duration=8846000,event=apt_get_update[0Ktravis_time:start:1728b55f[0Ktravis_time:end:1728b55f:start=1568186008743851000,finish=1568186008751674000,duration=7823000,event=deprecate_xcode_64[0Ktravis_time:start:2358c0e4[0Ktravis_time:end:2358c0e4:start=1568186008761654000,finish=1568186008773303000,duration=11649000,event=update_heroku[0Ktravis_time:start:00deab60[0Ktravis_time:end:00deab60:start=1568186008783664000,finish=1568186008791630000,duration=7966000,event=shell_session_update[0Ktravis_time:start:0bec3730[0Ktravis_time:end:0bec3730:start=1568186008802889000,finish=1568186008811289000,duration=8400000,event=maven_central_mirror[0Ktravis_time:start:0947ac0c[0Ktravis_time:end:0947ac0c:start=1568186008822542000,finish=1568186008830630000,duration=8088000,event=fix_ps4[0Ktravis_time:start:184fa82f[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:0172d2f2[0K$ git clone --depth=50 --branch=master https://github.com/irccloud/irccloud-desktop.git irccloud/irccloud-desktop
+Cloning into 'irccloud/irccloud-desktop'...
+travis_time:end:0172d2f2:start=1568186008851186000,finish=1568186009415398000,duration=564212000,event=checkout[0K$ cd irccloud/irccloud-desktop
+$ git checkout -qf 214f8350bba24438467c3036ab58a4e64b8fe9fe
+travis_fold:end:git.checkout[0K
+travis_time:end:0172d2f2:start=1568186008851186000,finish=1568186009486600000,duration=635414000,event=checkout[0Ktravis_time:start:0010391a[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export GH_TOKEN=[secure]
+$ export encrypted_fc666da9e2f5_key=[secure]
+$ export encrypted_fc666da9e2f5_iv=[secure]
+
+travis_time:end:0010391a:start=1568186009499482000,finish=1568186009523209000,duration=23727000,event=env[0Ktravis_fold:start:nvm.install[0Ktravis_time:start:1478f85c[0K$ nvm install 8
+Downloading and installing node v8.16.1...
+Downloading https://nodejs.org/dist/v8.16.1/node-v8.16.1-darwin-x64.tar.xz...
+Computing checksum with sha256sum
+Checksums matched!
+Now using node v8.16.1 (npm v6.4.1)
+travis_time:end:1478f85c:start=1568186010602745000,finish=1568186017792378000,duration=7189633000,event=setup[0Ktravis_fold:end:nvm.install[0K
+travis_fold:start:install.yarn[0K[32;1mInstalling yarn[0m
+travis_time:start:0bc958a2[0K$ curl -o- -L https://yarnpkg.com/install.sh | bash
+[37mInstalling Yarn![0m
+[36m> Downloading tarball...[0m
+
+[1/2]: https://yarnpkg.com/latest.tar.gz --> /var/folders/17/5mc7816d3mndxjqgplq6057w0000gn/T/yarn.tar.gz.XXXXXXXXXX.8gjdGDnC
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    93  100    93    0     0   1219      0 --:--:-- --:--:-- --:--:--  1223
+100   609    0   609    0     0   2563      0 --:--:-- --:--:-- --:--:--  2563
+  0 1211k    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 1211k  100 1211k    0     0  2312k      0 --:--:-- --:--:-- --:--:-- 9692k
+
+[2/2]: https://yarnpkg.com/latest.tar.gz.asc --> /var/folders/17/5mc7816d3mndxjqgplq6057w0000gn/T/yarn.tar.gz.XXXXXXXXXX.8gjdGDnC.asc
+100    97  100    97    0     0   3581      0 --:--:-- --:--:-- --:--:--  3581
+100   613    0   613    0     0   4868      0 --:--:-- --:--:-- --:--:--  4868
+100   832  100   832    0     0   5525      0 --:--:-- --:--:-- --:--:--  5525
+[36m> Verifying integrity...[0m
+gpg: key 1646B01B86E50310: public key "Yarn Packaging <yarn@dan.cx>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+gpg: Signature made Fri Jul 12 14:31:25 2019 GMT
+gpg:                using RSA key 6D98490C6F1ACDDD448E45954F77679369475BAA
+gpg: Good signature from "Yarn Packaging <yarn@dan.cx>" [unknown]
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 72EC F46A 56B4 AD39 C907  BBB7 1646 B01B 86E5 0310
+     Subkey fingerprint: 6D98 490C 6F1A CDDD 448E  4595 4F77 6793 6947 5BAA
+[32m> GPG signature looks good[0m
+[36m> Extracting to ~/.yarn...[0m
+[36m> Adding to $PATH...[0m
+[36m> We've added the following to your /Users/travis/.bashrc
+> If this isn't the profile of your current shell then please add the following to your correct profile:
+   
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+[0m
+[32m> Successfully installed Yarn 1.17.3! Please open another terminal where the `yarn` command will now be available.[0m
+travis_time:end:0bc958a2:start=1568186018491261000,finish=1568186020340411000,duration=1849150000,event=setup[0K[32;1mSetting up $PATH[0m
+$ export PATH=${TRAVIS_HOME}/.yarn/bin:$PATH
+travis_fold:end:install.yarn[0Ktravis_fold:start:cache.1[0KSetting up build cache
+$ export CASHER_DIR=${TRAVIS_HOME}/.casher
+travis_time:start:150db850[0K$ Installing caching utilities
+travis_time:end:150db850:start=1568186022093166000,finish=1568186022229502000,duration=136336000,event=setup_casher[0Ktravis_time:start:25f3cfb0[0Ktravis_time:end:25f3cfb0:start=1568186022244862000,finish=1568186022254287000,duration=9425000,event=setup_casher[0Ktravis_time:start:07b4239c[0Kattempting to download cache archive[0m
+[32;1mfetching master/cache-osx-xcode11-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855--node-8.tgz[0m
+[32;1mfound cache[0m
+travis_time:end:07b4239c:start=1568186022265130000,finish=1568186028373066000,duration=6107936000,event=setup_casher[0Ktravis_fold:end:cache.1[0K
+travis_fold:start:cache.npm[0K
+travis_time:start:3198fa7c[0Ktravis_time:end:3198fa7c:start=1568186028694941000,finish=1568186028704300000,duration=9359000,event=setup_cache[0Ktravis_time:start:0defe353[0Kadding /Users/travis/build/irccloud/irccloud-desktop/node_modules to cache[0m
+creating directory /Users/travis/build/irccloud/irccloud-desktop/node_modules[0m
+travis_time:end:0defe353:start=1568186028715350000,finish=1568186044271645000,duration=15556295000,event=setup_cache[0Ktravis_fold:end:cache.npm[0K$ node --version
+v8.16.1
+$ npm --version
+6.4.1
+$ nvm --version
+0.34.0
+$ yarn --version
+1.17.3
+
+travis_fold:start:before_install.1[0Ktravis_time:start:14511379[0K$ openssl aes-256-cbc -K $encrypted_fc666da9e2f5_key -iv $encrypted_fc666da9e2f5_iv -in .travis.env.enc -out .travis.env -d; source .travis.env;
+travis_time:end:14511379:start=1568186047636146000,finish=1568186047673072000,duration=36926000,event=before_install[0Ktravis_fold:end:before_install.1[0Ktravis_fold:start:before_install.2[0Ktravis_time:start:01d03247[0K$ node --version
+v8.16.1
+travis_time:end:01d03247:start=1568186047687408000,finish=1568186047707853000,duration=20445000,event=before_install[0Ktravis_fold:end:before_install.2[0Ktravis_fold:start:before_install.3[0Ktravis_time:start:055a8014[0K$ yarn --version
+1.17.3
+travis_time:end:055a8014:start=1568186047720780000,finish=1568186048035982000,duration=315202000,event=before_install[0Ktravis_fold:end:before_install.3[0Ktravis_fold:start:install[0Ktravis_time:start:17c41b6c[0K$ yarn
+yarn install v1.17.3
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+error /Users/travis/build/irccloud/irccloud-desktop/node_modules/electron: Command failed.
+Exit code: 1
+Command: node install.js
+Arguments: 
+Directory: /Users/travis/build/irccloud/irccloud-desktop/node_modules/electron
+Output:
+/Users/travis/build/irccloud/irccloud-desktop/node_modules/electron/install.js:49
+  throw err
+  ^
+
+Error: EEXIST: file already exists, symlink 'Versions/Current/Electron Framework' -> '/Users/travis/build/irccloud/irccloud-desktop/node_modules/electron/dist/Electron.app/Contents/Frameworks/Electron Framework.framework/Electron Framework'
+info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.
+travis_time:end:17c41b6c:start=1568186048048728000,finish=1568186098835983000,duration=50787255000,event=install[0K[31;1mThe command "yarn" failed and exited with 1 during .[0m
+
+Your build has been stopped.

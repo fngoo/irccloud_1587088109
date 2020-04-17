@@ -1,0 +1,1880 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 48bd07cd-4217-4ead-954b-e96b06b28cc8@1.worker-org-7d4f67b9bb-4hs4j.gce-production-1
+version: v6.2.1 https://github.com/travis-ci/worker/tree/4e3246c044eb4915c2378ffacd0b3d3ed0136bba
+instance: travis-job-8fe916fa-3e4c-4a6c-b56b-2fd0ce243c63 travis-ci-sardonyx-xenial-1553530528-f909ac5 (via amqp)
+startup: 6.628315999s
+travis_fold:end:worker_info[0Ktravis_time:start:0a86dae8[0Ktravis_time:end:0a86dae8:start=1568185439868614768,finish=1568185440084461813,duration=215847045,event=no_world_writable_dirs[0Ktravis_time:start:17d7657c[0Ktravis_time:end:17d7657c:start=1568185440088632393,finish=1568185440092902219,duration=4269826,event=setup_filter[0Ktravis_time:start:20eaae08[0Ktravis_time:end:20eaae08:start=1568185440099567141,finish=1568185440101971521,duration=2404380,event=check_unsupported[0Ktravis_time:start:09dc1318[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: node_js
+Build group: stable
+Build dist: xenial
+Build id: 583519132
+Job id: 583519134
+Runtime kernel version: 4.15.0-1028-gcp
+travis-build version: c0a4d3743
+[34m[1mBuild image provisioning date and time[0m
+Mon Mar 25 16:43:24 UTC 2019
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 16.04.6 LTS
+Release:	16.04
+Codename:	xenial
+[34m[1mSystemd Version[0m
+systemd 229
+[34m[1mCookbooks Version[0m
+42e42e4 https://github.com/travis-ci/travis-cookbooks/tree/42e42e4
+[34m[1mgit version[0m
+git version 2.21.0
+[34m[1mbash version[0m
+GNU bash, version 4.3.48(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 5.4.0-6ubuntu1~16.04.11) 5.4.0 20160609
+[34m[1mdocker version[0m
+Client:
+ Version:           18.06.0-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        0ffa825
+ Built:             Wed Jul 18 19:11:02 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server:
+ Engine:
+  Version:          18.06.0-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       0ffa825
+  Built:            Wed Jul 18 19:09:05 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.6.0
+[34m[1mshfmt version[0m
+v2.6.3
+[34m[1mccache version[0m
+3.2.4
+[34m[1mcmake version[0m
+cmake version 3.12.4
+[34m[1mheroku version[0m
+heroku/7.22.7 linux-x64 node-v11.10.1
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.8.9-9 Q16 x86_64 2018-09-28 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 4.8
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.25, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.2g  1 Mar 2016
+[34m[1mpacker version[0m
+1.3.3
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 10.7 (Ubuntu 10.7-1.pgdg16.04+1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+[34m[1msudo version[0m
+1.8.16
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:44:48)
+[34m[1miptables version[0m
+iptables v1.6.0
+[34m[1mcurl version[0m
+curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.17.1 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.1  protocol version 31
+[34m[1mgimme version[0m
+v1.5.3
+[34m[1mnvm version[0m
+0.34.0
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.86
+[34m[1mphpenv version[0m
+rbenv 1.1.2
+[34m[1mrvm version[0m
+rvm 1.29.7 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.5.3p105 (2018-10-18 revision 65156) [x86_64-linux]
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 63.0.1
+[34m[1mMongoDB version[0m
+MongoDB 4.0.7
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.4.21
+9.5.16
+9.6.12
+[34m[1mRedis version[0m
+redis-server 5.0.4
+[34m[1mPre-installed Go versions[0m
+1.11.1
+[34m[1mmvn version[0m
+Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T18:41:47Z)
+[34m[1mgradle version[0m
+Gradle 4.10.2!
+[34m[1mlein version[0m
+Leiningen 2.9.1 on Java 11.0.2 OpenJDK 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v10.15.3
+v11.0.0
+v4.9.1
+v6.17.0
+v8.12.0
+v8.15.1
+v8.9
+[34m[1mphpenv versions[0m
+  system
+  5.6
+  5.6.40
+  7.1
+  7.1.27
+  7.2
+* 7.2.15 (set by /home/travis/.phpenv/version)
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.8.4 2019-02-11 10:52:10
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.3.8
+ruby-2.4.5
+ruby-2.5.3
+travis_fold:end:system_info[0K
+travis_time:end:09dc1318:start=1568185440105315768,finish=1568185440112450010,duration=7134242,event=show_system_info[0Ktravis_time:start:03dee238[0Ktravis_time:end:03dee238:start=1568185440115741431,finish=1568185440129972035,duration=14230604,event=rm_riak_source[0Ktravis_time:start:000f22b6[0Ktravis_time:end:000f22b6:start=1568185440133294197,finish=1568185440139364648,duration=6070451,event=fix_rwky_redis[0Ktravis_time:start:2e2d04c8[0Ktravis_time:end:2e2d04c8:start=1568185440142859094,finish=1568185440499788734,duration=356929640,event=wait_for_network[0Ktravis_time:start:2abc2c32[0Ktravis_time:end:2abc2c32:start=1568185440503875006,finish=1568185440874438941,duration=370563935,event=update_apt_keys[0Ktravis_time:start:291e0d38[0Ktravis_time:end:291e0d38:start=1568185440881017435,finish=1568185440950481430,duration=69463995,event=fix_hhvm_source[0Ktravis_time:start:0ecb8c30[0Ktravis_time:end:0ecb8c30:start=1568185440956084253,finish=1568185440959447779,duration=3363526,event=update_mongo_arch[0Ktravis_time:start:03e4f918[0Ktravis_time:end:03e4f918:start=1568185440964799813,finish=1568185441022357319,duration=57557506,event=fix_sudo_enabled_trusty[0Ktravis_time:start:0941984b[0Ktravis_time:end:0941984b:start=1568185441027783259,finish=1568185441031351244,duration=3567985,event=update_glibc[0Ktravis_time:start:1241478e[0Ktravis_time:end:1241478e:start=1568185441036714268,finish=1568185441046773266,duration=10058998,event=clean_up_path[0Ktravis_time:start:25b527e0[0Ktravis_time:end:25b527e0:start=1568185441052167901,finish=1568185441062821177,duration=10653276,event=fix_resolv_conf[0Ktravis_time:start:0848d782[0Ktravis_time:end:0848d782:start=1568185441068916246,finish=1568185441080755590,duration=11839344,event=fix_etc_hosts[0Ktravis_time:start:13feaec4[0Ktravis_time:end:13feaec4:start=1568185441086410603,finish=1568185441098994019,duration=12583416,event=fix_mvn_settings_xml[0Ktravis_time:start:1578f87e[0Ktravis_time:end:1578f87e:start=1568185441104486824,finish=1568185441116337559,duration=11850735,event=no_ipv6_localhost[0Ktravis_time:start:0e39e218[0Ktravis_time:end:0e39e218:start=1568185441120820330,finish=1568185441123471866,duration=2651536,event=fix_etc_mavenrc[0Ktravis_time:start:02eced8e[0Ktravis_time:end:02eced8e:start=1568185441128812574,finish=1568185441132554123,duration=3741549,event=fix_wwdr_certificate[0Ktravis_time:start:25670cf8[0Ktravis_time:end:25670cf8:start=1568185441138493228,finish=1568185441169796572,duration=31303344,event=put_localhost_first[0Ktravis_time:start:0037c428[0Ktravis_time:end:0037c428:start=1568185441176082063,finish=1568185441179869172,duration=3787109,event=home_paths[0Ktravis_time:start:2d152a51[0Ktravis_time:end:2d152a51:start=1568185441185045035,finish=1568185441206182643,duration=21137608,event=disable_initramfs[0Ktravis_time:start:2a1d34ee[0Ktravis_time:end:2a1d34ee:start=1568185441211686692,finish=1568185441616860895,duration=405174203,event=disable_ssh_roaming[0Ktravis_time:start:28dd20d9[0Ktravis_time:end:28dd20d9:start=1568185441621914748,finish=1568185441627445599,duration=5530851,event=debug_tools[0Ktravis_time:start:0566151c[0Ktravis_time:end:0566151c:start=1568185441631716523,finish=1568185441635878626,duration=4162103,event=uninstall_oclint[0Ktravis_time:start:09aa1f84[0Ktravis_time:end:09aa1f84:start=1568185441641767631,finish=1568185441646870599,duration=5102968,event=rvm_use[0Ktravis_time:start:00b77073[0Ktravis_time:end:00b77073:start=1568185441653176630,finish=1568185441665501506,duration=12324876,event=rm_etc_boto_cfg[0Ktravis_time:start:06c64170[0Ktravis_time:end:06c64170:start=1568185441671639991,finish=1568185441675202610,duration=3562619,event=rm_oraclejdk8_symlink[0Ktravis_time:start:0244b224[0Ktravis_time:end:0244b224:start=1568185441682636306,finish=1568185441818486748,duration=135850442,event=enable_i386[0Ktravis_time:start:16d01f57[0Ktravis_time:end:16d01f57:start=1568185441824755959,finish=1568185441831688577,duration=6932618,event=update_rubygems[0Ktravis_time:start:0dc2ac7e[0Ktravis_time:end:0dc2ac7e:start=1568185441838844372,finish=1568185442863438070,duration=1024593698,event=ensure_path_components[0Ktravis_time:start:0099dae4[0Ktravis_time:end:0099dae4:start=1568185442869614745,finish=1568185442873108608,duration=3493863,event=redefine_curl[0Ktravis_time:start:22dd41a0[0Ktravis_time:end:22dd41a0:start=1568185442878118715,finish=1568185443001807498,duration=123688783,event=nonblock_pipe[0Ktravis_time:start:00157712[0Ktravis_time:end:00157712:start=1568185443007234541,finish=1568185443083964343,duration=76729802,event=apt_get_update[0Ktravis_time:start:0746bdc4[0Ktravis_time:end:0746bdc4:start=1568185443089272204,finish=1568185443092535365,duration=3263161,event=deprecate_xcode_64[0Ktravis_time:start:14960844[0Ktravis_time:end:14960844:start=1568185443096855298,finish=1568185446294705083,duration=3197849785,event=update_heroku[0Ktravis_time:start:1e7a4b94[0Ktravis_time:end:1e7a4b94:start=1568185446300338152,finish=1568185446302957908,duration=2619756,event=shell_session_update[0Ktravis_time:start:162df2da[0Ktravis_fold:start:docker_mtu[0Ktravis_fold:end:docker_mtu[0Ktravis_time:end:162df2da:start=1568185446308328142,finish=1568185448621393469,duration=2313065327,event=set_docker_mtu[0Ktravis_time:start:0cb927ca[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_time:end:0cb927ca:start=1568185448626066926,finish=1568185448718598280,duration=92531354,event=resolvconf[0Ktravis_time:start:15739140[0Ktravis_time:end:15739140:start=1568185448731649966,finish=1568185448905023178,duration=173373212,event=maven_central_mirror[0Ktravis_fold:start:apt[0Ktravis_time:start:00c35640[0K$ travis_apt_get_update
+travis_time:end:00c35640:start=1568185448912543265,finish=1568185459820732902,duration=10908189637,event=prepare[0K[33;1mInstalling APT Packages[0m
+travis_time:start:069ef29b[0K$ sudo -E apt-get -yq --no-install-suggests --no-install-recommends $(travis_apt_get_options) install libopenjp2-tools
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libopenjp2-7
+The following NEW packages will be installed:
+  libopenjp2-7 libopenjp2-tools
+0 upgraded, 2 newly installed, 0 to remove and 202 not upgraded.
+Need to get 191 kB of archives.
+After this operation, 684 kB of additional disk space will be used.
+Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libopenjp2-7 amd64 2.1.2-1.1+deb9u3build0.16.04.1 [112 kB]
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libopenjp2-tools amd64 2.1.2-1.1+deb9u3build0.16.04.1 [79.1 kB]
+Fetched 191 kB in 0s (1,155 kB/s)
+Selecting previously unselected package libopenjp2-7:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 124189 files and directories currently installed.)
+Preparing to unpack .../libopenjp2-7_2.1.2-1.1+deb9u3build0.16.04.1_amd64.deb ...
+Unpacking libopenjp2-7:amd64 (2.1.2-1.1+deb9u3build0.16.04.1) ...
+Selecting previously unselected package libopenjp2-tools.
+Preparing to unpack .../libopenjp2-tools_2.1.2-1.1+deb9u3build0.16.04.1_amd64.deb ...
+Unpacking libopenjp2-tools (2.1.2-1.1+deb9u3build0.16.04.1) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+Processing triggers for man-db (2.7.5-1) ...
+Setting up libopenjp2-7:amd64 (2.1.2-1.1+deb9u3build0.16.04.1) ...
+Setting up libopenjp2-tools (2.1.2-1.1+deb9u3build0.16.04.1) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+travis_time:end:069ef29b:start=1568185459830247966,finish=1568185464728320154,duration=4898072188,event=prepare[0Ktravis_fold:end:apt[0Ktravis_time:start:16e377eb[0Ktravis_time:end:16e377eb:start=1568185464735433584,finish=1568185464739111117,duration=3677533,event=fix_ps4[0Ktravis_time:start:23defd14[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:0e06bcc8[0K$ git clone --depth=50 --branch=master https://github.com/irccloud/irccloud-desktop.git irccloud/irccloud-desktop
+Cloning into 'irccloud/irccloud-desktop'...
+travis_time:end:0e06bcc8:start=1568185464753625328,finish=1568185465565514758,duration=811889430,event=checkout[0K$ cd irccloud/irccloud-desktop
+$ git checkout -qf 214f8350bba24438467c3036ab58a4e64b8fe9fe
+travis_fold:end:git.checkout[0K
+travis_time:end:0e06bcc8:start=1568185464753625328,finish=1568185465586180950,duration=832555622,event=checkout[0Ktravis_time:start:20e50024[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export GH_TOKEN=[secure]
+$ export encrypted_fc666da9e2f5_key=[secure]
+$ export encrypted_fc666da9e2f5_iv=[secure]
+
+travis_time:end:20e50024:start=1568185465594092194,finish=1568185465609761041,duration=15668847,event=env[0Ktravis_fold:start:nvm.install[0Ktravis_time:start:3d82bc00[0K$ nvm install 8
+Downloading and installing node v8.16.1...
+Downloading https://nodejs.org/dist/v8.16.1/node-v8.16.1-linux-x64.tar.xz...
+Computing checksum with sha256sum
+Checksums matched!
+Now using node v8.16.1 (npm v6.4.1)
+travis_time:end:3d82bc00:start=1568185466827047665,finish=1568185470161408315,duration=3334360650,event=setup[0Ktravis_fold:end:nvm.install[0K
+travis_fold:start:cache.1[0KSetting up build cache
+$ export CASHER_DIR=${TRAVIS_HOME}/.casher
+travis_time:start:2a49b608[0K$ Installing caching utilities
+travis_time:end:2a49b608:start=1568185471610412203,finish=1568185471887352871,duration=276940668,event=setup_casher[0Ktravis_time:start:02b309e6[0Ktravis_time:end:02b309e6:start=1568185471895031569,finish=1568185471899620446,duration=4588877,event=setup_casher[0Ktravis_time:start:388f8f42[0Kattempting to download cache archive[0m
+[32;1mfetching master/cache-linux-xenial-xcode11-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855--node-8.tgz[0m
+[32;1mfound cache[0m
+travis_time:end:388f8f42:start=1568185471905659973,finish=1568185474138490315,duration=2232830342,event=setup_casher[0Ktravis_fold:end:cache.1[0K
+travis_fold:start:cache.npm[0K
+travis_time:start:06a6f42c[0Ktravis_time:end:06a6f42c:start=1568185474333022727,finish=1568185474337649560,duration=4626833,event=setup_cache[0Ktravis_time:start:0e443f7d[0Kadding /home/travis/build/irccloud/irccloud-desktop/node_modules to cache[0m
+creating directory /home/travis/build/irccloud/irccloud-desktop/node_modules[0m
+travis_time:end:0e443f7d:start=1568185474346024330,finish=1568185480215461621,duration=5869437291,event=setup_cache[0Ktravis_fold:end:cache.npm[0K$ node --version
+v8.16.1
+$ npm --version
+6.4.1
+$ nvm --version
+0.34.0
+$ yarn --version
+1.15.2
+
+travis_fold:start:before_install.1[0Ktravis_time:start:047bf336[0K$ openssl aes-256-cbc -K $encrypted_fc666da9e2f5_key -iv $encrypted_fc666da9e2f5_iv -in .travis.env.enc -out .travis.env -d; source .travis.env;
+travis_time:end:047bf336:start=1568185481826368590,finish=1568185481844143665,duration=17775075,event=before_install[0Ktravis_fold:end:before_install.1[0Ktravis_fold:start:before_install.2[0Ktravis_time:start:2a6319d2[0K$ node --version
+v8.16.1
+travis_time:end:2a6319d2:start=1568185481853488068,finish=1568185481859926285,duration=6438217,event=before_install[0Ktravis_fold:end:before_install.2[0Ktravis_fold:start:before_install.3[0Ktravis_time:start:124ae3fa[0K$ yarn --version
+1.15.2
+travis_time:end:124ae3fa:start=1568185481867516619,finish=1568185482078654555,duration=211137936,event=before_install[0Ktravis_fold:end:before_install.3[0Ktravis_fold:start:install[0Ktravis_time:start:0a418096[0K$ yarn
+yarn install v1.15.2
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+$ electron-builder install-app-deps
+  • electron-builder  version=21.2.0
+  • loaded configuration  file=/home/travis/build/irccloud/irccloud-desktop/electron-builder.json
+  • rebuilding native dependencies  dependencies=spellchecker@3.7.0 platform=linux arch=x64
+  • rebuilding native dependency  name=spellchecker version=3.7.0
+$ yarn run snyk-protect
+yarn run v1.15.2
+$ snyk protect
+Successfully applied Snyk patches
+
+Done in 3.66s.
+Done in 48.45s.
+travis_time:end:0a418096:start=1568185482085493979,finish=1568185530767877931,duration=48682383952,event=install[0Ktravis_fold:end:install[0Ktravis_fold:start:before_script[0Ktravis_time:start:17f752ee[0K$ yarn list
+yarn list v1.15.2
+├─ @babel/code-frame@7.5.5
+│  └─ @babel/highlight@^7.0.0
+├─ @babel/highlight@7.5.0
+│  ├─ chalk@^2.0.0
+│  ├─ esutils@^2.0.2
+│  └─ js-tokens@^4.0.0
+├─ @develar/schema-utils@2.1.0
+│  ├─ ajv-keywords@^3.1.0
+│  └─ ajv@^6.1.0
+├─ @sindresorhus/is@0.14.0
+├─ @snyk/cli-interface@2.0.3
+│  └─ tslib@^1.9.3
+├─ @snyk/composer-lockfile-parser@1.0.3
+│  └─ lodash@^4.17.13
+├─ @snyk/dep-graph@1.12.0
+│  ├─ graphlib@^2.1.5
+│  ├─ lodash@^4.7.14
+│  ├─ object-hash@^1.3.1
+│  ├─ semver@^6.0.0
+│  ├─ source-map-support@^0.5.11
+│  └─ tslib@^1.9.3
+├─ @snyk/gemfile@1.2.0
+├─ @szmarczak/http-timer@1.1.2
+│  └─ defer-to-connect@^1.0.1
+├─ @types/agent-base@4.2.0
+│  ├─ @types/events@*
+│  └─ @types/node@*
+├─ @types/bunyan@1.8.6
+│  └─ @types/node@*
+├─ @types/debug@4.1.4
+├─ @types/events@3.0.0
+├─ @types/node@12.6.8
+├─ @types/restify@4.3.6
+│  ├─ @types/bunyan@*
+│  └─ @types/node@*
+├─ @types/semver@6.0.1
+├─ @types/xml2js@0.4.3
+│  ├─ @types/events@*
+│  └─ @types/node@*
+├─ @yarnpkg/lockfile@1.1.0
+├─ 7zip-bin@5.0.3
+├─ abbrev@1.1.1
+├─ accessibility-developer-tools@2.12.0
+├─ acorn-jsx@5.0.2
+├─ acorn@7.0.0
+├─ agent-base@4.3.0
+│  └─ es6-promisify@^5.0.0
+├─ ajv-keywords@3.4.1
+├─ ajv@6.10.2
+│  ├─ fast-deep-equal@^2.0.1
+│  ├─ fast-json-stable-stringify@^2.0.0
+│  ├─ json-schema-traverse@^0.4.1
+│  └─ uri-js@^4.2.2
+├─ ansi-align@2.0.0
+│  ├─ ansi-regex@3.0.0
+│  ├─ string-width@^2.0.0
+│  ├─ string-width@2.1.1
+│  │  ├─ is-fullwidth-code-point@^2.0.0
+│  │  └─ strip-ansi@^4.0.0
+│  └─ strip-ansi@4.0.0
+│     └─ ansi-regex@^3.0.0
+├─ ansi-escapes@3.2.0
+├─ ansi-regex@4.1.0
+├─ ansi-styles@3.2.1
+│  └─ color-convert@^1.9.0
+├─ ansicolors@0.3.2
+├─ any-promise@1.3.0
+├─ app-builder-bin@3.4.3
+├─ app-builder-lib@21.2.0
+│  ├─ @develar/schema-utils@~2.1.0
+│  ├─ 7zip-bin@~5.0.3
+│  ├─ async-exit-hook@^2.0.1
+│  ├─ bluebird-lst@^1.0.9
+│  ├─ builder-util-runtime@8.3.0
+│  ├─ builder-util@21.2.0
+│  ├─ chromium-pickle-js@^0.2.0
+│  ├─ debug@^4.1.1
+│  ├─ debug@4.1.1
+│  │  └─ ms@^2.1.1
+│  ├─ ejs@^2.6.2
+│  ├─ electron-publish@21.2.0
+│  ├─ fs-extra@^8.1.0
+│  ├─ hosted-git-info@^2.7.1
+│  ├─ is-ci@^2.0.0
+│  ├─ isbinaryfile@^4.0.2
+│  ├─ js-yaml@^3.13.1
+│  ├─ lazy-val@^1.0.4
+│  ├─ minimatch@^3.0.4
+│  ├─ ms@2.1.2
+│  ├─ normalize-package-data@^2.5.0
+│  ├─ read-config-file@5.0.0
+│  ├─ sanitize-filename@^1.6.2
+│  ├─ semver@^6.3.0
+│  ├─ semver@6.3.0
+│  └─ temp-file@^3.3.4
+├─ archy@1.0.0
+├─ argparse@1.0.10
+│  └─ sprintf-js@~1.0.2
+├─ array-find-index@1.0.2
+├─ asap@2.0.6
+├─ asn1@0.2.4
+│  └─ safer-buffer@~2.1.0
+├─ assert-plus@1.0.0
+├─ ast-types@0.13.2
+├─ astral-regex@1.0.0
+├─ async-exit-hook@2.0.1
+├─ async@2.6.1
+│  └─ lodash@^4.17.10
+├─ asynckit@0.4.0
+├─ aws-sign2@0.7.0
+├─ aws4@1.8.0
+├─ balanced-match@1.0.0
+├─ bcrypt-pbkdf@1.0.2
+│  └─ tweetnacl@^0.14.3
+├─ bluebird-lst@1.0.9
+│  └─ bluebird@^3.5.5
+├─ bluebird@3.5.5
+├─ boxen@1.3.0
+│  ├─ ansi-align@^2.0.0
+│  ├─ ansi-regex@3.0.0
+│  ├─ camelcase@^4.0.0
+│  ├─ camelcase@4.1.0
+│  ├─ chalk@^2.0.1
+│  ├─ cli-boxes@^1.0.0
+│  ├─ string-width@^2.0.0
+│  ├─ string-width@2.1.1
+│  │  ├─ is-fullwidth-code-point@^2.0.0
+│  │  └─ strip-ansi@^4.0.0
+│  ├─ strip-ansi@4.0.0
+│  │  └─ ansi-regex@^3.0.0
+│  ├─ term-size@^1.2.0
+│  └─ widest-line@^2.0.0
+├─ brace-expansion@1.1.11
+│  ├─ balanced-match@^1.0.0
+│  └─ concat-map@0.0.1
+├─ buffer-from@1.1.1
+├─ builder-util-runtime@8.3.0
+│  ├─ debug@^4.1.1
+│  ├─ debug@4.1.1
+│  │  └─ ms@^2.1.1
+│  ├─ ms@2.1.2
+│  └─ sax@^1.2.4
+├─ builder-util@21.2.0
+│  ├─ @types/debug@^4.1.4
+│  ├─ 7zip-bin@~5.0.3
+│  ├─ app-builder-bin@3.4.3
+│  ├─ bluebird-lst@^1.0.9
+│  ├─ builder-util-runtime@8.3.0
+│  ├─ chalk@^2.4.2
+│  ├─ debug@^4.1.1
+│  ├─ debug@4.1.1
+│  │  └─ ms@^2.1.1
+│  ├─ fs-extra@^8.1.0
+│  ├─ is-ci@^2.0.0
+│  ├─ js-yaml@^3.13.1
+│  ├─ ms@2.1.2
+│  ├─ source-map-support@^0.5.13
+│  ├─ source-map-support@0.5.13
+│  │  ├─ buffer-from@^1.0.0
+│  │  └─ source-map@^0.6.0
+│  ├─ stat-mode@^0.3.0
+│  └─ temp-file@^3.3.4
+├─ bytes@3.1.0
+├─ cacheable-request@6.1.0
+│  ├─ clone-response@^1.0.2
+│  ├─ get-stream@^5.1.0
+│  ├─ get-stream@5.1.0
+│  │  └─ pump@^3.0.0
+│  ├─ http-cache-semantics@^4.0.0
+│  ├─ keyv@^3.0.0
+│  ├─ lowercase-keys@^2.0.0
+│  ├─ lowercase-keys@2.0.0
+│  ├─ normalize-url@^4.1.0
+│  ├─ normalize-url@4.3.0
+│  └─ responselike@^1.0.2
+├─ callsites@3.1.0
+├─ camelcase-keys@2.1.0
+│  ├─ camelcase@^2.0.0
+│  └─ map-obj@^1.0.0
+├─ camelcase@2.1.1
+├─ capture-stack-trace@1.0.1
+├─ caseless@0.12.0
+├─ chalk@2.4.2
+│  ├─ ansi-styles@^3.2.1
+│  ├─ escape-string-regexp@^1.0.5
+│  └─ supports-color@^5.3.0
+├─ chardet@0.7.0
+├─ charenc@0.0.2
+├─ chromium-pickle-js@0.2.0
+├─ ci-info@2.0.0
+├─ cli-boxes@1.0.0
+├─ cli-cursor@2.1.0
+│  └─ restore-cursor@^2.0.0
+├─ cli-width@2.2.0
+├─ cliui@5.0.0
+│  ├─ string-width@^3.1.0
+│  ├─ strip-ansi@^5.2.0
+│  └─ wrap-ansi@^5.1.0
+├─ clone-deep@0.3.0
+│  ├─ for-own@^1.0.0
+│  ├─ is-plain-object@^2.0.1
+│  ├─ kind-of@^3.2.2
+│  └─ shallow-clone@^0.1.2
+├─ clone-response@1.0.2
+│  └─ mimic-response@^1.0.0
+├─ co@4.6.0
+├─ code-point-at@1.1.0
+├─ color-convert@1.9.3
+│  └─ color-name@1.1.3
+├─ color-name@1.1.3
+├─ combined-stream@1.0.8
+│  └─ delayed-stream@~1.0.0
+├─ concat-map@0.0.1
+├─ concat-stream@1.6.2
+│  ├─ buffer-from@^1.0.0
+│  ├─ inherits@^2.0.3
+│  ├─ isarray@1.0.0
+│  ├─ readable-stream@^2.2.2
+│  ├─ readable-stream@2.3.6
+│  │  ├─ core-util-is@~1.0.0
+│  │  ├─ inherits@~2.0.3
+│  │  ├─ isarray@~1.0.0
+│  │  ├─ process-nextick-args@~2.0.0
+│  │  ├─ safe-buffer@~5.1.1
+│  │  ├─ string_decoder@~1.1.1
+│  │  └─ util-deprecate@~1.0.1
+│  ├─ safe-buffer@5.1.2
+│  ├─ string_decoder@1.1.1
+│  │  └─ safe-buffer@~5.1.0
+│  └─ typedarray@^0.0.6
+├─ conf@6.0.0
+│  ├─ ajv@^6.10.2
+│  ├─ dot-prop@^5.0.0
+│  ├─ dot-prop@5.1.0
+│  │  └─ is-obj@^2.0.0
+│  ├─ env-paths@^2.2.0
+│  ├─ env-paths@2.2.0
+│  ├─ is-obj@2.0.0
+│  ├─ json-schema-typed@^7.0.1
+│  ├─ make-dir@^3.0.0
+│  ├─ make-dir@3.0.0
+│  │  └─ semver@^6.0.0
+│  ├─ onetime@^5.1.0
+│  ├─ pkg-up@^3.0.1
+│  ├─ semver@^6.2.0
+│  ├─ write-file-atomic@^3.0.0
+│  └─ write-file-atomic@3.0.0
+│     ├─ imurmurhash@^0.1.4
+│     ├─ is-typedarray@^1.0.0
+│     ├─ signal-exit@^3.0.2
+│     └─ typedarray-to-buffer@^3.1.5
+├─ configstore@3.1.2
+│  ├─ dot-prop@^4.1.0
+│  ├─ graceful-fs@^4.1.2
+│  ├─ make-dir@^1.0.0
+│  ├─ unique-string@^1.0.0
+│  ├─ write-file-atomic@^2.0.0
+│  └─ xdg-basedir@^3.0.0
+├─ cookie@0.3.1
+├─ core-util-is@1.0.2
+├─ create-error-class@3.0.2
+│  └─ capture-stack-trace@^1.0.0
+├─ cross-spawn@6.0.5
+│  ├─ nice-try@^1.0.4
+│  ├─ path-key@^2.0.1
+│  ├─ semver@^5.5.0
+│  ├─ semver@5.7.0
+│  ├─ shebang-command@^1.2.0
+│  └─ which@^1.2.9
+├─ crypt@0.0.2
+├─ crypto-random-string@1.0.0
+├─ currently-unhandled@0.4.1
+│  └─ array-find-index@^1.0.1
+├─ dashdash@1.14.1
+│  └─ assert-plus@^1.0.0
+├─ data-uri-to-buffer@2.0.1
+│  ├─ @types/node@^8.0.7
+│  └─ @types/node@8.10.51
+├─ debug@3.2.6
+│  ├─ ms@^2.1.1
+│  └─ ms@2.1.2
+├─ decamelize@1.2.0
+├─ decompress-response@3.3.0
+│  └─ mimic-response@^1.0.0
+├─ deep-extend@0.6.0
+├─ deep-is@0.1.3
+├─ defer-to-connect@1.0.2
+├─ degenerator@1.0.4
+│  ├─ ast-types@0.x.x
+│  ├─ escodegen@1.x.x
+│  └─ esprima@3.x.x
+├─ delayed-stream@1.0.0
+├─ depd@1.1.2
+├─ devtron@1.4.0
+│  ├─ accessibility-developer-tools@^2.11.0
+│  ├─ highlight.js@^9.3.0
+│  └─ humanize-plus@^1.8.1
+├─ diff@4.0.1
+├─ dmg-builder@21.2.0
+│  ├─ app-builder-lib@~21.2.0
+│  ├─ bluebird-lst@^1.0.9
+│  ├─ builder-util@~21.2.0
+│  ├─ fs-extra@^8.1.0
+│  ├─ iconv-lite@^0.5.0
+│  ├─ iconv-lite@0.5.0
+│  │  └─ safer-buffer@>= 2.1.2 < 3
+│  ├─ js-yaml@^3.13.1
+│  └─ sanitize-filename@^1.6.2
+├─ dockerfile-ast@0.0.16
+│  └─ vscode-languageserver-types@^3.5.0
+├─ doctrine@3.0.0
+│  └─ esutils@^2.0.2
+├─ dot-prop@4.2.0
+│  └─ is-obj@^1.0.0
+├─ dotenv-expand@5.1.0
+├─ dotenv@8.0.0
+├─ dotnet-deps-parser@4.5.0
+│  ├─ @types/xml2js@0.4.3
+│  ├─ lodash@^4.17.11
+│  ├��� source-map-support@^0.5.7
+│  ├─ tslib@^1.9.3
+│  └─ xml2js@0.4.19
+├─ duplexer3@0.1.4
+├─ ecc-jsbn@0.1.2
+│  ├─ jsbn@~0.1.0
+│  └─ safer-buffer@^2.1.0
+├─ ejs@2.6.2
+├─ electron-builder@21.2.0
+│  ├─ ansi-align@3.0.0
+│  │  └─ string-width@^3.0.0
+│  ├─ app-builder-lib@21.2.0
+│  ├─ bluebird-lst@^1.0.9
+│  ├─ boxen@3.2.0
+│  │  ├─ ansi-align@^3.0.0
+│  │  ├─ camelcase@^5.3.1
+│  │  ├─ chalk@^2.4.2
+│  │  ├─ cli-boxes@^2.2.0
+│  │  ├─ string-width@^3.0.0
+│  │  ├─ term-size@^1.2.0
+│  │  ├─ type-fest@^0.3.0
+│  │  └─ widest-line@^2.0.0
+│  ├─ builder-util-runtime@8.3.0
+│  ├─ builder-util@21.2.0
+│  ├─ camelcase@5.3.1
+│  ├─ chalk@^2.4.2
+│  ├─ cli-boxes@2.2.0
+│  ├─ configstore@4.0.0
+│  │  ├─ dot-prop@^4.1.0
+│  │  ├─ graceful-fs@^4.1.2
+│  │  ├─ make-dir@^1.0.0
+│  │  ├─ unique-string@^1.0.0
+│  │  ├─ write-file-atomic@^2.0.0
+│  │  └─ xdg-basedir@^3.0.0
+│  ├─ dmg-builder@21.2.0
+│  ├─ fs-extra@^8.1.0
+│  ├─ get-stream@4.1.0
+│  │  └─ pump@^3.0.0
+│  ├─ got@9.6.0
+│  │  ├─ @sindresorhus/is@^0.14.0
+│  │  ├─ @szmarczak/http-timer@^1.1.2
+│  │  ├─ cacheable-request@^6.0.0
+│  │  ├─ decompress-response@^3.3.0
+│  │  ├─ duplexer3@^0.1.4
+│  │  ├─ get-stream@^4.1.0
+│  │  ├─ lowercase-keys@^1.0.1
+│  │  ├─ mimic-response@^1.0.1
+│  │  ├─ p-cancelable@^1.0.0
+│  │  ├─ to-readable-stream@^1.0.0
+│  │  └─ url-parse-lax@^3.0.0
+│  ├─ is-ci@^2.0.0
+│  ├─ is-npm@3.0.0
+│  ├─ latest-version@5.1.0
+│  │  └─ package-json@^6.3.0
+│  ├─ lazy-val@^1.0.4
+│  ├─ package-json@6.4.0
+│  │  ├─ got@^9.6.0
+│  │  ├─ registry-auth-token@^3.4.0
+│  │  ├─ registry-url@^5.0.0
+│  │  └─ semver@^6.1.1
+│  ├─ prepend-http@2.0.0
+│  ├─ read-config-file@5.0.0
+│  ├─ registry-url@5.1.0
+│  │  └─ rc@^1.2.8
+│  ├─ sanitize-filename@^1.6.2
+│  ├─ type-fest@0.3.1
+│  ├─ update-notifier@^3.0.1
+│  ├─ update-notifier@3.0.1
+│  │  ├─ boxen@^3.0.0
+│  │  ├─ chalk@^2.0.1
+│  │  ├─ configstore@^4.0.0
+│  │  ├─ has-yarn@^2.1.0
+│  │  ├─ import-lazy@^2.1.0
+│  │  ├─ is-ci@^2.0.0
+│  │  ├─ is-installed-globally@^0.1.0
+│  │  ├─ is-npm@^3.0.0
+│  │  ├─ is-yarn-global@^0.3.0
+│  │  ├─ latest-version@^5.0.0
+│  │  ├─ semver-diff@^2.0.0
+│  │  └─ xdg-basedir@^3.0.0
+│  ├─ url-parse-lax@3.0.0
+│  │  └─ prepend-http@^2.0.0
+│  └─ yargs@^13.3.0
+├─ electron-dl@1.14.0
+│  ├─ ext-name@^5.0.0
+│  ├─ pupa@^1.0.0
+│  └─ unused-filename@^1.0.0
+├─ electron-download@4.1.1
+│  ├─ debug@^3.0.0
+│  ├─ env-paths@^1.0.0
+│  ├─ fs-extra@^4.0.1
+│  ├─ fs-extra@4.0.3
+│  │  ├─ graceful-fs@^4.1.2
+│  │  ├─ jsonfile@^4.0.0
+│  │  └─ universalify@^0.1.0
+│  ├─ minimist@^1.2.0
+│  ├─ nugget@^2.0.1
+│  ├─ path-exists@^3.0.0
+│  ├─ rc@^1.2.1
+│  ├��� semver@^5.4.1
+│  ├─ semver@5.7.0
+│  └─ sumchecker@^2.0.2
+├─ electron-is-dev@0.3.0
+├─ electron-is@3.0.0
+│  ├─ electron-is-dev@^0.3.0
+│  ├─ semver@^5.5.0
+│  └─ semver@5.7.0
+├─ electron-log@3.0.7
+├─ electron-publish@21.2.0
+│  ├─ bluebird-lst@^1.0.9
+│  ├─ builder-util-runtime@8.3.0
+│  ├─ builder-util@~21.2.0
+│  ├─ chalk@^2.4.2
+│  ├─ fs-extra@^8.1.0
+│  ├─ lazy-val@^1.0.4
+│  └─ mime@^2.4.4
+├─ electron-store@5.0.0
+│  ├─ conf@^6.0.0
+│  └─ type-fest@^0.7.1
+├─ electron-updater@4.1.2
+│  ├─ @types/semver@^6.0.1
+│  ├─ builder-util-runtime@8.3.0
+│  ├─ fs-extra@^8.1.0
+│  ├─ js-yaml@^3.13.1
+│  ├─ lazy-val@^1.0.4
+│  ├─ lodash.isequal@^4.5.0
+│  ├─ pako@^1.0.10
+│  └─ semver@^6.2.0
+├─ electron@6.0.7
+│  ├─ @types/node@^10.12.18
+│  ├─ @types/node@10.14.13
+│  ├─ electron-download@^4.1.0
+│  └─ extract-zip@^1.0.3
+├─ email-validator@2.0.4
+├─ emoji-regex@7.0.3
+├─ end-of-stream@1.4.1
+│  └─ once@^1.4.0
+├─ env-paths@1.0.0
+├─ error-ex@1.3.2
+│  └─ is-arrayish@^0.2.1
+├─ es6-promise@4.2.8
+├─ es6-promisify@5.0.0
+│  └─ es6-promise@^4.0.3
+├─ escape-string-regexp@1.0.5
+├─ escodegen@1.11.1
+│  ├─ esprima@^3.1.3
+│  ├─ estraverse@^4.2.0
+│  ├─ esutils@^2.0.2
+│  ├─ optionator@^0.8.1
+│  └─ source-map@~0.6.1
+├─ eslint-scope@5.0.0
+│  ├─ esrecurse@^4.1.0
+│  └─ estraverse@^4.1.1
+├─ eslint-utils@1.4.2
+│  ├─ eslint-visitor-keys@^1.0.0
+│  └─ eslint-visitor-keys@1.0.0
+├─ eslint-visitor-keys@1.1.0
+├─ eslint@6.3.0
+│  ├─ @babel/code-frame@^7.0.0
+│  ├─ ajv@^6.10.0
+│  ├─ chalk@^2.1.0
+│  ├─ cross-spawn@^6.0.5
+│  ├─ debug@^4.0.1
+│  ├─ debug@4.1.1
+│  │  └─ ms@^2.1.1
+│  ├─ doctrine@^3.0.0
+│  ├─ eslint-scope@^5.0.0
+│  ├─ eslint-utils@^1.4.2
+│  ├─ eslint-visitor-keys@^1.1.0
+│  ├─ espree@^6.1.1
+│  ├─ esquery@^1.0.1
+│  ├─ esutils@^2.0.2
+│  ├─ file-entry-cache@^5.0.1
+│  ├─ functional-red-black-tree@^1.0.1
+│  ├─ glob-parent@^5.0.0
+│  ├─ globals@^11.7.0
+│  ├─ ignore@^4.0.6
+│  ├─ import-fresh@^3.0.0
+│  ├─ imurmurhash@^0.1.4
+│  ├─ inquirer@^6.4.1
+│  ├─ is-glob@^4.0.0
+│  ├─ js-yaml@^3.13.1
+│  ├─ json-stable-stringify-without-jsonify@^1.0.1
+│  ├─ levn@^0.3.0
+│  ├─ lodash@^4.17.14
+│  ├─ minimatch@^3.0.4
+│  ├─ mkdirp@^0.5.1
+│  ├─ ms@2.1.2
+│  ├─ natural-compare@^1.4.0
+│  ├─ optionator@^0.8.2
+│  ├─ progress@^2.0.0
+│  ├─ regexpp@^2.0.1
+│  ├─ semver@^6.1.2
+│  ├─ strip-ansi@^5.2.0
+│  ├─ strip-json-comments@^3.0.1
+│  ├─ table@^5.2.3
+│  ├─ text-table@^0.2.0
+│  └─ v8-compile-cache@^2.0.3
+├─ espree@6.1.1
+│  ├─ acorn-jsx@^5.0.2
+│  ├─ acorn@^7.0.0
+│  └─ eslint-visitor-keys@^1.1.0
+├─ esprima@3.1.3
+├─ esquery@1.0.1
+│  └─ estraverse@^4.0.0
+├─ esrecurse@4.2.1
+│  └─ estraverse@^4.1.0
+├─ estraverse@4.2.0
+├─ esutils@2.0.2
+├─ execa@1.0.0
+│  ├─ cross-spawn@^6.0.0
+│  ├─ get-stream@^4.0.0
+│  ├─ get-stream@4.1.0
+│  │  └─ pump@^3.0.0
+│  ├─ is-stream@^1.1.0
+│  ├─ npm-run-path@^2.0.0
+│  ├─ p-finally@^1.0.0
+│  ├─ signal-exit@^3.0.0
+│  └─ strip-eof@^1.0.0
+├─ ext-list@2.2.2
+│  └─ mime-db@^1.28.0
+├─ ext-name@5.0.0
+│  ├─ ext-list@^2.0.0
+│  └─ sort-keys-length@^1.0.0
+├─ extend@3.0.2
+├─ external-editor@3.1.0
+│  ├─ chardet@^0.7.0
+│  ├─ iconv-lite@^0.4.24
+│  └─ tmp@^0.0.33
+├─ extract-zip@1.6.7
+│  ├─ concat-stream@1.6.2
+│  ├─ debug@2.6.9
+│  ├─ debug@2.6.9
+│  │  └─ ms@2.0.0
+│  ├─ mkdirp@0.5.1
+│  └─ yauzl@2.4.1
+├─ extsprintf@1.3.0
+├─ fast-deep-equal@2.0.1
+├─ fast-json-stable-stringify@2.0.0
+├─ fast-levenshtein@2.0.6
+├─ fd-slicer@1.0.1
+│  └─ pend@~1.2.0
+├─ figures@2.0.0
+│  └─ escape-string-regexp@^1.0.5
+├─ file-entry-cache@5.0.1
+│  └─ flat-cache@^2.0.1
+├─ file-uri-to-path@1.0.0
+├─ find-up@3.0.0
+│  └─ locate-path@^3.0.0
+├─ flat-cache@2.0.1
+│  ├─ flatted@^2.0.0
+│  ├─ rimraf@2.6.3
+│  └─ write@1.0.3
+├─ flatted@2.0.1
+├─ for-in@1.0.2
+├─ for-own@1.0.0
+│  └─ for-in@^1.0.1
+├─ forever-agent@0.6.1
+├─ form-data@2.3.3
+│  ├─ asynckit@^0.4.0
+│  ├─ combined-stream@^1.0.6
+│  └─ mime-types@^2.1.12
+├─ fs-extra@8.1.0
+│  ├─ graceful-fs@^4.2.0
+│  ├─ jsonfile@^4.0.0
+│  └─ universalify@^0.1.0
+├─ fs.realpath@1.0.0
+├─ ftp@0.3.10
+│  ├��� readable-stream@1.1.x
+│  └─ xregexp@2.0.0
+├─ functional-red-black-tree@1.0.1
+├─ get-caller-file@2.0.5
+├─ get-stdin@4.0.1
+├─ get-stream@3.0.0
+├─ get-uri@2.0.3
+│  ├─ data-uri-to-buffer@2
+│  ├─ debug@4
+│  ├─ debug@4.1.1
+│  │  └─ ms@^2.1.1
+│  ├─ extend@~3.0.2
+│  ├─ file-uri-to-path@1
+│  ├─ ftp@~0.3.10
+│  ├─ ms@2.1.2
+│  ├─ readable-stream@3
+│  ├─ readable-stream@3.4.0
+│  │  ├─ inherits@^2.0.3
+│  │  ├─ string_decoder@^1.1.1
+│  │  └─ util-deprecate@^1.0.1
+│  ├─ safe-buffer@5.1.2
+│  └─ string_decoder@1.2.0
+│     └─ safe-buffer@~5.1.0
+├─ getos@3.1.1
+│  └─ async@2.6.1
+├─ getpass@0.1.7
+│  └─ assert-plus@^1.0.0
+├─ git-up@4.0.1
+│  ├─ is-ssh@^1.3.0
+│  └─ parse-url@^5.0.0
+├─ git-url-parse@11.1.2
+│  └─ git-up@^4.0.0
+├─ glob-parent@5.0.0
+│  └─ is-glob@^4.0.1
+├─ glob@7.1.4
+│  ├─ fs.realpath@^1.0.0
+│  ├─ inflight@^1.0.4
+│  ├─ inherits@2
+│  ├─ minimatch@^3.0.4
+│  ├─ once@^1.3.0
+│  └─ path-is-absolute@^1.0.0
+├─ global-dirs@0.1.1
+│  └─ ini@^1.3.4
+├─ globals@11.12.0
+├─ got@6.7.1
+│  ├─ create-error-class@^3.0.0
+│  ├─ duplexer3@^0.1.4
+│  ├─ get-stream@^3.0.0
+│  ├─ is-redirect@^1.0.0
+│  ├─ is-retry-allowed@^1.0.0
+│  ├─ is-stream@^1.0.0
+│  ├─ lowercase-keys@^1.0.0
+│  ├─ safe-buffer@^5.0.1
+│  ├─ timed-out@^4.0.0
+│  ├─ unzip-response@^2.0.1
+│  └─ url-parse-lax@^1.0.0
+├─ graceful-fs@4.2.0
+├─ graphlib@2.1.7
+│  └─ lodash@^4.17.5
+├─ har-schema@2.0.0
+├─ har-validator@5.1.3
+│  ├─ ajv@^6.5.5
+│  └─ har-schema@^2.0.0
+├─ has-flag@3.0.0
+├─ has-yarn@2.1.0
+├─ highlight.js@9.15.8
+├─ hosted-git-info@2.7.1
+├─ http-cache-semantics@4.0.3
+├─ http-errors@1.7.3
+│  ├─ depd@~1.1.2
+│  ├─ inherits@2.0.4
+│  ├─ setprototypeof@1.1.1
+│  ├─ statuses@>= 1.5.0 < 2
+│  └─ toidentifier@1.0.0
+├─ http-proxy-agent@2.1.0
+│  ├─ agent-base@4
+│  ├─ debug@3.1.0
+│  └─ debug@3.1.0
+│     └─ ms@2.0.0
+├─ http-signature@1.2.0
+│  ├─ assert-plus@^1.0.0
+│  ├─ jsprim@^1.2.2
+│  └─ sshpk@^1.7.0
+├─ https-proxy-agent@2.2.2
+│  ├─ agent-base@^4.3.0
+│  └─ debug@^3.1.0
+├─ humanize-plus@1.8.2
+├─ iconv-lite@0.4.24
+│  └─ safer-buffer@>= 2.1.2 < 3
+├─ ignore@4.0.6
+├─ immediate@3.0.6
+├─ import-fresh@3.1.0
+│  ├─ parent-module@^1.0.0
+│  └─ resolve-from@^4.0.0
+├─ import-lazy@2.1.0
+├─ imurmurhash@0.1.4
+├─ indent-string@2.1.0
+│  └─ repeating@^2.0.0
+├─ inflight@1.0.6
+│  ├─ once@^1.3.0
+│  └─ wrappy@1
+├─ inherits@2.0.4
+├─ ini@1.3.5
+├─ inquirer@6.5.0
+│  ├─ ansi-escapes@^3.2.0
+│  ├─ ansi-regex@3.0.0
+│  ├─ chalk@^2.4.2
+│  ├─ cli-cursor@^2.1.0
+│  ├─ cli-width@^2.0.0
+│  ├─ external-editor@^3.0.3
+│  ├─ figures@^2.0.0
+│  ├─ lodash@^4.17.12
+│  ├─ mute-stream@0.0.7
+│  ├─ run-async@^2.2.0
+│  ├─ rxjs@^6.4.0
+│  ├─ string-width@^2.1.0
+│  ├─ string-width@2.1.1
+│  │  ├─ is-fullwidth-code-point@^2.0.0
+│  │  ├─ strip-ansi@^4.0.0
+│  │  └─ strip-ansi@4.0.0
+│  │     └─ ansi-regex@^3.0.0
+│  ├─ strip-ansi@^5.1.0
+│  └─ through@^2.3.6
+├─ invert-kv@1.0.0
+├─ ip@1.1.5
+├─ is-arrayish@0.2.1
+├─ is-buffer@1.1.6
+├─ is-ci@2.0.0
+│  └─ ci-info@^2.0.0
+├─ is-extendable@0.1.1
+├─ is-extglob@2.1.1
+├─ is-finite@1.0.2
+│  └─ number-is-nan@^1.0.0
+├─ is-fullwidth-code-point@2.0.0
+├─ is-glob@4.0.1
+│  └─ is-extglob@^2.1.1
+├─ is-installed-globally@0.1.0
+│  ├─ global-dirs@^0.1.0
+│  └─ is-path-inside@^1.0.0
+├─ is-npm@1.0.0
+├─ is-obj@1.0.1
+├─ is-path-inside@1.0.1
+│  └─ path-is-inside@^1.0.1
+├─ is-plain-obj@1.1.0
+├─ is-plain-object@2.0.4
+│  └─ isobject@^3.0.1
+├─ is-promise@2.1.0
+├─ is-redirect@1.0.0
+├─ is-retry-allowed@1.1.0
+├─ is-ssh@1.3.1
+│  └─ protocols@^1.1.0
+├─ is-stream@1.1.0
+├─ is-typedarray@1.0.0
+├─ is-utf8@0.2.1
+├─ is-wsl@1.1.0
+├─ is-yarn-global@0.3.0
+├─ isarray@0.0.1
+├─ isbinaryfile@4.0.2
+├─ isexe@2.0.0
+├─ isobject@3.0.1
+├─ isstream@0.1.2
+├─ js-tokens@4.0.0
+├─ js-yaml@3.13.1
+│  ├─ argparse@^1.0.7
+│  ├─ esprima@^4.0.0
+│  └─ esprima@4.0.1
+├─ jsbn@0.1.1
+├─ json-buffer@3.0.0
+├─ json-schema-traverse@0.4.1
+├─ json-schema-typed@7.0.1
+├─ json-schema@0.2.3
+├─ json-stable-stringify-without-jsonify@1.0.1
+├─ json-stringify-safe@5.0.1
+├─ json5@2.1.0
+│  └─ minimist@^1.2.0
+├─ jsonfile@4.0.0
+│  └─ graceful-fs@^4.1.6
+├─ jsprim@1.4.1
+│  ├─ assert-plus@1.0.0
+│  ├─ extsprintf@1.3.0
+│  ├─ json-schema@0.2.3
+│  └─ verror@1.10.0
+├─ jszip@3.2.2
+│  ├─ isarray@1.0.0
+│  ├─ lie@~3.3.0
+│  ├─ pako@~1.0.2
+│  ├─ readable-stream@~2.3.6
+│  ├─ readable-stream@2.3.6
+│  │  ├─ core-util-is@~1.0.0
+│  │  ├─ inherits@~2.0.3
+│  │  ├─ isarray@~1.0.0
+│  │  ├─ process-nextick-args@~2.0.0
+│  │  ├─ safe-buffer@~5.1.1
+│  │  ├─ string_decoder@~1.1.1
+│  │  └─ util-deprecate@~1.0.1
+│  ├─ safe-buffer@5.1.2
+│  ├─ set-immediate-shim@~1.0.1
+│  └─ string_decoder@1.1.1
+│     └─ safe-buffer@~5.1.0
+├─ keyv@3.1.0
+│  └─ json-buffer@3.0.0
+├─ kind-of@3.2.2
+│  └─ is-buffer@^1.1.5
+├─ latest-version@3.1.0
+│  └─ package-json@^4.0.0
+├─ lazy-cache@0.2.7
+├─ lazy-val@1.0.4
+├─ lcid@1.0.0
+│  └─ invert-kv@^1.0.0
+├─ levn@0.3.0
+│  ├─ prelude-ls@~1.1.2
+│  └─ type-check@~0.3.2
+├─ lie@3.3.0
+│  └─ immediate@~3.0.5
+├─ load-json-file@1.1.0
+│  ├─ graceful-fs@^4.1.2
+│  ├─ parse-json@^2.2.0
+│  ├─ pify@^2.0.0
+│  ├─ pinkie-promise@^2.0.0
+│  └─ strip-bom@^2.0.0
+├─ locate-path@3.0.0
+│  ├─ p-locate@^3.0.0
+│  └─ path-exists@^3.0.0
+├─ lodash.assign@4.2.0
+├─ lodash.assignin@4.2.0
+├─ lodash.clone@4.5.0
+├─ lodash.clonedeep@4.5.0
+├─ lodash.flatten@4.4.0
+├─ lodash.get@4.4.2
+├─ lodash.isequal@4.5.0
+├─ lodash.set@4.3.2
+├─ lodash@4.17.15
+├─ loud-rejection@1.6.0
+│  ├─ currently-unhandled@^0.4.1
+│  └─ signal-exit@^3.0.0
+├─ lowercase-keys@1.0.1
+├─ lru-cache@4.1.5
+│  ├─ pseudomap@^1.0.2
+│  └─ yallist@^2.1.2
+├─ macos-release@2.3.0
+├─ make-dir@1.3.0
+│  ├─ pify@^3.0.0
+│  └─ pify@3.0.0
+├─ map-obj@1.0.1
+├─ md5@2.2.1
+│  ├─ charenc@~0.0.1
+│  ├─ crypt@~0.0.1
+│  └─ is-buffer@~1.1.1
+├─ meow@3.7.0
+│  ├─ camelcase-keys@^2.0.0
+│  ├─ decamelize@^1.1.2
+│  ├─ loud-rejection@^1.0.0
+│  ├─ map-obj@^1.0.1
+│  ├─ minimist@^1.1.3
+│  ├─ normalize-package-data@^2.3.4
+│  ├─ object-assign@^4.0.1
+│  ├─ read-pkg-up@^1.0.1
+│  ├─ redent@^1.0.0
+│  └─ trim-newlines@^1.0.0
+├─ mime-db@1.40.0
+├─ mime-types@2.1.24
+│  └─ mime-db@1.40.0
+├─ mime@2.4.4
+├─ mimic-fn@2.1.0
+├─ mimic-response@1.0.1
+├─ minimatch@3.0.4
+│  └─ brace-expansion@^1.1.7
+├─ minimist@1.2.0
+├─ mixin-object@2.0.1
+│  ├─ for-in@^0.1.3
+│  ├─ for-in@0.1.8
+│  └─ is-extendable@^0.1.1
+├─ mkdirp@0.5.1
+│  ├─ minimist@0.0.8
+│  └─ minimist@0.0.8
+├─ modify-filename@1.1.0
+├─ ms@2.0.0
+├─ mute-stream@0.0.7
+├─ nan@2.14.0
+├─ natural-compare@1.4.0
+├─ nconf@0.10.0
+│  ├─ ansi-regex@2.1.1
+│  ├─ async@^1.4.0
+│  ├─ async@1.5.2
+│  ├─ cliui@3.2.0
+│  │  ├─ string-width@^1.0.1
+│  │  ├─ strip-ansi@^3.0.1
+│  │  └─ wrap-ansi@^2.0.0
+│  ├─ ini@^1.3.0
+│  ├─ is-fullwidth-code-point@1.0.0
+│  │  └─ number-is-nan@^1.0.0
+│  ├─ secure-keys@^1.0.0
+│  ├─ string-width@1.0.2
+│  │  ├─ code-point-at@^1.0.0
+│  │  ├─ is-fullwidth-code-point@^1.0.0
+│  │  └─ strip-ansi@^3.0.0
+│  ├─ strip-ansi@3.0.1
+│  │  └─ ansi-regex@^2.0.0
+│  ├─ wrap-ansi@2.1.0
+│  │  ├─ string-width@^1.0.1
+│  │  └─ strip-ansi@^3.0.1
+│  ├─ y18n@3.2.1
+│  ├─ yargs@^3.19.0
+│  └─ yargs@3.32.0
+│     ├─ camelcase@^2.0.1
+│     ├─ cliui@^3.0.3
+│     ├─ decamelize@^1.1.1
+│     ├─ os-locale@^1.4.0
+│     ├─ string-width@^1.0.1
+│     ├─ window-size@^0.1.4
+│     └─ y18n@^3.2.0
+├─ needle@2.4.0
+│  ├─ debug@^3.2.6
+│  ├─ iconv-lite@^0.4.4
+│  └─ sax@^1.2.4
+├─ netmask@1.0.6
+├─ nice-try@1.0.5
+├─ normalize-package-data@2.5.0
+│  ├─ hosted-git-info@^2.1.4
+│  ├─ resolve@^1.10.0
+│  ├─ semver@2 || 3 || 4 || 5
+│  ├─ semver@5.7.0
+│  └─ validate-npm-package-license@^3.0.1
+├─ normalize-url@3.3.0
+├─ npm-run-path@2.0.2
+│  └─ path-key@^2.0.0
+├─ nugget@2.0.1
+│  ├─ debug@^2.1.3
+│  ├─ debug@2.6.9
+│  │  └─ ms@2.0.0
+│  ├─ minimist@^1.1.0
+│  ├─ pretty-bytes@^1.0.2
+│  ├─ progress-stream@^1.1.0
+│  ├─ request@^2.45.0
+│  ├─ single-line-log@^1.1.2
+│  └─ throttleit@0.0.2
+├─ number-is-nan@1.0.1
+├─ oauth-sign@0.9.0
+├─ object-assign@4.1.1
+├─ object-hash@1.3.1
+├─ object-keys@0.4.0
+├─ once@1.4.0
+│  └─ wrappy@1
+├─ onetime@5.1.0
+│  └─ mimic-fn@^2.1.0
+├─ open@6.4.0
+│  └─ is-wsl@^1.1.0
+├─ opn@5.5.0
+│  └─ is-wsl@^1.1.0
+├─ optionator@0.8.2
+│  ├─ deep-is@~0.1.3
+│  ├─ fast-levenshtein@~2.0.4
+│  ├─ levn@~0.3.0
+│  ├─ prelude-ls@~1.1.2
+│  ├─ type-check@~0.3.2
+│  └─ wordwrap@~1.0.0
+├─ os-locale@1.4.0
+│  └─ lcid@^1.0.0
+├─ os-name@3.1.0
+│  ├─ macos-release@^2.2.0
+│  └─ windows-release@^3.1.0
+├─ os-tmpdir@1.0.2
+├─ p-cancelable@1.1.0
+├─ p-finally@1.0.0
+├─ p-limit@2.2.0
+│  └─ p-try@^2.0.0
+├─ p-locate@3.0.0
+│  └─ p-limit@^2.0.0
+├─ p-try@2.2.0
+├─ pac-proxy-agent@3.0.0
+│  ├─ agent-base@^4.2.0
+│  ├─ debug@^3.1.0
+│  ├─ get-uri@^2.0.0
+│  ├─ http-proxy-agent@^2.1.0
+│  ├─ https-proxy-agent@^2.2.1
+│  ├─ pac-resolver@^3.0.0
+│  ├─ raw-body@^2.2.0
+│  └─ socks-proxy-agent@^4.0.1
+├─ pac-resolver@3.0.0
+│  ├─ co@^4.6.0
+│  ├─ degenerator@^1.0.4
+│  ├─ ip@^1.1.5
+│  ├─ netmask@^1.0.6
+│  └─ thunkify@^2.1.2
+├─ package-json@4.0.1
+│  ├─ got@^6.7.1
+│  ├─ registry-auth-token@^3.0.1
+│  ├─ registry-url@^3.0.3
+│  ├─ semver@^5.1.0
+│  └─ semver@5.7.0
+├─ pako@1.0.10
+├─ parent-module@1.0.1
+│  └─ callsites@^3.0.0
+├─ parse-json@2.2.0
+│  └─ error-ex@^1.2.0
+├─ parse-path@4.0.1
+│  ├─ is-ssh@^1.3.0
+│  └─ protocols@^1.4.0
+├─ parse-url@5.0.1
+│  ├─ is-ssh@^1.3.0
+│  ├─ normalize-url@^3.3.0
+│  ├─ parse-path@^4.0.0
+│  └─ protocols@^1.4.0
+├─ path-exists@3.0.0
+├─ path-is-absolute@1.0.1
+├─ path-is-inside@1.0.2
+├─ path-key@2.0.1
+├─ path-parse@1.0.6
+├─ path-type@1.1.0
+│  ├─ graceful-fs@^4.1.2
+│  ├─ pify@^2.0.0
+│  └─ pinkie-promise@^2.0.0
+├─ pend@1.2.0
+├─ performance-now@2.1.0
+├─ pify@2.3.0
+├─ pinkie-promise@2.0.1
+│  └─ pinkie@^2.0.0
+├─ pinkie@2.0.4
+├─ pkg-up@3.1.0
+│  └─ find-up@^3.0.0
+├─ prelude-ls@1.1.2
+├─ prepend-http@1.0.4
+├─ pretty-bytes@1.0.4
+│  ├─ get-stdin@^4.0.1
+│  └─ meow@^3.1.0
+├─ process-nextick-args@2.0.1
+├─ progress-stream@1.2.0
+│  ├─ speedometer@~0.1.2
+│  └─ through2@~0.2.3
+├─ progress@2.0.3
+├─ promise@7.3.1
+│  └─ asap@~2.0.3
+├─ protocols@1.4.7
+├─ proxy-agent@3.1.0
+│  ├─ agent-base@^4.2.0
+│  ├─ debug@^3.1.0
+│  ├─ http-proxy-agent@^2.1.0
+│  ├─ https-proxy-agent@^2.2.1
+│  ├─ lru-cache@^4.1.2
+│  ├─ pac-proxy-agent@^3.0.0
+│  ├─ proxy-from-env@^1.0.0
+│  └─ socks-proxy-agent@^4.0.1
+├─ proxy-from-env@1.0.0
+├─ pseudomap@1.0.2
+├─ psl@1.2.0
+├─ pump@3.0.0
+│  ├─ end-of-stream@^1.1.0
+│  └─ once@^1.3.1
+├─ punycode@2.1.1
+├─ pupa@1.0.0
+├─ qs@6.5.2
+├─ raven@2.6.4
+│  ├─ cookie@0.3.1
+│  ├─ md5@^2.2.1
+│  ├─ stack-trace@0.0.10
+│  ├─ timed-out@4.0.1
+│  └─ uuid@3.3.2
+├─ raw-body@2.4.1
+│  ├─ bytes@3.1.0
+│  ├─ http-errors@1.7.3
+│  ├─ iconv-lite@0.4.24
+│  └─ unpipe@1.0.0
+├─ rc@1.2.8
+│  ├─ deep-extend@^0.6.0
+│  ├─ ini@~1.3.0
+│  ├─ minimist@^1.2.0
+│  ├─ strip-json-comments@~2.0.1
+│  └─ strip-json-comments@2.0.1
+├─ read-config-file@5.0.0
+│  ├─ dotenv-expand@^5.1.0
+│  ├─ dotenv@^8.0.0
+│  ├─ fs-extra@^8.1.0
+│  ├─ js-yaml@^3.13.1
+│  ├─ json5@^2.1.0
+│  └─ lazy-val@^1.0.4
+├─ read-pkg-up@1.0.1
+│  ├─ find-up@^1.0.0
+│  ├─ find-up@1.1.2
+│  │  ├─ path-exists@^2.0.0
+│  │  └─ pinkie-promise@^2.0.0
+│  ├─ path-exists@2.1.0
+│  │  └─ pinkie-promise@^2.0.0
+│  └─ read-pkg@^1.0.0
+├─ read-pkg@1.1.0
+│  ├─ load-json-file@^1.0.0
+│  ├─ normalize-package-data@^2.3.2
+│  └─ path-type@^1.0.0
+├─ readable-stream@1.1.14
+│  ├─ core-util-is@~1.0.0
+│  ├─ inherits@~2.0.1
+│  ├─ isarray@0.0.1
+│  └─ string_decoder@~0.10.x
+├─ redent@1.0.0
+│  ├─ indent-string@^2.1.0
+│  └─ strip-indent@^1.0.1
+├─ regexpp@2.0.1
+├─ registry-auth-token@3.4.0
+│  ├─ rc@^1.1.6
+│  └─ safe-buffer@^5.0.1
+├─ registry-url@3.1.0
+│  └─ rc@^1.0.1
+├─ repeating@2.0.1
+│  └─ is-finite@^1.0.0
+├─ request@2.88.0
+│  ├─ aws-sign2@~0.7.0
+│  ├─ aws4@^1.8.0
+│  ├─ caseless@~0.12.0
+│  ├─ combined-stream@~1.0.6
+│  ├─ extend@~3.0.2
+│  ├─ forever-agent@~0.6.1
+│  ├─ form-data@~2.3.2
+│  ├─ har-validator@~5.1.0
+│  ├─ http-signature@~1.2.0
+│  ├─ is-typedarray@~1.0.0
+│  ├─ isstream@~0.1.2
+│  ├─ json-stringify-safe@~5.0.1
+│  ├─ mime-types@~2.1.19
+│  ├─ oauth-sign@~0.9.0
+│  ├─ performance-now@^2.1.0
+│  ├─ qs@~6.5.2
+│  ├─ safe-buffer@^5.1.2
+│  ├─ tough-cookie@~2.4.3
+│  ├─ tunnel-agent@^0.6.0
+│  └─ uuid@^3.3.2
+├─ require-directory@2.1.1
+├─ require-main-filename@2.0.0
+├─ resolve-from@4.0.0
+├─ resolve@1.11.1
+│  └─ path-parse@^1.0.6
+├─ responselike@1.0.2
+│  └─ lowercase-keys@^1.0.0
+├─ restore-cursor@2.0.0
+│  ├─ mimic-fn@1.2.0
+│  ├─ onetime@^2.0.0
+│  ├─ onetime@2.0.1
+│  │  └─ mimic-fn@^1.0.0
+│  └─ signal-exit@^3.0.2
+├─ rimraf@2.6.3
+│  └─ glob@^7.1.3
+├─ run-async@2.3.0
+│  └─ is-promise@^2.1.0
+├─ rxjs@6.5.2
+│  └─ tslib@^1.9.0
+├─ safe-buffer@5.2.0
+├─ safer-buffer@2.1.2
+├─ sanitize-filename@1.6.3
+│  └─ truncate-utf8-bytes@^1.0.0
+├─ sax@1.2.4
+├─ secure-keys@1.0.0
+├─ semver-diff@2.1.0
+│  ├─ semver@^5.0.3
+│  └─ semver@5.7.0
+├─ semver@6.2.0
+├─ set-blocking@2.0.0
+├─ set-immediate-shim@1.0.1
+├─ setprototypeof@1.1.1
+├─ shallow-clone@0.1.2
+│  ├─ is-extendable@^0.1.1
+│  ├─ kind-of@^2.0.1
+│  ├─ kind-of@2.0.1
+│  │  └─ is-buffer@^1.0.2
+│  ├─ lazy-cache@^0.2.3
+│  └─ mixin-object@^2.0.1
+├─ shebang-command@1.2.0
+│  └─ shebang-regex@^1.0.0
+├─ shebang-regex@1.0.0
+├─ signal-exit@3.0.2
+├─ single-line-log@1.1.2
+│  ├─ ansi-regex@2.1.1
+│  ├─ is-fullwidth-code-point@1.0.0
+│  │  └─ number-is-nan@^1.0.0
+│  ├─ string-width@^1.0.1
+│  ├─ string-width@1.0.2
+│  │  ├─ code-point-at@^1.0.0
+│  │  ├─ is-fullwidth-code-point@^1.0.0
+│  │  └─ strip-ansi@^3.0.0
+│  └─ strip-ansi@3.0.1
+│     └─ ansi-regex@^2.0.0
+├─ slice-ansi@2.1.0
+│  ├─ ansi-styles@^3.2.0
+│  ├─ astral-regex@^1.0.0
+│  └─ is-fullwidth-code-point@^2.0.0
+├─ smart-buffer@4.0.2
+├─ snyk-config@2.2.2
+│  ├─ debug@^3.1.0
+│  ├─ lodash@^4.17.14
+│  └─ nconf@^0.10.0
+├─ snyk-docker-plugin@1.29.1
+│  ├─ debug@^4.1.1
+│  ├─ debug@4.1.1
+│  │  └─ ms@^2.1.1
+│  ├─ dockerfile-ast@0.0.16
+│  ├─ ms@2.1.2
+│  ├─ semver@^6.1.0
+│  └─ tslib@^1
+├─ snyk-go-parser@1.3.1
+│  ├─ toml@^3.0.0
+│  └─ tslib@^1.9.3
+├─ snyk-go-plugin@1.11.0
+│  ├─ debug@^4.1.1
+│  ├─ debug@4.1.1
+│  │  └─ ms@^2.1.1
+│  ├─ graphlib@^2.1.1
+│  ├─ ms@2.1.2
+│  ├─ snyk-go-parser@1.3.1
+│  ├─ tmp@0.0.33
+│  └─ tslib@^1.10.0
+├─ snyk-gradle-plugin@3.0.2
+│  ├─ @types/debug@^4.1.4
+│  ├─ chalk@^2.4.2
+│  ├─ clone-deep@^0.3.0
+│  ├─ debug@^4.1.1
+│  ├─ debug@4.1.1
+│  │  └─ ms@^2.1.1
+│  ├─ ms@2.1.2
+│  ├─ tmp@0.0.33
+│  └─ tslib@^1.9.3
+├─ snyk-module@1.9.1
+│  ├─ debug@^3.1.0
+│  └─ hosted-git-info@^2.7.1
+├─ snyk-mvn-plugin@2.4.0
+│  ├─ lodash@^4.17.15
+│  ├─ tslib@1.9.3
+│  └─ tslib@1.9.3
+├─ snyk-nodejs-lockfile-parser@1.16.0
+│  ├─ @yarnpkg/lockfile@^1.0.2
+│  ├─ graphlib@^2.1.5
+│  ├─ lodash@^4.17.14
+│  ├─ source-map-support@^0.5.7
+│  ├─ tslib@^1.9.3
+│  └─ uuid@^3.3.2
+├─ snyk-nuget-plugin@1.12.1
+│  ├─ debug@^3.1.0
+│  ├─ dotnet-deps-parser@4.5.0
+│  ├─ jszip@^3.1.5
+│  ├─ lodash@^4.17.14
+│  ├─ snyk-paket-parser@1.5.0
+│  ├─ tslib@^1.9.3
+│  └─ xml2js@^0.4.17
+├─ snyk-paket-parser@1.5.0
+│  └─ tslib@^1.9.3
+├─ snyk-php-plugin@1.6.4
+│  ├─ @snyk/composer-lockfile-parser@1.0.3
+│  ├─ tslib@1.9.3
+│  └─ tslib@1.9.3
+├─ snyk-policy@1.13.5
+│  ├─ debug@^3.1.0
+│  ├─ email-validator@^2.0.4
+│  ├─ js-yaml@^3.13.1
+│  ├─ lodash.clonedeep@^4.5.0
+│  ├─ semver@^6.0.0
+│  ├─ snyk-module@^1.9.1
+│  ├─ snyk-resolve@^1.0.1
+│  ├─ snyk-try-require@^1.3.1
+│  └─ then-fs@^2.0.0
+├─ snyk-python-plugin@1.13.2
+│  ├─ @snyk/cli-interface@^2.0.2
+│  └─ tmp@0.0.33
+├─ snyk-resolve-deps@4.4.0
+│  ├─ @types/node@^6.14.4
+│  ├─ @types/node@6.14.7
+│  ├─ @types/semver@^5.5.0
+│  ├─ @types/semver@5.5.0
+│  ├─ ansicolors@^0.3.2
+│  ├─ debug@^3.2.5
+│  ├─ lodash.assign@^4.2.0
+│  ├─ lodash.assignin@^4.2.0
+│  ├─ lodash.clone@^4.5.0
+│  ├─ lodash.flatten@^4.4.0
+│  ├─ lodash.get@^4.4.2
+│  ├─ lodash.set@^4.3.2
+│  ├─ lru-cache@^4.0.0
+│  ├─ semver@^5.5.1
+│  ├─ semver@5.7.0
+│  ├─ snyk-module@^1.6.0
+│  ├─ snyk-resolve@^1.0.0
+│  ├─ snyk-tree@^1.0.0
+│  ├─ snyk-try-require@^1.1.1
+│  └─ then-fs@^2.0.0
+├─ snyk-resolve@1.0.1
+│  ├─ debug@^3.1.0
+│  └─ then-fs@^2.0.0
+├─ snyk-sbt-plugin@2.8.0
+│  ├─ semver@^6.1.2
+│  ├─ tmp@^0.1.0
+│  ├─ tmp@0.1.0
+│  │  └─ rimraf@^2.6.3
+│  ├─ tree-kill@^1.2.1
+│  └─ tslib@^1.10.0
+├─ snyk-tree@1.0.0
+│  └─ archy@^1.0.0
+├─ snyk-try-require@1.3.1
+│  ├─ debug@^3.1.0
+│  ├─ lodash.clonedeep@^4.3.0
+│  ├─ lru-cache@^4.0.0
+│  └─ then-fs@^2.0.0
+├─ snyk@1.226.1
+│  ├─ @snyk/dep-graph@1.12.0
+│  ├─ @snyk/gemfile@1.2.0
+│  ├─ @types/agent-base@^4.2.0
+│  ├─ @types/restify@^4.3.6
+│  ├─ abbrev@^1.1.1
+│  ├─ ansi-escapes@3.2.0
+│  ├─ chalk@^2.4.2
+│  ├─ configstore@^3.1.2
+│  ├─ debug@^3.1.0
+│  ├─ diff@^4.0.1
+│  ├─ git-url-parse@11.1.2
+│  ├─ glob@^7.1.3
+│  ├─ inquirer@^6.2.2
+│  ├─ lodash@^4.17.14
+│  ├─ needle@^2.2.4
+│  ├─ opn@^5.5.0
+│  ├─ os-name@^3.0.0
+│  ├─ proxy-agent@^3.1.0
+│  ├─ proxy-from-env@^1.0.0
+│  ├─ semver@^6.0.0
+│  ├─ snyk-config@^2.2.1
+│  ├─ snyk-docker-plugin@1.29.1
+│  ├─ snyk-go-plugin@1.11.0
+│  ├─ snyk-gradle-plugin@^3.0.2
+│  ├─ snyk-module@1.9.1
+│  ├─ snyk-mvn-plugin@2.4.0
+│  ├─ snyk-nodejs-lockfile-parser@1.16.0
+│  ├─ snyk-nuget-plugin@1.12.1
+│  ├─ snyk-php-plugin@1.6.4
+│  ├─ snyk-policy@1.13.5
+│  ├─ snyk-python-plugin@^1.13.2
+│  ├─ snyk-resolve-deps@4.4.0
+│  ├─ snyk-resolve@1.0.1
+│  ├─ snyk-sbt-plugin@2.8.0
+│  ├─ snyk-tree@^1.0.0
+│  ├─ snyk-try-require@1.3.1
+│  ├─ source-map-support@^0.5.11
+│  ├─ strip-ansi@^5.2.0
+│  ├─ tempfile@^2.0.0
+│  ├─ then-fs@^2.0.0
+│  ├─ update-notifier@^2.5.0
+│  ├─ uuid@^3.3.2
+│  └─ wrap-ansi@^5.1.0
+├─ socks-proxy-agent@4.0.2
+│  ├─ agent-base@~4.2.1
+│  ├─ agent-base@4.2.1
+│  │  └─ es6-promisify@^5.0.0
+│  └─ socks@~2.3.2
+├─ socks@2.3.2
+│  ├─ ip@^1.1.5
+│  └─ smart-buffer@4.0.2
+├─ sort-keys-length@1.0.1
+│  └─ sort-keys@^1.0.0
+├─ sort-keys@1.1.2
+│  └─ is-plain-obj@^1.0.0
+├─ source-map-support@0.5.12
+│  ├─ buffer-from@^1.0.0
+│  └─ source-map@^0.6.0
+├─ source-map@0.6.1
+├─ spdx-correct@3.1.0
+│  ├─ spdx-expression-parse@^3.0.0
+│  └─ spdx-license-ids@^3.0.0
+├─ spdx-exceptions@2.2.0
+├─ spdx-expression-parse@3.0.0
+│  ├─ spdx-exceptions@^2.1.0
+│  └─ spdx-license-ids@^3.0.0
+├─ spdx-license-ids@3.0.5
+├─ speedometer@0.1.4
+├─ spellchecker@3.7.0
+│  ├─ any-promise@^1.3.0
+│  └─ nan@^2.14.0
+├─ sprintf-js@1.0.3
+├─ sshpk@1.16.1
+│  ├─ asn1@~0.2.3
+│  ├─ assert-plus@^1.0.0
+│  ├─ bcrypt-pbkdf@^1.0.0
+│  ├─ dashdash@^1.12.0
+│  ├─ ecc-jsbn@~0.1.1
+│  ├─ getpass@^0.1.1
+│  ├─ jsbn@~0.1.0
+│  ├─ safer-buffer@^2.0.2
+│  └─ tweetnacl@~0.14.0
+├─ stack-trace@0.0.10
+├─ stat-mode@0.3.0
+├─ statuses@1.5.0
+├─ string_decoder@0.10.31
+├─ string-width@3.1.0
+│  ├─ emoji-regex@^7.0.1
+│  ├─ is-fullwidth-code-point@^2.0.0
+│  └─ strip-ansi@^5.1.0
+├─ strip-ansi@5.2.0
+│  └─ ansi-regex@^4.1.0
+├─ strip-bom@2.0.0
+│  └─ is-utf8@^0.2.0
+├─ strip-eof@1.0.0
+├─ strip-indent@1.0.1
+│  └─ get-stdin@^4.0.1
+├─ strip-json-comments@3.0.1
+├─ sumchecker@2.0.2
+│  ├─ debug@^2.2.0
+│  └─ debug@2.6.9
+│     └─ ms@2.0.0
+├─ supports-color@5.5.0
+│  └─ has-flag@^3.0.0
+├─ table@5.4.4
+│  ├─ ajv@^6.10.2
+│  ├─ lodash@^4.17.14
+│  ├��� slice-ansi@^2.1.0
+│  └─ string-width@^3.0.0
+├─ temp-dir@1.0.0
+├─ temp-file@3.3.4
+│  ├─ async-exit-hook@^2.0.1
+│  └─ fs-extra@^8.1.0
+├─ tempfile@2.0.0
+│  ├─ temp-dir@^1.0.0
+│  └─ uuid@^3.0.1
+├─ term-size@1.2.0
+│  ├─ cross-spawn@5.1.0
+│  │  ├─ lru-cache@^4.0.1
+│  │  ├─ shebang-command@^1.2.0
+│  │  └─ which@^1.2.9
+│  ├─ execa@^0.7.0
+│  └─ execa@0.7.0
+│     ├─ cross-spawn@^5.0.1
+│     ├─ get-stream@^3.0.0
+│     ├─ is-stream@^1.1.0
+│     ├─ npm-run-path@^2.0.0
+│     ├─ p-finally@^1.0.0
+│     ├─ signal-exit@^3.0.0
+│     └─ strip-eof@^1.0.0
+├─ text-table@0.2.0
+├─ then-fs@2.0.0
+│  └─ promise@>=3.2 <8
+├─ throttleit@0.0.2
+├─ through@2.3.8
+├─ through2@0.2.3
+│  ├─ readable-stream@~1.1.9
+│  └─ xtend@~2.1.1
+├─ thunkify@2.1.2
+├─ timed-out@4.0.1
+├─ tmp@0.0.33
+│  └─ os-tmpdir@~1.0.2
+├─ to-readable-stream@1.0.0
+├─ toidentifier@1.0.0
+├─ toml@3.0.0
+├─ tough-cookie@2.4.3
+│  ├─ psl@^1.1.24
+│  ├─ punycode@^1.4.1
+│  └─ punycode@1.4.1
+├─ tree-kill@1.2.1
+├─ trim-newlines@1.0.0
+├─ truncate-utf8-bytes@1.0.2
+│  └─ utf8-byte-length@^1.0.1
+├─ tslib@1.10.0
+├─ tunnel-agent@0.6.0
+│  └─ safe-buffer@^5.0.1
+├─ tweetnacl@0.14.5
+├─ type-check@0.3.2
+│  └─ prelude-ls@~1.1.2
+├─ type-fest@0.7.1
+├─ typedarray-to-buffer@3.1.5
+│  └─ is-typedarray@^1.0.0
+├─ typedarray@0.0.6
+├─ unique-string@1.0.0
+│  └─ crypto-random-string@^1.0.0
+├─ universalify@0.1.2
+├─ unpipe@1.0.0
+├─ unused-filename@1.0.0
+│  ├─ modify-filename@^1.1.0
+│  └─ path-exists@^3.0.0
+├─ unzip-response@2.0.1
+├─ update-notifier@2.5.0
+│  ├─ boxen@^1.2.1
+│  ├─ chalk@^2.0.1
+│  ├─ ci-info@1.6.0
+│  ├─ configstore@^3.0.0
+│  ├─ import-lazy@^2.1.0
+│  ├─ is-ci@^1.0.10
+│  ├─ is-ci@1.2.1
+│  │  └─ ci-info@^1.5.0
+│  ├─ is-installed-globally@^0.1.0
+│  ├─ is-npm@^1.0.0
+│  ├─ latest-version@^3.0.0
+│  ├─ semver-diff@^2.0.0
+│  └─ xdg-basedir@^3.0.0
+├─ uri-js@4.2.2
+│  └─ punycode@^2.1.0
+├─ url-parse-lax@1.0.0
+│  └─ prepend-http@^1.0.1
+├─ utf8-byte-length@1.0.4
+├─ util-deprecate@1.0.2
+├─ uuid@3.3.2
+├─ v8-compile-cache@2.0.3
+├─ validate-npm-package-license@3.0.4
+│  ├─ spdx-correct@^3.0.0
+│  └─ spdx-expression-parse@^3.0.0
+├─ verror@1.10.0
+│  ├─ assert-plus@^1.0.0
+│  ├─ core-util-is@1.0.2
+│  ├─ extsprintf@^1.2.0
+│  └─ extsprintf@1.4.0
+├─ vscode-languageserver-types@3.14.0
+├─ which-module@2.0.0
+├─ which@1.3.1
+│  └─ isexe@^2.0.0
+├─ widest-line@2.0.1
+│  ├─ ansi-regex@3.0.0
+│  ├─ string-width@^2.1.1
+│  ├─ string-width@2.1.1
+│  │  ├─ is-fullwidth-code-point@^2.0.0
+│  │  └─ strip-ansi@^4.0.0
+│  └─ strip-ansi@4.0.0
+│     └─ ansi-regex@^3.0.0
+├─ window-size@0.1.4
+├─ windows-release@3.2.0
+│  └─ execa@^1.0.0
+├─ wordwrap@1.0.0
+├─ wrap-ansi@5.1.0
+│  ├─ ansi-styles@^3.2.0
+│  ├─ string-width@^3.0.0
+│  └─ strip-ansi@^5.0.0
+├─ wrappy@1.0.2
+├─ write-file-atomic@2.4.3
+│  ├─ graceful-fs@^4.1.11
+│  ├─ imurmurhash@^0.1.4
+│  └─ signal-exit@^3.0.2
+├─ write@1.0.3
+│  └─ mkdirp@^0.5.1
+├─ xdg-basedir@3.0.0
+├─ xml2js@0.4.19
+│  ├─ sax@>=0.6.0
+│  └─ xmlbuilder@~9.0.1
+├─ xmlbuilder@9.0.7
+├─ xregexp@2.0.0
+├─ xtend@2.1.2
+│  └─ object-keys@~0.4.0
+├─ y18n@4.0.0
+├─ yallist@2.1.2
+├─ yargs-parser@13.1.1
+│  ├─ camelcase@^5.0.0
+│  ├─ camelcase@5.3.1
+│  └─ decamelize@^1.2.0
+├─ yargs@13.3.0
+│  ├─ cliui@^5.0.0
+│  ├─ find-up@^3.0.0
+│  ├─ get-caller-file@^2.0.1
+│  ├─ require-directory@^2.1.1
+│  ├─ require-main-filename@^2.0.0
+│  ├─ set-blocking@^2.0.0
+│  ├─ string-width@^3.0.0
+│  ├─ which-module@^2.0.0
+│  ├─ y18n@^4.0.0
+│  └─ yargs-parser@^13.1.1
+└─ yauzl@2.4.1
+   └─ fd-slicer@~1.0.1
+Done in 0.74s.
+travis_time:end:17f752ee:start=1568185530774918285,finish=1568185531749984449,duration=975066164,event=before_script[0Ktravis_fold:end:before_script[0Ktravis_time:start:09e11320[0K$ ./scripts/travis.sh
+yarn run test
+yarn run v1.15.2
+$ eslint app
+Done in 1.62s.
+if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
+  yarn run snyk
+  yarn run mac
+fi
+if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then
+  yarn run linux
+fi
+yarn run v1.15.2
+$ electron-builder --linux -c.extraMetadata.irccloud.sentry_dsn ${SENTRY_DSN}
+  • electron-builder  version=21.2.0 os=4.15.0-1028-gcp
+  • artifacts will be published if draft release exists  reason=CI detected
+  • loaded configuration  file=/home/travis/build/irccloud/irccloud-desktop/electron-builder.json
+  • rebuilding native dependencies  dependencies=spellchecker@3.7.0 platform=linux arch=x64
+  • rebuilding native dependency  name=spellchecker version=3.7.0
+  • packaging       platform=linux arch=x64 electron=6.0.7 appOutDir=dist/linux-unpacked
+  • building        target=AppImage arch=x64 file=dist/IRCCloud-0.13.0-linux-x86_64.AppImage
+  • building        target=snap arch=x64 file=dist/irccloud-desktop_0.13.0_linux_amd64.snap
+  • downloading     url=https://github.com/electron-userland/electron-builder-binaries/releases/download/appimage-12.0.1/appimage-12.0.1.7z size=1.6 MB parts=1
+  • downloaded      url=https://github.com/electron-userland/electron-builder-binaries/releases/download/appimage-12.0.1/appimage-12.0.1.7z duration=757ms
+  • downloading     url=https://github.com/electron-userland/electron-builder-binaries/releases/download/snap-template-4.0-2/snap-template-electron-4.0-2-amd64.tar.7z size=1.5 MB parts=1
+  • downloaded      url=https://github.com/electron-userland/electron-builder-binaries/releases/download/snap-template-4.0-2/snap-template-electron-4.0-2-amd64.tar.7z duration=844ms
+  • publishing      publisher=Github (owner: irccloud, project: irccloud-desktop, version: 0.13.0)
+  • uploading       file=IRCCloud-0.13.0-linux-x86_64.AppImage provider=GitHub
+  • GitHub release not created  reason=existing type not compatible with publishing type tag=v0.13.0 version=0.13.0 existingType=pre-release publishingType=draft
+  • skipped publishing  file=IRCCloud-0.13.0-linux-x86_64.AppImage reason=existing type not compatible with publishing type tag=v0.13.0 version=0.13.0 existingType=pre-release publishingType=draft
+  • publishing      publisher=Snap Store
+  • not published to snapStore  file=/home/travis/build/irccloud/irccloud-desktop/dist/irccloud-desktop_0.13.0_linux_amd64.snap reason=current build is not for a git tag publishPolicy=onTagOrDraft
+  • building        target=deb arch=x64 file=dist/irccloud-desktop_0.13.0_linux_amd64.deb
+  • downloading     url=https://github.com/electron-userland/electron-builder-binaries/releases/download/fpm-1.9.3-2.3.1-linux-x86_64/fpm-1.9.3-2.3.1-linux-x86_64.7z size=5.0 MB parts=1
+  • downloaded      url=https://github.com/electron-userland/electron-builder-binaries/releases/download/fpm-1.9.3-2.3.1-linux-x86_64/fpm-1.9.3-2.3.1-linux-x86_64.7z duration=1.888s
+  • uploading       file=irccloud-desktop_0.13.0_linux_amd64.deb provider=GitHub
+  • skipped publishing  file=irccloud-desktop_0.13.0_linux_amd64.deb reason=existing type not compatible with publishing type tag=v0.13.0 version=0.13.0 existingType=pre-release publishingType=draft
+  • skipped publishing  file=latest-linux.yml reason=existing type not compatible with publishing type tag=v0.13.0 version=0.13.0 existingType=pre-release publishingType=draft
+Done in 176.26s.
+travis_time:end:09e11320:start=1568185531761357520,finish=1568185710547910624,duration=178786553104,event=script[0K[32;1mThe command "./scripts/travis.sh" exited with 0.[0m
+travis_fold:start:cache.2[0Kstore build cache
+travis_time:start:0613b158[0Ktravis_time:end:0613b158:start=1568185710555570257,finish=1568185710559418547,duration=3848290,event=cache[0Ktravis_time:start:18d2a944[0K[32;1mchanges detected (content changed, file is created, or file is deleted):\n/home/travis/build/irccloud/irccloud-desktop/node_modules/electron/dist/electron
+/home/travis/build/irccloud/irccloud-desktop/node_modules/electron/dist/resources.pak
+/home/travis/build/irccloud/irccloud-desktop/node_modules/electron/dist/version
+/home/travis/build/irccloud/irccloud-desktop/node_modules/electron/electron.d.ts
+/home/travis/build/irccloud/irccloud-desktop/node_modules/electron/package.json
+/home/travis/build/irccloud/irccloud-desktop/node_modules/spellchecker/build/config.gypi
+/home/travis/build/irccloud/irccloud-desktop/node_modules/spellchecker/build/hunspell.target.mk
+/home/travis/build/irccloud/irccloud-desktop/node_modules/spellchecker/build/Makefile
+/home/travis/build/irccloud/irccloud-desktop/node_modules/spellchecker/build/Release/.deps/Release/obj.target/hunspell/vendor/hunspell/src/hunspell/affentry.o.d
+/home/travis/build/irccloud/irccloud-desktop/node_modules/spellchecker/build/Release/.deps/Release/obj.target/hunspell/vendor/hunspell/src/hunspell/affixmgr.o.d\n...[0m
+[32;1mchanges detected, packing new archive[0m
+[32;1muploading master/cache-linux-xenial-xcode11-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855--node-8.tgz[0m
+[32;1mcache uploaded[0m
+travis_time:end:18d2a944:start=1568185710565877137,finish=1568185725057182879,duration=14491305742,event=cache[0Ktravis_fold:end:cache.2[0K
+travis_fold:start:dpl_0[0Ktravis_time:start:0d0b3088[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
+Successfully installed dpl-1.10.12
+1 gem installed
+travis_time:end:0d0b3088:start=1568185726837077508,finish=1568185729093222862,duration=2256145354,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:10c22838[0Ktravis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
+Successfully installed dpl-snap-1.10.12
+1 gem installed
+Ensure prerequisites for "snapcraft" are available                             /Ensure prerequisites for "snapcraft" are available                             -Ensure prerequisites for "snapcraft" are available                             \Download snap "core" (7396) from channel "stable"                              |Download snap "core" (7396) from channel "stable"                              /Download snap "core" (7396) from channel "stable"                              -Download snap "core" (7396) from channel "stable"                              \Download snap "core" (7396) from channel "stable"                              |Download snap "core" (7396) from channel "stable"                              /[?25l[7mDownload snap [0m"core" (7396) from channel "stable"             18%  163MB/s 467ms[7mDownload snap "core" (73[0m96) from channel "stable"             31%  140MB/s 461ms[7mDownload snap "core" (7396) from [0mchannel "stable"             41%  126MB/s 432ms[7mDownload snap "core" (7396) from channel "s[0mtable"             55%  124MB/s 340ms[7mDownload snap "core" (7396) from channel "stable"    [0m         67%  122MB/s 248ms[7mDownload snap "core" (7396) from channel "stable"             80[0m%  122MB/s 150ms[7mDownload snap "core" (7396) from channel "stable"             93%  121MB/s[0m  52ms[7mDownload snap "core" (7396) from channel "stable"            100%  114MB/s 0.0ns[0m[7mDownload snap "core" (7396) from channel "stable"            100%  101MB/s 0.0ns[0m[7mDownload snap "core" (7396) from channel "stable"            100% 85.4MB/s 0.0ns[0mFetch and check assertions for snap "core" (7396)                              -Fetch and check assertions for snap "core" (7396)                              \Fetch and check assertions for snap "core" (7396)                              |Fetch and check assertions for snap "core" (7396)                              /Fetch and check assertions for snap "core" (7396)                              -Fetch and check assertions for snap "core" (7396)                              \Fetch and check assertions for snap "core" (7396)                              |Fetch and check assertions for snap "core" (7396)                              /Fetch and check assertions for snap "core" (7396)                              -Mount snap "core" (7396)                                                       \Mount snap "core" (7396)                                                       |Mount snap "core" (7396)                                                       /Mount snap "core" (7396)                                                       -Mount snap "core" (7396)                                                       \Mount snap "core" (7396)                                                       |Mount snap "core" (7396)                                                       /Mount snap "core" (7396)                                                       -Setup snap "core" (7396) security profiles                                     \Setup snap "core" (7396) security profiles                                     |Setup snap "core" (7396) security profiles                                     /Download snap "snapcraft" (3308) from channel "stable"                         -Download snap "snapcraft" (3308) from channel "stable"                         \Download snap "snapcraft" (3308) from channel "stable"                         |Download snap "snapcraft" (3308) from channel "stable"                         /Download snap "snapcraft" (3308) from channel "stable"                         -Download snap "snapcraft" (3308) from channel "stable"                         \Download snap "snapcraft" (3308) from channel "stable"                         |Download snap "snapcraft" (3308) from channel "stable"                         /Download snap "snapcraft" (3308) from channel "stable"                         -Download snap "snapcraft" (3308) from channel "stable"                         \[?25l[7mDownload snap "sna[0mpcraft" (3308) from channel "stable"        23%  136MB/s 339ms[7mDownload snap "snapcraft" (330[0m8) from channel "stable"        38%  112MB/s 334ms[7mDownload snap "snapcraft" (3308) from channe[0ml "stable"        55%  108MB/s 249ms[7mDownload snap "snapcraft" (3308) from channel "stable"   [0m     72%  105MB/s 162ms[7mDownload snap "snapcraft" (3308) from channel "stable"        88%  104[0mMB/s  67ms[7mDownload snap "snapcraft" (3308) from channel "stable"       100% 97.9MB/s 0.0ns[0m[7mDownload snap "snapcraft" (3308) from channel "stable"       100% 83.9MB/s 0.0ns[0mFetch and check assertions for snap "snapcraft" (3308)                         |Fetch and check assertions for snap "snapcraft" (3308)                         /Fetch and check assertions for snap "snapcraft" (3308)                         -Fetch and check assertions for snap "snapcraft" (3308)                         \Fetch and check assertions for snap "snapcraft" (3308)                         |Mount snap "snapcraft" (3308)                                                  /Mount snap "snapcraft" (3308)                                                  -Mount snap "snapcraft" (3308)                                                  \Mount snap "snapcraft" (3308)                                                  |Mount snap "snapcraft" (3308)                                                  /Mount snap "snapcraft" (3308)                                                  -Mount snap "snapcraft" (3308)                                                  \Mount snap "snapcraft" (3308)                                                  |Make snap "snapcraft" (3308) available to the system                           /[0m[?25h[Ksnapcraft 3.7.2 from 'canonical' installed
+
+travis_fold:end:dpl.1Attemping to login
+travis_fold:start:dpl.2[33mPreparing deploy[0m
+
+Login successful. You now have these capabilities:
+
+snaps:       ['irccloud']
+channels:    ['edge']
+permissions: ['package_access', 'package_manage', 'package_push', 'package_register', 'package_release', 'package_update']
+expires:     2020-07-15T15:46:01.384335
+
+
+travis_fold:end:dpl.2travis_fold:start:dpl.3[33mDeploying application[0m
+travis_fold:start:dpl.4[33mPushing snap[0m
+Preparing to push 'irccloud-desktop_0.13.0_linux_amd64.snap'.
+After pushing, an attempt will be made to release to 'edge'
+Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [                     ]   0%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [                     ]   1%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [                     ]   2%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [                     ]   3%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [                     ]   4%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=                    ]   5%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=                    ]   6%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=                    ]   7%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=                    ]   8%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=                    ]   9%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [==                   ]  10%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [==                   ]  11%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [==                   ]  12%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [==                   ]  13%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [==                   ]  14%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [===                  ]  15%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [===                  ]  16%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [===                  ]  17%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [===                  ]  18%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [====                 ]  19%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [====                 ]  20%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [====                 ]  21%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [====                 ]  22%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [====                 ]  23%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=====                ]  24%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=====                ]  25%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=====                ]  26%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=====                ]  27%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=====                ]  28%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [======               ]  29%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [======               ]  30%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [======               ]  31%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [======               ]  32%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [======               ]  33%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=======              ]  34%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=======              ]  35%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=======              ]  36%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=======              ]  37%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [========             ]  38%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [========             ]  39%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [========             ]  40%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [========             ]  41%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [========             ]  42%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=========            ]  43%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=========            ]  44%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=========            ]  45%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=========            ]  46%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=========            ]  47%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [==========           ]  48%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [==========           ]  49%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [==========           ]  50%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [==========           ]  51%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [===========          ]  52%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [===========          ]  53%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [===========          ]  54%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [===========          ]  55%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [===========          ]  56%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [============         ]  57%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [============         ]  58%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [============         ]  59%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [============         ]  60%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [============         ]  61%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=============        ]  62%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=============        ]  63%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=============        ]  64%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=============        ]  65%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=============        ]  66%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [==============       ]  67%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [==============       ]  68%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [==============       ]  69%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [==============       ]  70%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [===============      ]  71%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [===============      ]  72%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [===============      ]  73%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [===============      ]  74%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [===============      ]  75%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [================     ]  76%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [================     ]  77%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [================     ]  78%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [================     ]  79%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [================     ]  80%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=================    ]  81%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=================    ]  82%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=================    ]  83%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=================    ]  84%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [==================   ]  85%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [==================   ]  86%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [==================   ]  87%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [==================   ]  88%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [==================   ]  89%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [===================  ]  90%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [===================  ]  91%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [===================  ]  92%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [===================  ]  93%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [===================  ]  94%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [==================== ]  95%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [==================== ]  96%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [==================== ]  97%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [==================== ]  98%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [==================== ]  99%Pushing 'irccloud-desktop_0.13.0_linux_amd64.snap' [=====================] 100%
+Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Ready to release!
+Revision 15 of 'irccloud' created.
+Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...-                                                                 Processing...\                                                                 Processing...|                                                                 Processing.../                                                                 Processing...|                                                                 
+Track    Arch    Channel    Version    Revision
+latest   amd64   stable     -          -
+                 candidate  -          -
+                 beta       -          -
+                 edge       0.13.0     15
+
+travis_fold:end:dpl.4
+travis_fold:end:dpl.4travis_time:end:10c22838:start=1568185729102667437,finish=1568185797287670741,duration=68185003304,event=after_success[0K
+Done. Your build exited with 0.

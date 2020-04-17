@@ -1,0 +1,1783 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 8a46ac75-aef3-4c07-a83d-380d72387444@1.worker-org-6bc68c5dcd-2t24f.macstadium-prod-2
+version: v6.2.0 https://github.com/travis-ci/worker/tree/5e5476e01646095f48eec13196fdb3faf8f5cbf7
+instance: 02c50c9a-3ec7-458d-a24e-97b8cbed6e8c travis-ci-macos10.14-xcode11g-20191571658720 (via amqp)
+startup: 1m10.144458792s
+travis_fold:end:worker_info[0Ktravis_time:start:149a96f8[0Ktravis_time:end:149a96f8:start=1582798856245160000,finish=1582798856905540000,duration=660380000,event=no_world_writable_dirs[0Ktravis_time:start:06d3ba4f[0Ktravis_time:end:06d3ba4f:start=1582798856914309000,finish=1582798856922408000,duration=8099000,event=setup_filter[0Ktravis_time:start:0d404fc0[0Ktravis_time:end:0d404fc0:start=1582798856932071000,finish=1582798856939118000,duration=7047000,event=check_unsupported[0Ktravis_time:start:12d0c2cc[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: node_js
+Build id: 655738097
+Job id: 655738098
+Runtime kernel version: 18.5.0
+travis-build version: 171ee24bb
+[34m[1mBuild image provisioning date and time[0m
+Mon Oct 21 11:58:09 GMT 2019
+[34m[1mOperating System Details[0m
+ProductName:	Mac OS X
+ProductVersion:	10.14.4
+BuildVersion:	18E226
+[34m[1mGit version[0m
+git version 2.23.0
+[34m[1mbash version[0m
+GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin18)
+Copyright (C) 2007 Free Software Foundation, Inc.
+[34m[1mGCC version[0m
+Apple clang version 11.0.0 (clang-1100.0.33.8)
+Target: x86_64-apple-darwin18.5.0
+Thread model: posix
+InstalledDir: /Applications/Xcode-11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+[34m[1mLLVM version[0m
+Apple clang version 11.0.0 (clang-1100.0.33.8)
+Target: x86_64-apple-darwin18.5.0
+Thread model: posix
+InstalledDir: /Applications/Xcode-11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.6.4
+[34m[1mPre-installed Node.js versions[0m
+v10.15.0
+v10.16.3
+v4.9.1
+v6.16.0
+v6.17.1
+v8.15.0
+v8.16.1
+[34m[1mmvn -version[0m
+Apache Maven 3.6.2 (40f52333136460af0dc0d7232c0dc0bcf0d9e117; 2019-08-27T15:06:16Z)
+Maven home: /usr/local/Cellar/maven/3.6.2/libexec
+Java version: 13, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/openjdk-13.jdk/Contents/Home
+Default locale: en_US, platform encoding: UTF-8
+OS name: "mac os x", version: "10.14.4", arch: "x86_64", family: "mac"
+travis_fold:end:system_info[0K
+travis_time:end:12d0c2cc:start=1582798856947337000,finish=1582798856962239000,duration=14902000,event=show_system_info[0Ktravis_time:start:1ee40c2d[0Ktravis_time:end:1ee40c2d:start=1582798856970571000,finish=1582798856977784000,duration=7213000,event=rm_riak_source[0Ktravis_time:start:03db681c[0Ktravis_time:end:03db681c:start=1582798856986148000,finish=1582798856993536000,duration=7388000,event=fix_rwky_redis[0Ktravis_time:start:035b464a[0Ktravis_time:end:035b464a:start=1582798857001735000,finish=1582798857403537000,duration=401802000,event=wait_for_network[0Ktravis_time:start:20d7a324[0Ktravis_time:end:20d7a324:start=1582798857412057000,finish=1582798857419796000,duration=7739000,event=update_apt_keys[0Ktravis_time:start:059f8b9e[0Ktravis_time:end:059f8b9e:start=1582798857428266000,finish=1582798857436442000,duration=8176000,event=fix_hhvm_source[0Ktravis_time:start:332169ec[0Ktravis_time:end:332169ec:start=1582798857445146000,finish=1582798857452971000,duration=7825000,event=update_mongo_arch[0Ktravis_time:start:0eb6c2b9[0Ktravis_time:end:0eb6c2b9:start=1582798857461731000,finish=1582798857472769000,duration=11038000,event=fix_sudo_enabled_trusty[0Ktravis_time:start:15ec339f[0Ktravis_time:end:15ec339f:start=1582798857483113000,finish=1582798857490319000,duration=7206000,event=update_glibc[0Ktravis_time:start:01dffb44[0Ktravis_time:end:01dffb44:start=1582798857498730000,finish=1582798857558305000,duration=59575000,event=clean_up_path[0Ktravis_time:start:2f9350c4[0Ktravis_time:end:2f9350c4:start=1582798857567668000,finish=1582798857620073000,duration=52405000,event=fix_resolv_conf[0Ktravis_time:start:02790dd2[0Ktravis_time:end:02790dd2:start=1582798857629655000,finish=1582798857684749000,duration=55094000,event=fix_etc_hosts[0Ktravis_time:start:00edbfc0[0Ktravis_time:end:00edbfc0:start=1582798857693528000,finish=1582798857700615000,duration=7087000,event=fix_mvn_settings_xml[0Ktravis_time:start:21192b70[0Ktravis_time:end:21192b70:start=1582798857709907000,finish=1582798857765368000,duration=55461000,event=no_ipv6_localhost[0Ktravis_time:start:085cb609[0Ktravis_time:end:085cb609:start=1582798857775288000,finish=1582798857782904000,duration=7616000,event=fix_etc_mavenrc[0Ktravis_time:start:0521e8f0[0Ktravis_time:end:0521e8f0:start=1582798857791432000,finish=1582798858045533000,duration=254101000,event=fix_wwdr_certificate[0Ktravis_time:start:00036e84[0Ktravis_time:end:00036e84:start=1582798858054193000,finish=1582798858241389000,duration=187196000,event=put_localhost_first[0Ktravis_time:start:0d6d1ed2[0Ktravis_time:end:0d6d1ed2:start=1582798858250158000,finish=1582798858257448000,duration=7290000,event=home_paths[0Ktravis_time:start:13674dbc[0Ktravis_time:end:13674dbc:start=1582798858265904000,finish=1582798858280105000,duration=14201000,event=disable_initramfs[0Ktravis_time:start:200b076c[0Ktravis_time:end:200b076c:start=1582798858288510000,finish=1582798858312773000,duration=24263000,event=disable_ssh_roaming[0Ktravis_time:start:03094950[0Ktravis_time:end:03094950:start=1582798858322270000,finish=1582798858329663000,duration=7393000,event=debug_tools[0Ktravis_time:start:0bdb1d4e[0K
+travis_time:end:0bdb1d4e:start=1582798858338884000,finish=1582798861404204000,duration=3065320000,event=uninstall_oclint[0Ktravis_time:start:066472b9[0Ktravis_time:end:066472b9:start=1582798861416587000,finish=1582798862523986000,duration=1107399000,event=rvm_use[0Ktravis_time:start:1c907e3e[0Ktravis_time:end:1c907e3e:start=1582798862536737000,finish=1582798862591067000,duration=54330000,event=rm_etc_boto_cfg[0Ktravis_time:start:040b7fa7[0Ktravis_time:end:040b7fa7:start=1582798862601437000,finish=1582798862609540000,duration=8103000,event=rm_oraclejdk8_symlink[0Ktravis_time:start:03a44db6[0Ktravis_time:end:03a44db6:start=1582798862620764000,finish=1582798862634454000,duration=13690000,event=enable_i386[0Ktravis_time:start:0ddb698c[0Ktravis_time:end:0ddb698c:start=1582798862644694000,finish=1582798862656962000,duration=12268000,event=update_rubygems[0Ktravis_time:start:14bc58b7[0Ktravis_time:end:14bc58b7:start=1582798862666948000,finish=1582798862680981000,duration=14033000,event=ensure_path_components[0Ktravis_time:start:006c61c8[0Ktravis_time:end:006c61c8:start=1582798862692579000,finish=1582798862701058000,duration=8479000,event=redefine_curl[0Ktravis_time:start:0271eacb[0Ktravis_time:end:0271eacb:start=1582798862712559000,finish=1582798862821786000,duration=109227000,event=nonblock_pipe[0Ktravis_time:start:08a45f3a[0Ktravis_time:end:08a45f3a:start=1582798862831560000,finish=1582798862840282000,duration=8722000,event=apt_get_update[0Ktravis_time:start:123daa27[0Ktravis_time:end:123daa27:start=1582798862850662000,finish=1582798862858277000,duration=7615000,event=deprecate_xcode_64[0Ktravis_time:start:13ad5580[0Ktravis_time:end:13ad5580:start=1582798862867663000,finish=1582798862879153000,duration=11490000,event=update_heroku[0Ktravis_time:start:02ca6ed8[0Ktravis_time:end:02ca6ed8:start=1582798862890589000,finish=1582798862898396000,duration=7807000,event=shell_session_update[0Ktravis_time:start:2c044d46[0Ktravis_time:end:2c044d46:start=1582798862909141000,finish=1582798862916995000,duration=7854000,event=maven_central_mirror[0Ktravis_time:start:0acc61f6[0Ktravis_time:end:0acc61f6:start=1582798862928101000,finish=1582798862935797000,duration=7696000,event=maven_https[0Ktravis_time:start:060ab0b7[0Ktravis_time:end:060ab0b7:start=1582798862946098000,finish=1582798862953421000,duration=7323000,event=fix_ps4[0Ktravis_time:start:16759b60[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:0125e740[0K$ git clone --depth=50 --branch=master https://github.com/irccloud/irccloud-desktop.git irccloud/irccloud-desktop
+Cloning into 'irccloud/irccloud-desktop'...
+travis_time:end:0125e740:start=1582798862972675000,finish=1582798863681511000,duration=708836000,event=checkout[0K$ cd irccloud/irccloud-desktop
+$ git checkout -qf 9ae4f811dfc89de9708cb071e17e8484b8486dab
+travis_fold:end:git.checkout[0K
+travis_time:end:0125e740:start=1582798862972675000,finish=1582798863752794000,duration=780119000,event=checkout[0Ktravis_time:start:11d200d2[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export GH_TOKEN=[secure]
+$ export encrypted_fc666da9e2f5_key=[secure]
+$ export encrypted_fc666da9e2f5_iv=[secure]
+
+travis_time:end:11d200d2:start=1582798863763246000,finish=1582798863785752000,duration=22506000,event=env[0Ktravis_fold:start:nvm.install[0Ktravis_time:start:0718616a[0K$ nvm install 12
+Downloading and installing node v12.16.1...
+Downloading https://nodejs.org/dist/v12.16.1/node-v12.16.1-darwin-x64.tar.xz...
+Computing checksum with sha256sum
+Checksums matched!
+Now using node v12.16.1 (npm v6.13.4)
+travis_time:end:0718616a:start=1582798864857025000,finish=1582798871029249000,duration=6172224000,event=setup[0Ktravis_fold:end:nvm.install[0K
+travis_fold:start:install.yarn[0K[32;1mInstalling yarn[0m
+travis_time:start:0d91d3fd[0K$ curl -o- -L https://yarnpkg.com/install.sh | bash
+[37mInstalling Yarn![0m
+[36m> Downloading tarball...[0m
+
+[1/2]: https://yarnpkg.com/latest.tar.gz --> /var/folders/17/5mc7816d3mndxjqgplq6057w0000gn/T/yarn.tar.gz.XXXXXXXXXX.M53tg8Te
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    57  100    57    0     0    468      0 --:--:-- --:--:-- --:--:--   467
+100    93  100    93    0     0    385      0 --:--:-- --:--:-- --:--:--   385
+100   609  100   609    0     0   1748      0 --:--:-- --:--:-- --:--:--  1748
+100 1214k  100 1214k    0     0  2149k      0 --:--:-- --:--:-- --:--:-- 2149k
+
+[2/2]: https://yarnpkg.com/latest.tar.gz.asc --> /var/folders/17/5mc7816d3mndxjqgplq6057w0000gn/T/yarn.tar.gz.XXXXXXXXXX.M53tg8Te.asc
+100    61  100    61    0     0   2667      0 --:--:-- --:--:-- --:--:--  2667
+100    97  100    97    0     0   2167      0 --:--:-- --:--:-- --:--:--  2167
+100   613  100   613    0     0   9250      0 --:--:-- --:--:-- --:--:--  9250
+100  1028  100  1028    0     0  10450      0 --:--:-- --:--:-- --:--:-- 10450
+[36m> Verifying integrity...[0m
+gpg: key 1646B01B86E50310: public key "Yarn Packaging <yarn@dan.cx>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+gpg: Signature made Wed Feb  5 12:55:14 2020 GMT
+gpg:                using RSA key 6D98490C6F1ACDDD448E45954F77679369475BAA
+gpg: Good signature from "Yarn Packaging <yarn@dan.cx>" [unknown]
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 72EC F46A 56B4 AD39 C907  BBB7 1646 B01B 86E5 0310
+     Subkey fingerprint: 6D98 490C 6F1A CDDD 448E  4595 4F77 6793 6947 5BAA
+[32m> GPG signature looks good[0m
+[36m> Extracting to ~/.yarn...[0m
+[36m> Adding to $PATH...[0m
+[36m> We've added the following to your /Users/travis/.bashrc
+> If this isn't the profile of your current shell then please add the following to your correct profile:
+   
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+[0m
+[32m> Successfully installed Yarn 1.22.0! Please open another terminal where the `yarn` command will now be available.[0m
+travis_time:end:0d91d3fd:start=1582798871710680000,finish=1582798873457355000,duration=1746675000,event=setup[0K[32;1mSetting up $PATH[0m
+$ export PATH=${TRAVIS_HOME}/.yarn/bin:$PATH
+travis_fold:end:install.yarn[0K$ node --version
+v12.16.1
+$ npm --version
+6.13.4
+$ nvm --version
+0.35.2
+$ yarn --version
+1.22.0
+
+travis_fold:start:before_install.1[0Ktravis_time:start:2262c5f7[0K$ openssl aes-256-cbc -K $encrypted_fc666da9e2f5_key -iv $encrypted_fc666da9e2f5_iv -in .travis.env.enc -out .travis.env -d; source .travis.env;
+travis_time:end:2262c5f7:start=1582798876410580000,finish=1582798876454325000,duration=43745000,event=before_install[0Ktravis_fold:end:before_install.1[0Ktravis_fold:start:before_install.2[0Ktravis_time:start:2d1f08a2[0K$ node --version
+v12.16.1
+travis_time:end:2d1f08a2:start=1582798876466009000,finish=1582798876486287000,duration=20278000,event=before_install[0Ktravis_fold:end:before_install.2[0Ktravis_fold:start:before_install.3[0Ktravis_time:start:00d579a6[0K$ yarn --version
+1.22.0
+travis_time:end:00d579a6:start=1582798876498031000,finish=1582798876760283000,duration=262252000,event=before_install[0Ktravis_fold:end:before_install.3[0Ktravis_fold:start:install[0Ktravis_time:start:032cf426[0K$ yarn
+yarn install v1.22.0
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+$ electron-builder install-app-deps
+  • electron-builder  version=22.3.5
+  • loaded configuration  file=/Users/travis/build/irccloud/irccloud-desktop/electron-builder.json
+$ yarn run snyk-protect
+yarn run v1.22.0
+$ snyk protect
+Successfully applied Snyk patches
+
+Done in 2.79s.
+Done in 49.89s.
+travis_time:end:032cf426:start=1582798876772098000,finish=1582798926953503000,duration=50181405000,event=install[0Ktravis_fold:end:install[0Ktravis_fold:start:before_script[0Ktravis_time:start:0f2dbe40[0K$ yarn list
+yarn list v1.22.0
+├─ @babel/code-frame@7.8.3
+│  └─ @babel/highlight@^7.8.3
+├─ @babel/highlight@7.8.3
+│  ├─ chalk@^2.0.0
+│  ├─ esutils@^2.0.2
+│  └─ js-tokens@^4.0.0
+├─ @develar/schema-utils@2.1.0
+│  ├─ ajv-keywords@^3.1.0
+│  └─ ajv@^6.1.0
+├─ @electron/get@1.7.5
+│  ├─ debug@^4.1.1
+│  ├─ env-paths@^2.2.0
+│  ├─ fs-extra@^8.1.0
+│  ├─ global-agent@^2.0.2
+│  ├─ global-tunnel-ng@^2.7.1
+│  ├─ got@^9.6.0
+│  ├─ sanitize-filename@^1.6.2
+│  └─ sumchecker@^3.0.1
+├─ @sindresorhus/is@0.14.0
+├─ @snyk/cli-interface@2.3.1
+│  └─ tslib@^1.9.3
+├─ @snyk/cocoapods-lockfile-parser@3.0.0
+│  ├─ @snyk/dep-graph@^1.11.0
+│  ├─ @snyk/ruby-semver@^2.0.4
+│  ├─ @types/js-yaml@^3.12.1
+│  ├─ core-js@^3.2.0
+│  ├─ js-yaml@^3.13.1
+│  ├─ source-map-support@^0.5.7
+│  └─ tslib@^1.9.3
+├─ @snyk/composer-lockfile-parser@1.2.0
+│  └─ lodash@^4.17.13
+├─ @snyk/configstore@3.2.0-rc1
+│  ├─ dot-prop@^5.2.0
+│  ├─ graceful-fs@^4.1.2
+│  ├─ make-dir@^1.0.0
+│  ├─ make-dir@1.3.0
+│  │  └─ pify@^3.0.0
+│  ├─ unique-string@^1.0.0
+│  ├─ write-file-atomic@^2.0.0
+│  ├─ write-file-atomic@2.4.3
+│  │  ├─ graceful-fs@^4.1.11
+│  │  ├─ imurmurhash@^0.1.4
+│  │  └─ signal-exit@^3.0.2
+│  └─ xdg-basedir@^3.0.0
+├─ @snyk/dep-graph@1.15.0
+│  ├─ graphlib@^2.1.5
+│  ├─ lodash@^4.7.14
+│  ├─ object-hash@^1.3.1
+│  ├─ semver@^6.0.0
+│  ├─ source-map-support@^0.5.11
+│  └─ tslib@^1.10.0
+├─ @snyk/gemfile@1.2.0
+├─ @snyk/ruby-semver@2.0.4
+│  └─ lodash@^4.17.14
+├─ @snyk/snyk-cocoapods-plugin@2.0.1
+│  ├─ @snyk/cli-interface@1.5.0
+│  ├─ @snyk/cli-interface@1.5.0
+│  │  └─ tslib@^1.9.3
+│  ├─ @snyk/cocoapods-lockfile-parser@3.0.0
+│  ├─ @snyk/dep-graph@^1.13.1
+│  ├─ source-map-support@^0.5.7
+│  └─ tslib@^1.9.3
+├─ @snyk/update-notifier@2.5.1-rc2
+│  ├─ @snyk/configstore@3.2.0-rc1
+│  ├─ boxen@^1.3.0
+│  ├─ chalk@^2.3.2
+│  ├─ ci-info@1.6.0
+│  ├─ import-lazy@^2.1.0
+│  ├─ is-ci@^1.0.10
+│  ├─ is-ci@1.2.1
+│  │  └─ ci-info@^1.5.0
+│  ├─ is-installed-globally@^0.1.0
+│  ├─ is-npm@^1.0.0
+│  ├─ latest-version@^3.1.0
+│  ├─ semver-diff@^2.0.0
+│  └─ xdg-basedir@^3.0.0
+├─ @szmarczak/http-timer@1.1.2
+│  └─ defer-to-connect@^1.0.1
+├─ @types/agent-base@4.2.0
+│  ├─ @types/events@*
+│  └─ @types/node@*
+├─ @types/bunyan@1.8.6
+│  └─ @types/node@*
+├─ @types/color-name@1.1.1
+├─ @types/debug@4.1.5
+├─ @types/events@3.0.0
+├─ @types/fs-extra@8.1.0
+│  └─ @types/node@*
+├─ @types/js-yaml@3.12.2
+├─ @types/node@13.7.0
+├─ @types/restify@4.3.6
+│  ├─ @types/bunyan@*
+│  └─ @types/node@*
+├─ @types/semver@7.1.0
+│  └─ @types/node@*
+├─ @types/xml2js@0.4.3
+│  ├─ @types/events@*
+│  └─ @types/node@*
+├─ @types/yargs-parser@15.0.0
+├─ @types/yargs@15.0.3
+│  └─ @types/yargs-parser@*
+├─ @yarnpkg/lockfile@1.1.0
+├─ 7zip-bin@5.0.3
+├─ abbrev@1.1.1
+├─ accessibility-developer-tools@2.12.0
+├─ acorn-jsx@5.1.0
+├─ acorn@7.1.0
+├─ agent-base@4.3.0
+│  └─ es6-promisify@^5.0.0
+├─ ajv-keywords@3.4.1
+├─ ajv@6.11.0
+│  ├─ fast-deep-equal@^3.1.1
+│  ├─ fast-json-stable-stringify@^2.0.0
+│  ├─ json-schema-traverse@^0.4.1
+│  └─ uri-js@^4.2.2
+├─ ansi-align@2.0.0
+│  ├─ ansi-regex@3.0.0
+│  ├─ string-width@^2.0.0
+│  ├─ string-width@2.1.1
+│  │  ├─ is-fullwidth-code-point@^2.0.0
+│  │  └─ strip-ansi@^4.0.0
+│  └─ strip-ansi@4.0.0
+│     └─ ansi-regex@^3.0.0
+├─ ansi-escapes@3.2.0
+├─ ansi-regex@4.1.0
+├─ ansi-styles@3.2.1
+│  └─ color-convert@^1.9.0
+├─ ansicolors@0.3.2
+├─ app-builder-bin@3.5.2
+├─ app-builder-lib@22.3.5
+│  ├─ @develar/schema-utils@~2.1.0
+│  ├─ 7zip-bin@~5.0.3
+│  ├─ async-exit-hook@^2.0.1
+│  ├─ bluebird-lst@^1.0.9
+│  ├─ builder-util-runtime@8.6.1
+│  ├─ builder-util@22.3.5
+│  ├─ chromium-pickle-js@^0.2.0
+│  ├─ debug@^4.1.1
+│  ├─ ejs@^3.0.1
+│  ├─ electron-publish@22.3.5
+│  ├─ fs-extra@^8.1.0
+│  ├─ hosted-git-info@^3.0.2
+│  ├─ hosted-git-info@3.0.2
+│  │  └─ lru-cache@^5.1.1
+│  ├─ is-ci@^2.0.0
+│  ├─ isbinaryfile@^4.0.4
+│  ├─ js-yaml@^3.13.1
+│  ├─ lazy-val@^1.0.4
+│  ├─ lru-cache@5.1.1
+│  │  └─ yallist@^3.0.2
+│  ├─ minimatch@^3.0.4
+│  ├─ normalize-package-data@^2.5.0
+│  ├─ read-config-file@5.0.1
+│  ├─ sanitize-filename@^1.6.3
+│  ├─ semver@^7.1.3
+│  ├─ semver@7.1.3
+│  ├─ temp-file@^3.3.6
+│  └─ yallist@3.1.1
+├─ archy@1.0.0
+├─ argparse@1.0.10
+│  └─ sprintf-js@~1.0.2
+├─ asap@2.0.6
+├─ ast-types@0.13.2
+├─ astral-regex@1.0.0
+├─ async-exit-hook@2.0.1
+├─ async@3.1.1
+├─ balanced-match@1.0.0
+├─ bl@3.0.0
+│  ├─ readable-stream@^3.0.1
+│  ├─ readable-stream@3.5.0
+│  │  ├─ inherits@^2.0.3
+│  │  ├─ string_decoder@^1.1.1
+│  │  └─ util-deprecate@^1.0.1
+│  └─ string_decoder@1.3.0
+│     └─ safe-buffer@~5.2.0
+├─ bluebird-lst@1.0.9
+│  └─ bluebird@^3.5.5
+├─ bluebird@3.7.2
+├─ boolean@3.0.0
+├─ boxen@1.3.0
+│  ├─ ansi-align@^2.0.0
+│  ├─ ansi-regex@3.0.0
+│  ├─ camelcase@^4.0.0
+│  ├─ camelcase@4.1.0
+│  ├─ chalk@^2.0.1
+│  ├─ cli-boxes@^1.0.0
+│  ├─ string-width@^2.0.0
+│  ├─ string-width@2.1.1
+│  │  ├─ is-fullwidth-code-point@^2.0.0
+│  │  └─ strip-ansi@^4.0.0
+│  ├─ strip-ansi@4.0.0
+│  │  └─ ansi-regex@^3.0.0
+│  ├─ term-size@^1.2.0
+│  └─ widest-line@^2.0.0
+├─ brace-expansion@1.1.11
+│  ├─ balanced-match@^1.0.0
+│  └─ concat-map@0.0.1
+├─ buffer-from@1.1.1
+├─ builder-util-runtime@8.6.1
+│  ├─ debug@^4.1.1
+│  └─ sax@^1.2.4
+├─ builder-util@22.3.5
+│  ├─ @types/debug@^4.1.5
+│  ├─ @types/fs-extra@^8.1.0
+│  ├─ 7zip-bin@~5.0.3
+│  ├─ ansi-styles@4.2.1
+│  │  ├─ @types/color-name@^1.1.1
+│  │  └─ color-convert@^2.0.1
+│  ├─ app-builder-bin@3.5.2
+│  ├─ bluebird-lst@^1.0.9
+│  ├─ builder-util-runtime@8.6.1
+│  ├─ chalk@^3.0.0
+│  ├─ chalk@3.0.0
+│  │  ├─ ansi-styles@^4.1.0
+│  │  └─ supports-color@^7.1.0
+│  ├─ color-convert@2.0.1
+│  │  └─ color-name@~1.1.4
+│  ├─ color-name@1.1.4
+│  ├─ debug@^4.1.1
+│  ├─ fs-extra@^8.1.0
+│  ├─ has-flag@4.0.0
+│  ├─ is-ci@^2.0.0
+│  ├─ js-yaml@^3.13.1
+│  ├─ source-map-support@^0.5.16
+│  ├─ stat-mode@^1.0.0
+│  ├─ supports-color@7.1.0
+│  │  └─ has-flag@^4.0.0
+│  └─ temp-file@^3.3.6
+├─ bytes@3.1.0
+├─ cacheable-request@6.1.0
+│  ├─ clone-response@^1.0.2
+│  ├─ get-stream@^5.1.0
+│  ├─ get-stream@5.1.0
+│  │  └─ pump@^3.0.0
+│  ├─ http-cache-semantics@^4.0.0
+│  ├─ keyv@^3.0.0
+│  ├─ lowercase-keys@^2.0.0
+│  ├─ lowercase-keys@2.0.0
+│  ├─ normalize-url@^4.1.0
+│  └─ responselike@^1.0.2
+├─ callsites@3.1.0
+├─ camelcase@5.3.1
+├─ capture-stack-trace@1.0.1
+├─ chalk@2.4.2
+│  ├─ ansi-styles@^3.2.1
+│  ├─ escape-string-regexp@^1.0.5
+│  └─ supports-color@^5.3.0
+├─ chardet@0.7.0
+├─ charenc@0.0.2
+├─ chromium-pickle-js@0.2.0
+├─ ci-info@2.0.0
+├─ cli-boxes@1.0.0
+├─ cli-cursor@2.1.0
+│  └─ restore-cursor@^2.0.0
+├─ cli-spinner@0.2.10
+├─ cli-width@2.2.0
+├─ cliui@6.0.0
+│  ├─ ansi-regex@5.0.0
+│  ├─ ansi-styles@4.2.1
+│  │  ├─ @types/color-name@^1.1.1
+│  │  └─ color-convert@^2.0.1
+│  ├─ color-convert@2.0.1
+│  │  └─ color-name@~1.1.4
+│  ├─ color-name@1.1.4
+│  ├─ string-width@^4.2.0
+│  ├─ strip-ansi@^6.0.0
+│  ├─ strip-ansi@6.0.0
+│  │  └─ ansi-regex@^5.0.0
+│  ├─ wrap-ansi@^6.2.0
+│  └─ wrap-ansi@6.2.0
+│     ├─ ansi-styles@^4.0.0
+│     ├─ string-width@^4.1.0
+│     └─ strip-ansi@^6.0.0
+├─ clone-response@1.0.2
+│  └─ mimic-response@^1.0.0
+├─ co@4.6.0
+├─ code-point-at@1.1.0
+├─ color-convert@1.9.3
+│  └─ color-name@1.1.3
+├─ color-name@1.1.3
+├─ concat-map@0.0.1
+├─ concat-stream@1.6.2
+│  ├─ buffer-from@^1.0.0
+│  ├─ inherits@^2.0.3
+│  ├─ readable-stream@^2.2.2
+│  └─ typedarray@^0.0.6
+├─ conf@6.2.1
+│  ├─ ajv@^6.10.2
+│  ├─ debounce-fn@^3.0.1
+│  ├─ dot-prop@^5.0.0
+│  ├─ env-paths@^2.2.0
+│  ├─ json-schema-typed@^7.0.1
+│  ├─ make-dir@^3.0.0
+│  ├─ onetime@^5.1.0
+│  ├─ pkg-up@^3.0.1
+│  ├─ semver@^6.2.0
+│  └─ write-file-atomic@^3.0.0
+├─ config-chain@1.1.12
+│  ├─ ini@^1.3.4
+│  └─ proto-list@~1.2.1
+├─ configstore@5.0.1
+│  ├─ crypto-random-string@2.0.0
+│  ├─ dot-prop@^5.2.0
+│  ├─ graceful-fs@^4.1.2
+│  ├─ make-dir@^3.0.0
+│  ├─ unique-string@^2.0.0
+│  ├─ unique-string@2.0.0
+│  │  └─ crypto-random-string@^2.0.0
+│  ├─ write-file-atomic@^3.0.0
+│  ├─ xdg-basedir@^4.0.0
+│  └─ xdg-basedir@4.0.0
+├─ cookie@0.3.1
+├─ core-js@3.6.4
+├─ core-util-is@1.0.2
+├─ create-error-class@3.0.2
+│  └─ capture-stack-trace@^1.0.0
+├─ cross-spawn@6.0.5
+│  ├─ nice-try@^1.0.4
+│  ├─ path-key@^2.0.1
+│  ├─ semver@^5.5.0
+│  ├─ semver@5.7.1
+│  ├─ shebang-command@^1.2.0
+│  └─ which@^1.2.9
+├─ crypt@0.0.2
+├─ crypto-random-string@1.0.0
+├─ data-uri-to-buffer@1.2.0
+├─ debounce-fn@3.0.1
+���  └─ mimic-fn@^2.1.0
+├─ debug@4.1.1
+│  ├─ ms@^2.1.1
+│  └─ ms@2.1.2
+├─ decamelize@1.2.0
+├─ decompress-response@3.3.0
+│  └─ mimic-response@^1.0.0
+├─ deep-extend@0.6.0
+├─ deep-is@0.1.3
+├─ defer-to-connect@1.1.3
+├─ define-properties@1.1.3
+│  └─ object-keys@^1.0.12
+├─ degenerator@1.0.4
+│  ├─ ast-types@0.x.x
+│  ├─ escodegen@1.x.x
+│  ├─ esprima@3.1.3
+│  └─ esprima@3.x.x
+├─ depd@1.1.2
+├─ detect-node@2.0.4
+├─ devtron@1.4.0
+│  ├─ accessibility-developer-tools@^2.11.0
+│  ├─ highlight.js@^9.3.0
+│  └─ humanize-plus@^1.8.1
+├─ diff@4.0.2
+├─ dmg-builder@22.3.5
+│  ├─ app-builder-lib@~22.3.5
+│  ├─ bluebird-lst@^1.0.9
+│  ├─ builder-util@~22.3.5
+│  ├─ fs-extra@^8.1.0
+│  ├─ iconv-lite@^0.5.1
+│  ├─ iconv-lite@0.5.1
+│  │  └─ safer-buffer@>= 2.1.2 < 3
+│  ├─ js-yaml@^3.13.1
+│  └─ sanitize-filename@^1.6.3
+├─ dockerfile-ast@0.0.19
+│  └─ vscode-languageserver-types@^3.5.0
+├─ doctrine@3.0.0
+│  └─ esutils@^2.0.2
+├─ dot-prop@5.2.0
+│  └─ is-obj@^2.0.0
+├─ dotenv-expand@5.1.0
+├─ dotenv@8.2.0
+├─ dotnet-deps-parser@4.9.0
+│  ├─ @types/xml2js@0.4.3
+│  ├─ lodash@^4.17.11
+│  ├─ source-map-support@^0.5.7
+│  ├─ tslib@^1.10.0
+│  ├─ xml2js@0.4.19
+│  ├─ xml2js@0.4.19
+│  │  ├─ sax@>=0.6.0
+│  │  └─ xmlbuilder@~9.0.1
+│  └─ xmlbuilder@9.0.7
+├─ duplexer3@0.1.4
+├─ ejs@3.0.1
+├─ electron-builder@22.3.5
+│  ├─ @types/yargs@^15.0.3
+│  ├─ ansi-styles@4.2.1
+│  │  ├─ @types/color-name@^1.1.1
+│  │  └─ color-convert@^2.0.1
+│  ├─ app-builder-lib@22.3.5
+│  ├─ bluebird-lst@^1.0.9
+│  ├─ builder-util-runtime@8.6.1
+│  ├─ builder-util@22.3.5
+│  ├─ chalk@^3.0.0
+│  ├─ chalk@3.0.0
+│  │  ├─ ansi-styles@^4.1.0
+│  │  └─ supports-color@^7.1.0
+│  ├─ color-convert@2.0.1
+│  │  └─ color-name@~1.1.4
+│  ├─ color-name@1.1.4
+│  ├─ dmg-builder@22.3.5
+│  ├─ fs-extra@^8.1.0
+│  ├─ has-flag@4.0.0
+│  ├─ is-ci@^2.0.0
+│  ├─ lazy-val@^1.0.4
+│  ├─ read-config-file@5.0.1
+│  ├─ sanitize-filename@^1.6.3
+│  ├─ supports-color@7.1.0
+│  │  └─ has-flag@^4.0.0
+│  ├─ update-notifier@^4.1.0
+│  └─ yargs@^15.1.0
+├─ electron-dl@3.0.0
+│  ├─ ext-name@^5.0.0
+│  ├─ pupa@^2.0.1
+│  └─ unused-filename@^2.1.0
+├─ electron-is-dev@0.3.0
+├─ electron-is@3.0.0
+│  ├─ electron-is-dev@^0.3.0
+│  ├─ semver@^5.5.0
+│  └─ semver@5.7.1
+├─ electron-log@4.0.7
+├─ electron-notarize@0.2.1
+│  ├─ debug@^4.1.1
+│  └─ fs-extra@^8.1.0
+├─ electron-publish@22.3.5
+│  ├─ @types/fs-extra@^8.1.0
+│  ├─ ansi-styles@4.2.1
+│  │  ├─ @types/color-name@^1.1.1
+│  │  └─ color-convert@^2.0.1
+│  ├─ bluebird-lst@^1.0.9
+│  ├─ builder-util-runtime@8.6.1
+│  ├─ builder-util@~22.3.5
+│  ├─ chalk@^3.0.0
+│  ├─ chalk@3.0.0
+│  │  ├─ ansi-styles@^4.1.0
+│  │  └─ supports-color@^7.1.0
+│  ├─ color-convert@2.0.1
+│  │  └─ color-name@~1.1.4
+│  ├─ color-name@1.1.4
+│  ├─ fs-extra@^8.1.0
+│  ├─ has-flag@4.0.0
+│  ├─ lazy-val@^1.0.4
+│  ├─ mime@^2.4.4
+│  └─ supports-color@7.1.0
+│     └─ has-flag@^4.0.0
+├─ electron-store@5.1.1
+│  ├─ conf@^6.2.1
+│  ├─ type-fest@^0.7.1
+│  └─ type-fest@0.7.1
+├─ electron-updater@4.2.4
+│  ├─ @types/semver@^7.1.0
+│  ├─ builder-util-runtime@8.6.1
+│  ├─ fs-extra@^8.1.0
+│  ├─ js-yaml@^3.13.1
+│  ├─ lazy-val@^1.0.4
+│  ├─ lodash.isequal@^4.5.0
+│  ├─ pako@^1.0.11
+│  ├─ semver@^7.1.3
+│  └─ semver@7.1.3
+├─ electron@8.0.2
+│  ├─ @electron/get@^1.0.1
+│  ├─ @types/node@^12.0.12
+│  ├─ @types/node@12.12.26
+│  └─ extract-zip@^1.0.3
+├─ email-validator@2.0.4
+├─ emoji-regex@8.0.0
+├─ encodeurl@1.0.2
+├─ end-of-stream@1.4.4
+│  └─ once@^1.4.0
+├─ env-paths@2.2.0
+├─ es6-error@4.1.1
+├─ es6-promise@4.2.8
+├─ es6-promisify@5.0.0
+│  └─ es6-promise@^4.0.3
+├─ escape-goat@2.1.1
+├─ escape-string-regexp@1.0.5
+├─ escodegen@1.14.1
+│  ├─ esprima@^4.0.1
+│  ├─ estraverse@^4.2.0
+│  ├─ esutils@^2.0.2
+│  ├─ optionator@^0.8.1
+│  └─ source-map@~0.6.1
+├─ eslint-scope@5.0.0
+│  ├─ esrecurse@^4.1.0
+│  └─ estraverse@^4.1.1
+├─ eslint-utils@1.4.3
+│  └─ eslint-visitor-keys@^1.1.0
+├─ eslint-visitor-keys@1.1.0
+├─ eslint@6.8.0
+│  ├─ @babel/code-frame@^7.0.0
+│  ├─ ajv@^6.10.0
+│  ├─ ansi-escapes@4.3.0
+│  │  └─ type-fest@^0.8.1
+│  ├─ chalk@^2.1.0
+│  ├─ cli-cursor@3.1.0
+│  │  └─ restore-cursor@^3.1.0
+│  ├─ cross-spawn@^6.0.5
+│  ├─ debug@^4.0.1
+│  ├─ doctrine@^3.0.0
+│  ├─ eslint-scope@^5.0.0
+│  ├─ eslint-utils@^1.4.3
+│  ├─ eslint-visitor-keys@^1.1.0
+│  ├─ espree@^6.1.2
+│  ├─ esquery@^1.0.1
+│  ├─ esutils@^2.0.2
+│  ├─ figures@3.1.0
+│  │  └─ escape-string-regexp@^1.0.5
+│  ├─ file-entry-cache@^5.0.1
+│  ├─ functional-red-black-tree@^1.0.1
+│  ├─ glob-parent@^5.0.0
+│  ├─ globals@^12.1.0
+│  ├─ ignore@^4.0.6
+│  ├─ import-fresh@^3.0.0
+│  ├─ imurmurhash@^0.1.4
+│  ├─ inquirer@^7.0.0
+│  ├─ inquirer@7.0.4
+│  │  ├─ ansi-escapes@^4.2.1
+│  │  ├─ chalk@^2.4.2
+│  │  ├─ cli-cursor@^3.1.0
+│  │  ├─ cli-width@^2.0.0
+│  │  ├─ external-editor@^3.0.3
+│  │  ├─ figures@^3.0.0
+│  │  ├─ lodash@^4.17.15
+│  │  ├─ mute-stream@0.0.8
+│  │  ├─ run-async@^2.2.0
+│  │  ├─ rxjs@^6.5.3
+│  │  ├─ string-width@^4.1.0
+│  │  ├─ strip-ansi@^5.1.0
+│  │  └─ through@^2.3.6
+│  ├─ is-glob@^4.0.0
+│  ├─ js-yaml@^3.13.1
+│  ├─ json-stable-stringify-without-jsonify@^1.0.1
+│  ├─ levn@^0.3.0
+│  ├─ lodash@^4.17.14
+│  ├─ minimatch@^3.0.4
+│  ├─ mkdirp@^0.5.1
+│  ├─ mute-stream@0.0.8
+│  ├─ natural-compare@^1.4.0
+│  ├─ optionator@^0.8.3
+│  ├─ progress@^2.0.0
+│  ├─ regexpp@^2.0.1
+│  ├─ restore-cursor@3.1.0
+│  │  ├─ onetime@^5.1.0
+│  │  └─ signal-exit@^3.0.2
+│  ├─ semver@^6.1.2
+│  ├─ strip-ansi@^5.2.0
+│  ├─ strip-json-comments@^3.0.1
+│  ├─ table@^5.2.3
+│  ├─ text-table@^0.2.0
+│  └─ v8-compile-cache@^2.0.3
+├─ espree@6.1.2
+│  ├─ acorn-jsx@^5.1.0
+│  ├─ acorn@^7.1.0
+│  └─ eslint-visitor-keys@^1.1.0
+├─ esprima@4.0.1
+├─ esquery@1.0.1
+│  └─ estraverse@^4.0.0
+├─ esrecurse@4.2.1
+│  └─ estraverse@^4.1.0
+├─ estraverse@4.3.0
+├─ esutils@2.0.3
+├─ event-loop-spinner@1.1.0
+│  └─ tslib@^1.10.0
+├─ execa@1.0.0
+│  ├─ cross-spawn@^6.0.0
+│  ├─ get-stream@^4.0.0
+│  ├─ get-stream@4.1.0
+│  │  └─ pump@^3.0.0
+│  ├─ is-stream@^1.1.0
+│  ├─ npm-run-path@^2.0.0
+│  ├─ p-finally@^1.0.0
+│  ├─ signal-exit@^3.0.0
+│  └─ strip-eof@^1.0.0
+├─ ext-list@2.2.2
+│  └─ mime-db@^1.28.0
+├─ ext-name@5.0.0
+│  ├─ ext-list@^2.0.0
+│  └─ sort-keys-length@^1.0.0
+├─ extend@3.0.2
+├─ external-editor@3.1.0
+│  ├─ chardet@^0.7.0
+│  ├─ iconv-lite@^0.4.24
+│  └─ tmp@^0.0.33
+├─ extract-zip@1.6.7
+│  ├─ concat-stream@1.6.2
+│  ├─ debug@2.6.9
+│  ├─ debug@2.6.9
+│  │  └─ ms@2.0.0
+│  ├─ mkdirp@0.5.1
+│  └─ yauzl@2.4.1
+├─ fast-deep-equal@3.1.1
+├─ fast-json-stable-stringify@2.1.0
+├─ fast-levenshtein@2.0.6
+├─ fd-slicer@1.0.1
+│  └─ pend@~1.2.0
+├─ figures@2.0.0
+│  └─ escape-string-regexp@^1.0.5
+├─ file-entry-cache@5.0.1
+│  └─ flat-cache@^2.0.1
+├─ file-uri-to-path@1.0.0
+├─ find-up@4.1.0
+│  ├─ locate-path@^5.0.0
+│  └─ path-exists@^4.0.0
+├─ flat-cache@2.0.1
+│  ├─ flatted@^2.0.0
+│  ├─ rimraf@2.6.3
+│  └─ write@1.0.3
+├─ flatted@2.0.1
+├─ fs-constants@1.0.0
+├─ fs-extra@8.1.0
+│  ├─ graceful-fs@^4.2.0
+│  ├─ jsonfile@^4.0.0
+│  └─ universalify@^0.1.0
+├─ fs.realpath@1.0.0
+├─ ftp@0.3.10
+│  ├─ isarray@0.0.1
+│  ├─ readable-stream@1.1.14
+│  │  ├─ core-util-is@~1.0.0
+│  │  ├─ inherits@~2.0.1
+│  │  ├─ isarray@0.0.1
+│  │  └─ string_decoder@~0.10.x
+│  ├─ readable-stream@1.1.x
+│  ├─ string_decoder@0.10.31
+│  └─ xregexp@2.0.0
+├─ functional-red-black-tree@1.0.1
+├─ get-caller-file@2.0.5
+├─ get-stream@3.0.0
+├─ get-uri@2.0.4
+│  ├─ data-uri-to-buffer@1
+│  ├─ debug@2
+│  ├─ debug@2.6.9
+│  │  └─ ms@2.0.0
+│  ├─ extend@~3.0.2
+│  ├─ file-uri-to-path@1
+│  ├─ ftp@~0.3.10
+│  └─ readable-stream@2
+├─ getos@3.1.4
+│  └─ async@^3.1.0
+├─ git-up@4.0.1
+│  ├─ is-ssh@^1.3.0
+│  └─ parse-url@^5.0.0
+├─ git-url-parse@11.1.2
+│  └─ git-up@^4.0.0
+├─ glob-parent@5.1.0
+│  └─ is-glob@^4.0.1
+├─ glob@7.1.6
+│  ├─ fs.realpath@^1.0.0
+│  ├─ inflight@^1.0.4
+│  ├─ inherits@2
+│  ├─ minimatch@^3.0.4
+│  ├─ once@^1.3.0
+│  └─ path-is-absolute@^1.0.0
+├─ global-agent@2.1.8
+│  ├─ boolean@^3.0.0
+│  ├─ core-js@^3.6.4
+│  ├─ es6-error@^4.1.1
+│  ├─ matcher@^2.1.0
+│  ├─ roarr@^2.15.2
+│  ├─ semver@^7.1.2
+│  ├─ semver@7.1.2
+│  └─ serialize-error@^5.0.0
+├─ global-dirs@0.1.1
+│  └─ ini@^1.3.4
+├─ global-tunnel-ng@2.7.1
+│  ├─ encodeurl@^1.0.2
+│  ├─ lodash@^4.17.10
+│  ├─ npm-conf@^1.1.3
+│  └─ tunnel@^0.0.6
+├─ globals@12.3.0
+│  └─ type-fest@^0.8.1
+├─ globalthis@1.0.1
+│  └─ define-properties@^1.1.3
+├─ got@9.6.0
+│  ├─ @sindresorhus/is@^0.14.0
+│  ├─ @szmarczak/http-timer@^1.1.2
+│  ├─ cacheable-request@^6.0.0
+│  ├─ decompress-response@^3.3.0
+│  ├─ duplexer3@^0.1.4
+│  ├─ get-stream@^4.1.0
+│  ├─ get-stream@4.1.0
+│  │  └─ pump@^3.0.0
+│  ├─ lowercase-keys@^1.0.1
+│  ├─ mimic-response@^1.0.1
+│  ├─ p-cancelable@^1.0.0
+│  ├─ to-readable-stream@^1.0.0
+│  └─ url-parse-lax@^3.0.0
+├─ graceful-fs@4.2.3
+├─ graphlib@2.1.8
+│  └─ lodash@^4.17.15
+├─ has-flag@3.0.0
+├─ has-yarn@2.1.0
+├─ highlight.js@9.18.1
+├─ hosted-git-info@2.8.5
+├─ http-cache-semantics@4.0.4
+├─ http-errors@1.7.3
+│  ├─ depd@~1.1.2
+│  ├─ inherits@2.0.4
+│  ├─ setprototypeof@1.1.1
+│  ├─ statuses@>= 1.5.0 < 2
+│  └─ toidentifier@1.0.0
+├─ http-proxy-agent@2.1.0
+│  ├─ agent-base@4
+│  ├─ debug@3.1.0
+│  └─ debug@3.1.0
+│     └─ ms@2.0.0
+├─ https-proxy-agent@3.0.1
+│  ├─ agent-base@^4.3.0
+│  ├─ debug@^3.1.0
+│  ├─ debug@3.2.6
+│  │  └─ ms@^2.1.1
+│  └─ ms@2.1.2
+├─ humanize-plus@1.8.2
+├─ iconv-lite@0.4.24
+│  └─ safer-buffer@>= 2.1.2 < 3
+├─ ignore@4.0.6
+├─ immediate@3.0.6
+├─ import-fresh@3.2.1
+│  ├─ parent-module@^1.0.0
+│  └─ resolve-from@^4.0.0
+├─ import-lazy@2.1.0
+├─ imurmurhash@0.1.4
+├─ inflight@1.0.6
+│  ├─ once@^1.3.0
+│  └─ wrappy@1
+├─ inherits@2.0.4
+├─ ini@1.3.5
+├─ inquirer@6.5.2
+│  ├─ ansi-escapes@^3.2.0
+│  ├─ ansi-regex@3.0.0
+│  ├─ chalk@^2.4.2
+│  ├─ cli-cursor@^2.1.0
+│  ├─ cli-width@^2.0.0
+│  ├─ external-editor@^3.0.3
+│  ├─ figures@^2.0.0
+│  ├─ lodash@^4.17.12
+│  ├─ mute-stream@0.0.7
+│  ├─ run-async@^2.2.0
+│  ├─ rxjs@^6.4.0
+│  ├─ string-width@^2.1.0
+│  ├─ string-width@2.1.1
+│  │  ├─ is-fullwidth-code-point@^2.0.0
+│  │  ├─ strip-ansi@^4.0.0
+│  │  └─ strip-ansi@4.0.0
+│  │     └─ ansi-regex@^3.0.0
+│  ├─ strip-ansi@^5.1.0
+│  └─ through@^2.3.6
+├─ invert-kv@1.0.0
+├─ ip@1.1.5
+├─ is-buffer@1.1.6
+├─ is-ci@2.0.0
+│  └─ ci-info@^2.0.0
+├─ is-docker@2.0.0
+├─ is-extglob@2.1.1
+├─ is-fullwidth-code-point@2.0.0
+├─ is-glob@4.0.1
+│  └─ is-extglob@^2.1.1
+├─ is-installed-globally@0.1.0
+│  ├─ global-dirs@^0.1.0
+│  └─ is-path-inside@^1.0.0
+├─ is-npm@1.0.0
+├─ is-obj@2.0.0
+├─ is-path-inside@1.0.1
+│  └─ path-is-inside@^1.0.1
+├─ is-plain-obj@1.1.0
+├─ is-promise@2.1.0
+├─ is-redirect@1.0.0
+├─ is-retry-allowed@1.2.0
+├─ is-ssh@1.3.1
+│  └─ protocols@^1.1.0
+├─ is-stream@1.1.0
+├─ is-typedarray@1.0.0
+├─ is-wsl@2.1.1
+├─ is-yarn-global@0.3.0
+├─ isarray@1.0.0
+├─ isbinaryfile@4.0.4
+├─ isexe@2.0.0
+├─ js-tokens@4.0.0
+├─ js-yaml@3.13.1
+│  ├─ argparse@^1.0.7
+│  └─ esprima@^4.0.0
+├─ json-buffer@3.0.0
+├─ json-schema-traverse@0.4.1
+├─ json-schema-typed@7.0.3
+├─ json-stable-stringify-without-jsonify@1.0.1
+├─ json-stringify-safe@5.0.1
+├─ json5@2.1.1
+│  └─ minimist@^1.2.0
+├─ jsonfile@4.0.0
+│  └─ graceful-fs@^4.1.6
+├─ jszip@3.2.2
+│  ├─ lie@~3.3.0
+│  ├─ pako@~1.0.2
+│  ├─ readable-stream@~2.3.6
+│  └─ set-immediate-shim@~1.0.1
+├─ keyv@3.1.0
+│  └─ json-buffer@3.0.0
+├─ latest-version@3.1.0
+│  └─ package-json@^4.0.0
+├─ lazy-val@1.0.4
+├─ lcid@1.0.0
+│  └─ invert-kv@^1.0.0
+├─ levn@0.3.0
+│  ├─ prelude-ls@~1.1.2
+│  └─ type-check@~0.3.2
+├─ lie@3.3.0
+│  └─ immediate@~3.0.5
+├─ locate-path@5.0.0
+│  └─ p-locate@^4.1.0
+├─ lodash.assign@4.2.0
+├─ lodash.assignin@4.2.0
+├─ lodash.clone@4.5.0
+├─ lodash.clonedeep@4.5.0
+├─ lodash.flatten@4.4.0
+├─ lodash.get@4.4.2
+├─ lodash.isequal@4.5.0
+├─ lodash.set@4.3.2
+├─ lodash@4.17.15
+├─ lowercase-keys@1.0.1
+├─ lru-cache@4.1.5
+│  ├─ pseudomap@^1.0.2
+│  └─ yallist@^2.1.2
+├─ macos-release@2.3.0
+├─ make-dir@3.0.0
+│  └─ semver@^6.0.0
+├─ matcher@2.1.0
+│  ├─ escape-string-regexp@^2.0.0
+│  └─ escape-string-regexp@2.0.0
+├─ md5@2.2.1
+│  ├─ charenc@~0.0.1
+│  ├─ crypt@~0.0.1
+│  └─ is-buffer@~1.1.1
+├─ mime-db@1.43.0
+├─ mime@2.4.4
+├─ mimic-fn@2.1.0
+├─ mimic-response@1.0.1
+├─ minimatch@3.0.4
+│  └─ brace-expansion@^1.1.7
+├─ minimist@1.2.0
+├─ mkdirp@0.5.1
+│  ├─ minimist@0.0.8
+│  └─ minimist@0.0.8
+├─ modify-filename@1.1.0
+├─ ms@2.0.0
+├─ mute-stream@0.0.7
+├─ natural-compare@1.4.0
+├─ nconf@0.10.0
+│  ├─ ansi-regex@2.1.1
+│  ├─ async@^1.4.0
+│  ├─ async@1.5.2
+│  ├─ camelcase@2.1.1
+│  ├─ cliui@3.2.0
+│  │  ├─ string-width@^1.0.1
+│  │  ├─ strip-ansi@^3.0.1
+│  │  └─ wrap-ansi@^2.0.0
+│  ├─ ini@^1.3.0
+│  ├─ is-fullwidth-code-point@1.0.0
+│  │  └─ number-is-nan@^1.0.0
+│  ├─ secure-keys@^1.0.0
+│  ├─ string-width@1.0.2
+│  │  ├─ code-point-at@^1.0.0
+│  │  ├─ is-fullwidth-code-point@^1.0.0
+│  │  └─ strip-ansi@^3.0.0
+│  ├─ strip-ansi@3.0.1
+│  │  └─ ansi-regex@^2.0.0
+│  ├─ wrap-ansi@2.1.0
+│  │  ├─ string-width@^1.0.1
+│  │  └─ strip-ansi@^3.0.1
+│  ├─ y18n@3.2.1
+│  ├─ yargs@^3.19.0
+│  └─ yargs@3.32.0
+│     ├─ camelcase@^2.0.1
+│     ├─ cliui@^3.0.3
+│     ├─ decamelize@^1.1.1
+│     ├─ os-locale@^1.4.0
+│     ├─ string-width@^1.0.1
+│     ├─ window-size@^0.1.4
+│     └─ y18n@^3.2.0
+├─ needle@2.3.2
+│  ├─ debug@^3.2.6
+│  ├─ debug@3.2.6
+│  │  └─ ms@^2.1.1
+│  ├─ iconv-lite@^0.4.4
+│  ├─ ms@2.1.2
+│  └─ sax@^1.2.4
+├─ netmask@1.0.6
+├─ nice-try@1.0.5
+├─ normalize-package-data@2.5.0
+│  ├─ hosted-git-info@^2.1.4
+│  ├─ resolve@^1.10.0
+│  ├─ semver@2 || 3 || 4 || 5
+│  ├─ semver@5.7.1
+│  └─ validate-npm-package-license@^3.0.1
+├─ normalize-url@4.5.0
+├─ npm-conf@1.1.3
+│  ├─ config-chain@^1.1.11
+│  └─ pify@^3.0.0
+├─ npm-run-path@2.0.2
+│  └─ path-key@^2.0.0
+├─ number-is-nan@1.0.1
+├─ object-hash@1.3.1
+├─ object-keys@1.1.1
+├─ once@1.4.0
+│  └─ wrappy@1
+├─ onetime@5.1.0
+│  └─ mimic-fn@^2.1.0
+├─ open@7.0.2
+│  ├─ is-docker@^2.0.0
+│  └─ is-wsl@^2.1.1
+├─ opn@5.5.0
+│  ├─ is-wsl@^1.1.0
+│  └─ is-wsl@1.1.0
+├─ optionator@0.8.3
+│  ├─ deep-is@~0.1.3
+│  ├─ fast-levenshtein@~2.0.6
+│  ├─ levn@~0.3.0
+│  ├─ prelude-ls@~1.1.2
+│  ├─ type-check@~0.3.2
+│  └─ word-wrap@~1.2.3
+├─ os-locale@1.4.0
+│  └─ lcid@^1.0.0
+├─ os-name@3.1.0
+│  ├─ macos-release@^2.2.0
+│  └─ windows-release@^3.1.0
+├─ os-tmpdir@1.0.2
+├─ p-cancelable@1.1.0
+├─ p-finally@1.0.0
+├─ p-limit@2.2.2
+│  └─ p-try@^2.0.0
+├─ p-locate@4.1.0
+│  └─ p-limit@^2.2.0
+├─ p-map@2.1.0
+├─ p-try@2.2.0
+├─ pac-proxy-agent@3.0.1
+│  ├─ agent-base@^4.2.0
+│  ├─ debug@^4.1.1
+│  ├─ get-uri@^2.0.0
+│  ├─ http-proxy-agent@^2.1.0
+│  ├─ https-proxy-agent@^3.0.0
+│  ├─ pac-resolver@^3.0.0
+│  ├─ raw-body@^2.2.0
+│  └─ socks-proxy-agent@^4.0.1
+├─ pac-resolver@3.0.0
+│  ├─ co@^4.6.0
+│  ├─ degenerator@^1.0.4
+│  ├─ ip@^1.1.5
+│  ├─ netmask@^1.0.6
+│  └─ thunkify@^2.1.2
+├─ package-json@4.0.1
+│  ├─ got@^6.7.1
+│  ├─ got@6.7.1
+│  │  ├─ create-error-class@^3.0.0
+│  │  ├─ duplexer3@^0.1.4
+│  │  ├─ get-stream@^3.0.0
+│  │  ├─ is-redirect@^1.0.0
+│  │  ├─ is-retry-allowed@^1.0.0
+│  │  ├─ is-stream@^1.0.0
+│  │  ├─ lowercase-keys@^1.0.0
+│  │  ├─ safe-buffer@^5.0.1
+│  │  ├─ timed-out@^4.0.0
+│  │  ├─ unzip-response@^2.0.1
+│  │  └─ url-parse-lax@^1.0.0
+│  ├─ prepend-http@1.0.4
+│  ├─ registry-auth-token@^3.0.1
+│  ├─ registry-url@^3.0.3
+│  ├─ semver@^5.1.0
+│  ├─ semver@5.7.1
+│  └─ url-parse-lax@1.0.0
+│     └─ prepend-http@^1.0.1
+├─ pako@1.0.11
+├─ parent-module@1.0.1
+│  └─ callsites@^3.0.0
+├─ parse-path@4.0.1
+│  ├─ is-ssh@^1.3.0
+│  └─ protocols@^1.4.0
+├─ parse-url@5.0.1
+│  ├─ is-ssh@^1.3.0
+│  ├─ normalize-url@^3.3.0
+│  ├─ normalize-url@3.3.0
+│  ├─ parse-path@^4.0.0
+│  └─ protocols@^1.4.0
+├─ path-exists@4.0.0
+├─ path-is-absolute@1.0.1
+├─ path-is-inside@1.0.2
+├─ path-key@2.0.1
+├─ path-parse@1.0.6
+├─ pend@1.2.0
+├─ pify@3.0.0
+├─ pkg-up@3.1.0
+│  ├─ find-up@^3.0.0
+│  ├─ find-up@3.0.0
+│  │  └─ locate-path@^3.0.0
+│  ├─ locate-path@3.0.0
+│  │  ├─ p-locate@^3.0.0
+│  │  └─ path-exists@^3.0.0
+│  ├─ p-locate@3.0.0
+│  │  └─ p-limit@^2.0.0
+│  └─ path-exists@3.0.0
+├─ prelude-ls@1.1.2
+├─ prepend-http@2.0.0
+├─ process-nextick-args@2.0.1
+├─ progress@2.0.3
+├─ promise@7.3.1
+│  └─ asap@~2.0.3
+├─ proto-list@1.2.4
+├─ protocols@1.4.7
+├─ proxy-agent@3.1.1
+│  ├─ agent-base@^4.2.0
+│  ├─ debug@4
+│  ├─ http-proxy-agent@^2.1.0
+│  ├─ https-proxy-agent@^3.0.0
+│  ├─ lru-cache@^5.1.1
+│  ├─ lru-cache@5.1.1
+│  │  └─ yallist@^3.0.2
+│  ├─ pac-proxy-agent@^3.0.1
+│  ├─ proxy-from-env@^1.0.0
+│  ├─ socks-proxy-agent@^4.0.1
+│  └─ yallist@3.1.1
+├─ proxy-from-env@1.0.0
+├─ pseudomap@1.0.2
+├─ pump@3.0.0
+│  ├─ end-of-stream@^1.1.0
+│  └─ once@^1.3.1
+├─ punycode@2.1.1
+├─ pupa@2.0.1
+│  └─ escape-goat@^2.0.0
+├─ raven@2.6.4
+│  ├─ cookie@0.3.1
+│  ├─ md5@^2.2.1
+│  ├─ stack-trace@0.0.10
+│  ├─ timed-out@4.0.1
+│  ├─ uuid@3.3.2
+│  └─ uuid@3.3.2
+├─ raw-body@2.4.1
+│  ├─ bytes@3.1.0
+│  ├─ http-errors@1.7.3
+│  ├─ iconv-lite@0.4.24
+│  └─ unpipe@1.0.0
+├─ rc@1.2.8
+│  ├─ deep-extend@^0.6.0
+│  ├─ ini@~1.3.0
+│  ├─ minimist@^1.2.0
+│  ├─ strip-json-comments@~2.0.1
+│  └─ strip-json-comments@2.0.1
+├─ read-config-file@5.0.1
+│  ├─ dotenv-expand@^5.1.0
+│  ├─ dotenv@^8.2.0
+│  ├─ fs-extra@^8.1.0
+│  ├─ js-yaml@^3.13.1
+│  ├─ json5@^2.1.1
+│  └─ lazy-val@^1.0.4
+├─ readable-stream@2.3.7
+│  ├─ core-util-is@~1.0.0
+│  ├─ inherits@~2.0.3
+│  ├─ isarray@~1.0.0
+│  ├─ process-nextick-args@~2.0.0
+│  ├─ safe-buffer@~5.1.1
+│  ├─ safe-buffer@5.1.2
+│  ├─ string_decoder@~1.1.1
+│  └─ util-deprecate@~1.0.1
+├─ regexpp@2.0.1
+├─ registry-auth-token@3.4.0
+│  ├─ rc@^1.1.6
+│  └─ safe-buffer@^5.0.1
+├─ registry-url@3.1.0
+│  └─ rc@^1.0.1
+├─ require-directory@2.1.1
+├─ require-main-filename@2.0.0
+├─ resolve-from@4.0.0
+├─ resolve@1.15.1
+│  └─ path-parse@^1.0.6
+├─ responselike@1.0.2
+│  └─ lowercase-keys@^1.0.0
+├─ restore-cursor@2.0.0
+│  ├─ mimic-fn@1.2.0
+│  ├─ onetime@^2.0.0
+│  ├─ onetime@2.0.1
+│  │  └─ mimic-fn@^1.0.0
+│  └─ signal-exit@^3.0.2
+├─ rimraf@2.6.3
+│  └─ glob@^7.1.3
+├─ roarr@2.15.2
+│  ├─ boolean@^3.0.0
+│  ├─ detect-node@^2.0.4
+│  ├─ globalthis@^1.0.1
+│  ├─ json-stringify-safe@^5.0.1
+│  ├─ semver-compare@^1.0.0
+│  ├─ sprintf-js@^1.1.2
+│  └─ sprintf-js@1.1.2
+├─ run-async@2.3.0
+│  └─ is-promise@^2.1.0
+├─ rxjs@6.5.4
+│  └─ tslib@^1.9.0
+├─ safe-buffer@5.2.0
+├─ safer-buffer@2.1.2
+├─ sanitize-filename@1.6.3
+│  └─ truncate-utf8-bytes@^1.0.0
+├─ sax@1.2.4
+├─ secure-keys@1.0.0
+├─ semver-compare@1.0.0
+├─ semver-diff@2.1.0
+│  ├─ semver@^5.0.3
+│  └─ semver@5.7.1
+├─ semver@6.3.0
+├─ serialize-error@5.0.0
+│  └─ type-fest@^0.8.0
+├─ set-blocking@2.0.0
+├─ set-immediate-shim@1.0.1
+├─ setprototypeof@1.1.1
+├─ shebang-command@1.2.0
+│  └─ shebang-regex@^1.0.0
+├─ shebang-regex@1.0.0
+├─ signal-exit@3.0.2
+├─ slice-ansi@2.1.0
+│  ├─ ansi-styles@^3.2.0
+│  ├─ astral-regex@^1.0.0
+│  └─ is-fullwidth-code-point@^2.0.0
+├─ smart-buffer@4.1.0
+├─ snyk-config@2.2.3
+│  ├─ debug@^3.1.0
+│  ├─ debug@3.2.6
+│  │  └─ ms@^2.1.1
+│  ├─ lodash@^4.17.15
+│  ├─ ms@2.1.2
+│  └─ nconf@^0.10.0
+├─ snyk-docker-plugin@2.2.0
+│  ├─ debug@^4.1.1
+│  ├─ dockerfile-ast@0.0.19
+│  ├─ event-loop-spinner@^1.1.0
+│  ├─ semver@^6.1.0
+│  ├─ tar-stream@^2.1.0
+│  └─ tslib@^1
+├─ snyk-go-parser@1.4.0
+│  ├─ toml@^3.0.0
+│  └─ tslib@^1.10.0
+├─ snyk-go-plugin@1.13.0
+│  ├─ debug@^4.1.1
+│  ├─ graphlib@^2.1.1
+│  ├─ rimraf@2.7.1
+│  │  └─ glob@^7.1.3
+│  ├─ snyk-go-parser@1.4.0
+│  ├─ tmp@0.1.0
+│  ├─ tmp@0.1.0
+│  │  └─ rimraf@^2.6.3
+│  └─ tslib@^1.10.0
+├─ snyk-gradle-plugin@3.2.5
+│  ├─ @snyk/cli-interface@2.3.0
+│  ├─ @snyk/cli-interface@2.3.0
+│  │  └─ tslib@^1.9.3
+│  ├─ @types/debug@^4.1.4
+│  ├─ chalk@^2.4.2
+│  ├─ debug@^4.1.1
+│  ├─ tmp@0.0.33
+│  └─ tslib@^1.9.3
+├─ snyk-module@1.9.1
+│  ├─ debug@^3.1.0
+│  ├─ debug@3.2.6
+│  │  └─ ms@^2.1.1
+│  ├─ hosted-git-info@^2.7.1
+│  └─ ms@2.1.2
+├─ snyk-mvn-plugin@2.9.0
+│  ├─ @snyk/cli-interface@2.3.1
+│  ├─ debug@^4.1.1
+│  ├─ lodash@^4.17.15
+│  ├─ ms@2.1.2
+│  ├─ needle@^2.4.0
+│  ├─ needle@2.4.0
+│  │  ├─ debug@^3.2.6
+│  │  ├─ debug@3.2.6
+│  │  │  └─ ms@^2.1.1
+│  │  ├─ iconv-lite@^0.4.4
+│  │  └─ sax@^1.2.4
+│  ├─ rimraf@2.7.1
+│  │  └─ glob@^7.1.3
+│  ├─ tmp@^0.1.0
+│  ├─ tmp@0.1.0
+│  │  └─ rimraf@^2.6.3
+│  ├─ tslib@1.9.3
+│  └─ tslib@1.9.3
+├─ snyk-nodejs-lockfile-parser@1.17.0
+│  ├─ @yarnpkg/lockfile@^1.0.2
+│  ├─ graphlib@^2.1.5
+│  ├─ lodash@^4.17.14
+│  ├─ p-map@2.1.0
+│  ├─ source-map-support@^0.5.7
+│  ├─ tslib@^1.9.3
+│  └─ uuid@^3.3.2
+├─ snyk-nuget-plugin@1.16.0
+│  ├─ debug@^3.1.0
+│  ├─ debug@3.2.6
+│  │  └─ ms@^2.1.1
+│  ├─ dotnet-deps-parser@4.9.0
+│  ├─ jszip@^3.1.5
+│  ├─ lodash@^4.17.14
+│  ├─ ms@2.1.2
+│  ├─ snyk-paket-parser@1.5.0
+│  ├─ tslib@^1.9.3
+│  └─ xml2js@^0.4.17
+├─ snyk-paket-parser@1.5.0
+│  └─ tslib@^1.9.3
+├─ snyk-php-plugin@1.7.0
+│  ├─ @snyk/cli-interface@2.2.0
+│  ├─ @snyk/cli-interface@2.2.0
+│  │  ├─ tslib@^1.9.3
+│  │  └─ tslib@1.10.0
+│  ├─ @snyk/composer-lockfile-parser@1.2.0
+│  ├─ tslib@1.9.3
+│  └─ tslib@1.9.3
+├─ snyk-policy@1.13.5
+│  ├─ debug@^3.1.0
+│  ├─ debug@3.2.6
+│  │  └─ ms@^2.1.1
+│  ├─ email-validator@^2.0.4
+│  ├─ js-yaml@^3.13.1
+│  ├─ lodash.clonedeep@^4.5.0
+│  ├─ ms@2.1.2
+│  ├─ semver@^6.0.0
+│  ├─ snyk-module@^1.9.1
+│  ├─ snyk-resolve@^1.0.1
+│  ├─ snyk-try-require@^1.3.1
+│  └─ then-fs@^2.0.0
+├─ snyk-python-plugin@1.17.0
+│  ├─ @snyk/cli-interface@^2.0.3
+│  └─ tmp@0.0.33
+├─ snyk-resolve-deps@4.4.0
+│  ├─ @types/node@^6.14.4
+│  ├─ @types/node@6.14.9
+│  ├─ @types/semver@^5.5.0
+│  ├─ @types/semver@5.5.0
+│  ├─ ansicolors@^0.3.2
+│  ├─ debug@^3.2.5
+���  ├─ debug@3.2.6
+│  │  └─ ms@^2.1.1
+│  ├─ lodash.assign@^4.2.0
+│  ├─ lodash.assignin@^4.2.0
+│  ├─ lodash.clone@^4.5.0
+│  ├─ lodash.flatten@^4.4.0
+│  ├─ lodash.get@^4.4.2
+│  ├─ lodash.set@^4.3.2
+│  ├─ lru-cache@^4.0.0
+│  ├─ ms@2.1.2
+│  ├─ semver@^5.5.1
+│  ├─ semver@5.7.1
+│  ├─ snyk-module@^1.6.0
+│  ├─ snyk-resolve@^1.0.0
+│  ├─ snyk-tree@^1.0.0
+│  ├─ snyk-try-require@^1.1.1
+│  └─ then-fs@^2.0.0
+├─ snyk-resolve@1.0.1
+│  ├─ debug@^3.1.0
+│  ├─ debug@3.2.6
+│  │  └─ ms@^2.1.1
+│  ├─ ms@2.1.2
+│  └─ then-fs@^2.0.0
+├─ snyk-sbt-plugin@2.11.0
+│  ├─ debug@^4.1.1
+│  ├─ rimraf@2.7.1
+│  │  └─ glob@^7.1.3
+│  ├─ semver@^6.1.2
+│  ├─ tmp@^0.1.0
+│  ├─ tmp@0.1.0
+│  │  └─ rimraf@^2.6.3
+│  ├─ tree-kill@^1.2.2
+│  └─ tslib@^1.10.0
+├─ snyk-tree@1.0.0
+│  └─ archy@^1.0.0
+├─ snyk-try-require@1.3.1
+│  ├─ debug@^3.1.0
+│  ├─ debug@3.2.6
+│  │  └─ ms@^2.1.1
+│  ├─ lodash.clonedeep@^4.3.0
+│  ├─ lru-cache@^4.0.0
+│  ├─ ms@2.1.2
+│  └─ then-fs@^2.0.0
+├─ snyk@1.297.1
+│  ├─ @snyk/cli-interface@2.3.2
+│  ├─ @snyk/cli-interface@2.3.2
+│  │  └─ tslib@^1.9.3
+│  ├─ @snyk/configstore@^3.2.0-rc1
+│  ├─ @snyk/dep-graph@1.13.1
+│  ├─ @snyk/dep-graph@1.13.1
+│  │  ├─ graphlib@^2.1.5
+│  │  ├─ lodash@^4.7.14
+│  │  ├─ object-hash@^1.3.1
+│  │  ├─ semver@^6.0.0
+│  │  ├─ source-map-support@^0.5.11
+│  │  └─ tslib@^1.9.3
+│  ├─ @snyk/gemfile@1.2.0
+│  ├─ @snyk/snyk-cocoapods-plugin@2.0.1
+│  ├─ @snyk/update-notifier@^2.5.1-rc2
+│  ├─ @types/agent-base@^4.2.0
+│  ├─ @types/restify@^4.3.6
+│  ├─ abbrev@^1.1.1
+│  ├─ ansi-escapes@3.2.0
+│  ├─ chalk@^2.4.2
+│  ├─ cli-spinner@0.2.10
+│  ├─ debug@^3.1.0
+│  ├─ debug@3.2.6
+│  │  └─ ms@^2.1.1
+│  ├─ diff@^4.0.1
+│  ├─ git-url-parse@11.1.2
+│  ├─ glob@^7.1.3
+│  ├─ inquirer@^6.2.2
+│  ├─ lodash@^4.17.14
+│  ├─ ms@2.1.2
+│  ├─ needle@^2.2.4
+│  ├─ opn@^5.5.0
+│  ├─ os-name@^3.0.0
+│  ├─ proxy-agent@^3.1.1
+│  ├─ proxy-from-env@^1.0.0
+│  ├─ semver@^6.0.0
+│  ├─ snyk-config@^2.2.1
+│  ├─ snyk-docker-plugin@2.2.0
+│  ├─ snyk-go-plugin@1.13.0
+│  ├─ snyk-gradle-plugin@3.2.5
+│  ├─ snyk-module@1.9.1
+│  ├─ snyk-mvn-plugin@2.9.0
+│  ├─ snyk-nodejs-lockfile-parser@1.17.0
+│  ├─ snyk-nuget-plugin@1.16.0
+│  ├─ snyk-php-plugin@1.7.0
+│  ├─ snyk-policy@1.13.5
+│  ├─ snyk-python-plugin@1.17.0
+│  ├─ snyk-resolve-deps@4.4.0
+│  ├─ snyk-resolve@1.0.1
+│  ├─ snyk-sbt-plugin@2.11.0
+│  ├─ snyk-tree@^1.0.0
+│  ├─ snyk-try-require@1.3.1
+│  ├─ source-map-support@^0.5.11
+│  ├─ strip-ansi@^5.2.0
+│  ├─ tempfile@^2.0.0
+│  ├─ then-fs@^2.0.0
+│  ├─ uuid@^3.3.2
+│  └─ wrap-ansi@^5.1.0
+├─ socks-proxy-agent@4.0.2
+│  ├─ agent-base@~4.2.1
+│  ├─ agent-base@4.2.1
+│  │  └─ es6-promisify@^5.0.0
+│  └─ socks@~2.3.2
+├─ socks@2.3.3
+│  ├─ ip@1.1.5
+│  └─ smart-buffer@^4.1.0
+├─ sort-keys-length@1.0.1
+│  └─ sort-keys@^1.0.0
+├─ sort-keys@1.1.2
+│  └─ is-plain-obj@^1.0.0
+├─ source-map-support@0.5.16
+│  ├─ buffer-from@^1.0.0
+│  └─ source-map@^0.6.0
+├─ source-map@0.6.1
+├─ spdx-correct@3.1.0
+│  ├─ spdx-expression-parse@^3.0.0
+│  └─ spdx-license-ids@^3.0.0
+├─ spdx-exceptions@2.2.0
+├─ spdx-expression-parse@3.0.0
+│  ├─ spdx-exceptions@^2.1.0
+│  └─ spdx-license-ids@^3.0.0
+├─ spdx-license-ids@3.0.5
+├─ sprintf-js@1.0.3
+├─ stack-trace@0.0.10
+├─ stat-mode@1.0.0
+├─ statuses@1.5.0
+├─ string_decoder@1.1.1
+│  ├─ safe-buffer@~5.1.0
+│  └─ safe-buffer@5.1.2
+├─ string-width@4.2.0
+│  ├─ ansi-regex@5.0.0
+│  ├─ emoji-regex@^8.0.0
+│  ├─ is-fullwidth-code-point@^3.0.0
+│  ├─ is-fullwidth-code-point@3.0.0
+│  ├─ strip-ansi@^6.0.0
+│  └─ strip-ansi@6.0.0
+│     └─ ansi-regex@^5.0.0
+├─ strip-ansi@5.2.0
+│  └─ ansi-regex@^4.1.0
+├─ strip-eof@1.0.0
+├─ strip-json-comments@3.0.1
+├─ sumchecker@3.0.1
+│  └─ debug@^4.1.0
+├─ supports-color@5.5.0
+│  └─ has-flag@^3.0.0
+├─ table@5.4.6
+│  ├─ ajv@^6.10.2
+│  ├─ emoji-regex@7.0.3
+│  ├─ lodash@^4.17.14
+│  ├─ slice-ansi@^2.1.0
+│  ├─ string-width@^3.0.0
+│  └─ string-width@3.1.0
+│     ├─ emoji-regex@^7.0.1
+│     ├─ is-fullwidth-code-point@^2.0.0
+│     └─ strip-ansi@^5.1.0
+├─ tar-stream@2.1.0
+│  ├─ bl@^3.0.0
+│  ├─ end-of-stream@^1.4.1
+│  ├─ fs-constants@^1.0.0
+│  ├─ inherits@^2.0.3
+│  ├─ readable-stream@^3.1.1
+│  ├─ readable-stream@3.5.0
+│  │  ├─ inherits@^2.0.3
+│  │  ├─ string_decoder@^1.1.1
+│  │  └─ util-deprecate@^1.0.1
+│  └─ string_decoder@1.3.0
+│     └─ safe-buffer@~5.2.0
+├─ temp-dir@1.0.0
+├─ temp-file@3.3.6
+│  ├─ async-exit-hook@^2.0.1
+│  └─ fs-extra@^8.1.0
+├─ tempfile@2.0.0
+│  ├─ temp-dir@^1.0.0
+│  └─ uuid@^3.0.1
+├─ term-size@1.2.0
+│  ├─ cross-spawn@5.1.0
+│  │  ├─ lru-cache@^4.0.1
+│  │  ├─ shebang-command@^1.2.0
+│  │  └─ which@^1.2.9
+│  ├─ execa@^0.7.0
+│  └─ execa@0.7.0
+│     ├─ cross-spawn@^5.0.1
+│     ├─ get-stream@^3.0.0
+│     ├─ is-stream@^1.1.0
+│     ├─ npm-run-path@^2.0.0
+│     ├─ p-finally@^1.0.0
+│     ├─ signal-exit@^3.0.0
+│     └─ strip-eof@^1.0.0
+├─ text-table@0.2.0
+├─ then-fs@2.0.0
+│  └─ promise@>=3.2 <8
+├─ through@2.3.8
+├─ thunkify@2.1.2
+├─ timed-out@4.0.1
+├─ tmp@0.0.33
+│  └─ os-tmpdir@~1.0.2
+├─ to-readable-stream@1.0.0
+├─ toidentifier@1.0.0
+├─ toml@3.0.0
+├─ tree-kill@1.2.2
+├─ truncate-utf8-bytes@1.0.2
+│  └─ utf8-byte-length@^1.0.1
+├─ tslib@1.10.0
+├─ tunnel@0.0.6
+├─ type-check@0.3.2
+│  └��� prelude-ls@~1.1.2
+├─ type-fest@0.8.1
+├─ typedarray-to-buffer@3.1.5
+│  └─ is-typedarray@^1.0.0
+├─ typedarray@0.0.6
+├─ unique-string@1.0.0
+│  └─ crypto-random-string@^1.0.0
+├─ universalify@0.1.2
+├─ unpipe@1.0.0
+├─ unused-filename@2.1.0
+│  ├─ modify-filename@^1.1.0
+│  └─ path-exists@^4.0.0
+├─ unzip-response@2.0.1
+├─ update-notifier@4.1.0
+│  ├─ ansi-align@3.0.0
+│  │  ├─ string-width@^3.0.0
+│  │  └─ string-width@3.1.0
+│  │     ├─ emoji-regex@^7.0.1
+│  │     ├─ is-fullwidth-code-point@^2.0.0
+│  │     └─ strip-ansi@^5.1.0
+│  ├─ ansi-styles@4.2.1
+│  │  ├─ @types/color-name@^1.1.1
+│  │  └─ color-convert@^2.0.1
+│  ├─ boxen@^4.2.0
+│  ├─ boxen@4.2.0
+│  │  ├─ ansi-align@^3.0.0
+│  │  ├─ camelcase@^5.3.1
+│  │  ├─ chalk@^3.0.0
+│  │  ├─ cli-boxes@^2.2.0
+│  │  ├─ string-width@^4.1.0
+│  │  ├─ term-size@^2.1.0
+│  │  ├─ type-fest@^0.8.1
+│  │  └─ widest-line@^3.1.0
+│  ├─ chalk@^3.0.0
+│  ├─ chalk@3.0.0
+│  │  ├─ ansi-styles@^4.1.0
+│  │  └─ supports-color@^7.1.0
+│  ├─ cli-boxes@2.2.0
+│  ├─ color-convert@2.0.1
+│  │  └─ color-name@~1.1.4
+│  ├─ color-name@1.1.4
+│  ├─ configstore@^5.0.1
+│  ├─ emoji-regex@7.0.3
+│  ├─ global-dirs@2.0.1
+│  │  └─ ini@^1.3.5
+│  ├─ has-flag@4.0.0
+│  ├─ has-yarn@^2.1.0
+│  ├─ import-lazy@^2.1.0
+│  ├─ is-ci@^2.0.0
+│  ├─ is-installed-globally@^0.3.1
+│  ├─ is-installed-globally@0.3.1
+│  │  ├─ global-dirs@^2.0.1
+│  │  └─ is-path-inside@^3.0.1
+│  ├─ is-npm@^4.0.0
+│  ├─ is-npm@4.0.0
+│  ├─ is-path-inside@3.0.2
+│  ├─ is-yarn-global@^0.3.0
+│  ├─ latest-version@^5.0.0
+│  ├─ latest-version@5.1.0
+│  │  └─ package-json@^6.3.0
+│  ├─ package-json@6.5.0
+│  │  ├─ got@^9.6.0
+│  │  ├─ registry-auth-token@^4.0.0
+│  │  ├─ registry-url@^5.0.0
+│  │  └─ semver@^6.2.0
+│  ├─ pupa@^2.0.1
+│  ├─ registry-auth-token@4.1.1
+│  │  └─ rc@^1.2.8
+│  ├─ registry-url@5.1.0
+│  │  └─ rc@^1.2.8
+│  ├─ semver-diff@^3.1.1
+│  ├─ semver-diff@3.1.1
+│  │  └─ semver@^6.3.0
+│  ├─ supports-color@7.1.0
+│  │  └─ has-flag@^4.0.0
+│  ├─ term-size@2.2.0
+│  ├─ widest-line@3.1.0
+│  │  └─ string-width@^4.0.0
+│  ├─ xdg-basedir@^4.0.0
+│  └─ xdg-basedir@4.0.0
+├─ uri-js@4.2.2
+│  └─ punycode@^2.1.0
+├─ url-parse-lax@3.0.0
+│  └─ prepend-http@^2.0.0
+├─ utf8-byte-length@1.0.4
+├─ util-deprecate@1.0.2
+├─ uuid@3.4.0
+├─ v8-compile-cache@2.1.0
+├─ validate-npm-package-license@3.0.4
+│  ├─ spdx-correct@^3.0.0
+│  └─ spdx-expression-parse@^3.0.0
+├─ vscode-languageserver-types@3.15.1
+├─ which-module@2.0.0
+├─ which@1.3.1
+│  └─ isexe@^2.0.0
+├─ widest-line@2.0.1
+│  ├─ ansi-regex@3.0.0
+│  ├─ string-width@^2.1.1
+│  ├─ string-width@2.1.1
+│  │  ├─ is-fullwidth-code-point@^2.0.0
+│  │  └─ strip-ansi@^4.0.0
+│  └─ strip-ansi@4.0.0
+│     └─ ansi-regex@^3.0.0
+├─ window-size@0.1.4
+├─ windows-release@3.2.0
+│  └─ execa@^1.0.0
+├─ word-wrap@1.2.3
+├─ wrap-ansi@5.1.0
+│  ├─ ansi-styles@^3.2.0
+│  ├─ emoji-regex@7.0.3
+│  ├─ string-width@^3.0.0
+│  ├─ string-width@3.1.0
+│  │  ├─ emoji-regex@^7.0.1
+│  │  ├─ is-fullwidth-code-point@^2.0.0
+│  │  └─ strip-ansi@^5.1.0
+│  └─ strip-ansi@^5.0.0
+├─ wrappy@1.0.2
+├─ write-file-atomic@3.0.1
+│  ├─ imurmurhash@^0.1.4
+│  ├─ is-typedarray@^1.0.0
+│  ├─ signal-exit@^3.0.2
+│  └─ typedarray-to-buffer@^3.1.5
+├─ write@1.0.3
+│  └─ mkdirp@^0.5.1
+├─ xdg-basedir@3.0.0
+├─ xml2js@0.4.23
+│  ├─ sax@>=0.6.0
+│  └─ xmlbuilder@~11.0.0
+├─ xmlbuilder@11.0.1
+├─ xregexp@2.0.0
+├─ y18n@4.0.0
+├─ yallist@2.1.2
+├─ yargs-parser@16.1.0
+│  ├─ camelcase@^5.0.0
+│  └─ decamelize@^1.2.0
+├─ yargs@15.1.0
+│  ├─ cliui@^6.0.0
+│  ├─ decamelize@^1.2.0
+│  ├─ find-up@^4.1.0
+│  ├─ get-caller-file@^2.0.1
+│  ├─ require-directory@^2.1.1
+│  ├─ require-main-filename@^2.0.0
+│  ├─ set-blocking@^2.0.0
+│  ├─ string-width@^4.2.0
+│  ├─ which-module@^2.0.0
+│  ├─ y18n@^4.0.0
+│  └─ yargs-parser@^16.1.0
+└─ yauzl@2.4.1
+   └─ fd-slicer@~1.0.1
+Done in 0.81s.
+travis_time:end:0f2dbe40:start=1582798926966101000,finish=1582798928132014000,duration=1165913000,event=before_script[0Ktravis_fold:end:before_script[0Ktravis_time:start:0249f84f[0K$ ./scripts/travis.sh
+yarn run test
+yarn run v1.22.0
+$ eslint app
+Done in 1.38s.
+if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
+  yarn run snyk
+  yarn run mac
+fi
+yarn run v1.22.0
+$ snyk test
+
+Testing /Users/travis/build/irccloud/irccloud-desktop...
+
+Organization:      jwheare
+Package manager:   yarn
+Target file:       yarn.lock
+Project name:      irccloud-desktop
+Open source:       no
+Project path:      /Users/travis/build/irccloud/irccloud-desktop
+Local Snyk policy: found
+Licenses:          enabled
+
+✓ Tested 375 dependencies for known issues, no vulnerable paths found.
+
+Done in 2.84s.
+yarn run v1.22.0
+$ electron-builder --mac -c.extraMetadata.irccloud.sentry_dsn ${SENTRY_DSN}
+  • electron-builder  version=22.3.5 os=18.5.0
+  • artifacts will be published if draft release exists  reason=CI detected
+  • loaded configuration  file=/Users/travis/build/irccloud/irccloud-desktop/electron-builder.json
+  • packaging       platform=darwin arch=x64 electron=8.0.2 appOutDir=dist/mac
+  • downloading     url=https://github.com/electron/electron/releases/download/v8.0.2/electron-v8.0.2-darwin-x64.zip size=66 MB parts=4
+  • downloaded      url=https://github.com/electron/electron/releases/download/v8.0.2/electron-v8.0.2-darwin-x64.zip duration=1.399s
+  • signing         file=dist/mac/IRCCloud.app identityName=Developer ID Application: IRCCloud Ltd. (GED45EQAGA) identityHash=0186B946B61D4161EB4569A570DC59AA143B5C48 provisioningProfile=none
+  • notarizing      appBundleId=com.irccloud.desktop appPath=/Users/travis/build/irccloud/irccloud-desktop/dist/mac/IRCCloud.app
+  • building        target=DMG arch=x64 file=dist/IRCCloud-0.14.1.dmg
+  • building        target=macOS zip arch=x64 file=dist/IRCCloud-0.14.1-mac.zip
+  • building block map  blockMapFile=dist/IRCCloud-0.14.1.dmg.blockmap
+  • publishing      publisher=Github (owner: irccloud, project: irccloud-desktop, version: 0.14.1)
+  • uploading       file=IRCCloud-0.14.1.dmg.blockmap provider=GitHub
+  • uploading       file=IRCCloud-0.14.1.dmg provider=GitHub
+  • building embedded block map  file=dist/IRCCloud-0.14.1-mac.zip
+  • uploading       file=IRCCloud-0.14.1-mac.zip provider=GitHub
+Done in 319.52s.
+if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then
+  sudo snap install snapcraft --classic
+  sudo snap install multipass --beta --classic
+  sudo snap install review-tools
+  yarn run linux
+fi
+travis_time:end:0249f84f:start=1582798928157989000,finish=1582799253137215000,duration=324979226000,event=script[0K[32;1mThe command "./scripts/travis.sh" exited with 0.[0m
+
+[33;1mSkipping a deployment with the snap provider because a custom condition was not met[0m
+
+Done. Your build exited with 0.
